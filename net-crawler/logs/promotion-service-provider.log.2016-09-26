@@ -1,0 +1,877 @@
+2016-09-26 14:36:21,283 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 14:36:21,617 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@11758f2a: startup date [Mon Sep 26 14:36:21 CST 2016]; root of context hierarchy
+2016-09-26 14:36:21,718 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-09-26 14:36:22,290 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-09-26 14:36:22,628 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-09-26 14:36:23,168 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-09-26 14:36:27,020 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-09-26 14:36:27,472 [main] WARN  org.springframework.beans.factory.support.AbstractBeanFactory (AbstractBeanFactory.java:1480) - Bean creation exception on FactoryBean type check: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockinfoMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/StockinfoMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+2016-09-26 14:36:27,540 [main] WARN  org.springframework.beans.factory.support.AbstractBeanFactory (AbstractBeanFactory.java:1480) - Bean creation exception on FactoryBean type check: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxMassageMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxMassageMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+2016-09-26 14:36:27,594 [main] WARN  org.springframework.beans.factory.support.AbstractBeanFactory (AbstractBeanFactory.java:1480) - Bean creation exception on FactoryBean type check: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxStockInfoMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxStockInfoMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+2016-09-26 14:36:27,638 [main] WARN  org.springframework.beans.factory.support.AbstractBeanFactory (AbstractBeanFactory.java:1480) - Bean creation exception on FactoryBean type check: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxStockTradeMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxStockTradeMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+2016-09-26 14:36:27,640 [main] WARN  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:546) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zx.modules.stock.service.StockService': Cannot resolve reference to bean 'stockService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.zx.stock.mybatis.dao.StockinfoMapper com.zx.modules.stock.service.impl.StockServiceImpl.stockInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.zx.stock.mybatis.dao.StockinfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+Related cause: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockinfoMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/StockinfoMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+Related cause: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxMassageMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxMassageMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+Related cause: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxStockInfoMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxStockInfoMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+Related cause: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxStockTradeMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxStockTradeMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+2016-09-26 14:36:27,648 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:1383) - {dataSource-1} closed
+2016-09-26 14:36:27,713 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Error creating bean with name 'com.zx.modules.stock.service.StockService': Cannot resolve reference to bean 'stockService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.zx.stock.mybatis.dao.StockinfoMapper com.zx.modules.stock.service.impl.StockServiceImpl.stockInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.zx.stock.mybatis.dao.StockinfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zx.modules.stock.service.StockService': Cannot resolve reference to bean 'stockService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.zx.stock.mybatis.dao.StockinfoMapper com.zx.modules.stock.service.impl.StockServiceImpl.stockInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.zx.stock.mybatis.dao.StockinfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+Related cause: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockinfoMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/StockinfoMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+Related cause: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxMassageMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxMassageMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+Related cause: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxStockInfoMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxStockInfoMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+Related cause: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxStockTradeMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxStockTradeMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.zx.stock.mybatis.dao.StockinfoMapper com.zx.modules.stock.service.impl.StockServiceImpl.stockInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.zx.stock.mybatis.dao.StockinfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 16 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.zx.stock.mybatis.dao.StockinfoMapper com.zx.modules.stock.service.impl.StockServiceImpl.stockInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.zx.stock.mybatis.dao.StockinfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:573)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 24 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.zx.stock.mybatis.dao.StockinfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1373)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1119)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	... 26 more
+Related cause:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockinfoMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/StockinfoMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:808)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:544)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:447)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:423)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:220)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 44 more
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:468)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:343)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	... 51 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:464)
+	... 54 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:437)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:325)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1994)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:879)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2973)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:348)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 57 more
+Related cause:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxMassageMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxMassageMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:808)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:544)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:447)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:423)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:220)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 44 more
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:468)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:343)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	... 51 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:464)
+	... 54 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:437)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:325)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1994)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:879)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2973)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:348)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 57 more
+Related cause:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxStockInfoMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxStockInfoMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:808)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:544)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:447)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:423)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:220)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 44 more
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:468)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:343)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	... 51 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:464)
+	... 54 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:437)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:325)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1994)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:879)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2973)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:348)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 57 more
+Related cause:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxStockTradeMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxStockTradeMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:808)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:544)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:447)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:423)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:220)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 44 more
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:468)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:343)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	... 51 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:464)
+	... 54 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:437)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:325)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1994)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:879)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2973)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:348)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 57 more
+2016-09-26 14:36:27,726 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 14:36:27,774 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 14:43:46,245 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 14:43:46,384 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612679d6: startup date [Mon Sep 26 14:43:46 CST 2016]; root of context hierarchy
+2016-09-26 14:43:46,437 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-09-26 14:43:46,617 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-09-26 14:43:46,751 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-09-26 14:43:46,992 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-09-26 14:43:50,197 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-09-26 14:43:50,931 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.stock.service.StockService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 14:43:51,138 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 14:43:51,138 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to url dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=726&side=provider&timestamp=1474872230969, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 14:43:51,505 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 14:43:51,507 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.trade.service.TradeService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 14:43:51,531 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.TradeService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 14:43:51,531 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.TradeService to url dubbo://10.0.1.56:30111/com.zx.modules.trade.service.TradeService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.TradeService&loadbalance=roundrobin&methods=test&pid=726&side=provider&timestamp=1474872231511, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 14:43:51,549 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 14:45:26,652 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 14:45:26,790 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612679d6: startup date [Mon Sep 26 14:45:26 CST 2016]; root of context hierarchy
+2016-09-26 14:45:26,854 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-09-26 14:45:27,060 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-09-26 14:45:27,205 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-09-26 14:45:27,471 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-09-26 14:45:31,588 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-09-26 14:45:31,893 [main] WARN  org.springframework.beans.factory.support.AbstractBeanFactory (AbstractBeanFactory.java:1480) - Bean creation exception on FactoryBean type check: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockinfoMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/StockinfoMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+2016-09-26 14:45:31,950 [main] WARN  org.springframework.beans.factory.support.AbstractBeanFactory (AbstractBeanFactory.java:1480) - Bean creation exception on FactoryBean type check: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxMassageMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxMassageMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+2016-09-26 14:45:31,999 [main] WARN  org.springframework.beans.factory.support.AbstractBeanFactory (AbstractBeanFactory.java:1480) - Bean creation exception on FactoryBean type check: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxStockInfoMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxStockInfoMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+2016-09-26 14:45:32,062 [main] WARN  org.springframework.beans.factory.support.AbstractBeanFactory (AbstractBeanFactory.java:1480) - Bean creation exception on FactoryBean type check: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxStockTradeMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxStockTradeMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+2016-09-26 14:45:32,064 [main] WARN  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:546) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zx.modules.stock.service.StockService': Cannot resolve reference to bean 'stockService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.zx.stock.mybatis.dao.StockinfoMapper com.zx.modules.stock.service.impl.StockServiceImpl.stockInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.zx.stock.mybatis.dao.StockinfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+Related cause: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockinfoMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/StockinfoMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+Related cause: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxMassageMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxMassageMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+Related cause: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxStockInfoMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxStockInfoMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+Related cause: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxStockTradeMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxStockTradeMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+2016-09-26 14:45:32,072 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:1383) - {dataSource-1} closed
+2016-09-26 14:45:32,106 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Error creating bean with name 'com.zx.modules.stock.service.StockService': Cannot resolve reference to bean 'stockService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.zx.stock.mybatis.dao.StockinfoMapper com.zx.modules.stock.service.impl.StockServiceImpl.stockInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.zx.stock.mybatis.dao.StockinfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zx.modules.stock.service.StockService': Cannot resolve reference to bean 'stockService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.zx.stock.mybatis.dao.StockinfoMapper com.zx.modules.stock.service.impl.StockServiceImpl.stockInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.zx.stock.mybatis.dao.StockinfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+Related cause: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockinfoMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/StockinfoMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+Related cause: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxMassageMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxMassageMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+Related cause: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxStockInfoMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxStockInfoMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+Related cause: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxStockTradeMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxStockTradeMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.zx.stock.mybatis.dao.StockinfoMapper com.zx.modules.stock.service.impl.StockServiceImpl.stockInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.zx.stock.mybatis.dao.StockinfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 16 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.zx.stock.mybatis.dao.StockinfoMapper com.zx.modules.stock.service.impl.StockServiceImpl.stockInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.zx.stock.mybatis.dao.StockinfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:573)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 24 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.zx.stock.mybatis.dao.StockinfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1373)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1119)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	... 26 more
+Related cause:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'stockinfoMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/StockinfoMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:808)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:544)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:447)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:423)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:220)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 44 more
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:468)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:343)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	... 51 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:464)
+	... 54 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:437)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:325)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1994)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:879)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2973)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:348)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 57 more
+Related cause:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxMassageMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxMassageMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:808)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:544)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:447)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:423)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:220)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 44 more
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:468)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:343)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	... 51 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:464)
+	... 54 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:437)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:325)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1994)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:879)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2973)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:348)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 57 more
+Related cause:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxStockInfoMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxStockInfoMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:808)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:544)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:447)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:423)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:220)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 44 more
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:468)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:343)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	... 51 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:464)
+	... 54 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:437)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:325)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1994)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:879)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2973)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:348)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 57 more
+Related cause:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zxStockTradeMapper' defined in file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/dao/ZxStockTradeMapper.class]: Cannot resolve reference to bean 'serviceSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:808)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:544)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:447)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:423)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:220)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serviceSqlSessionFactory' defined in class path resource [common-spring-context-dao.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 44 more
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-dao/target/classes/com/zx/stock/mybatis/mapper/ZxMassageMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:468)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:343)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	... 51 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:259)
+	at org.apache.ibatis.parsing.XPathParser.<init>(XPathParser.java:125)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.<init>(XMLMapperBuilder.java:78)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:464)
+	... 54 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 30; columnNumber: 9; 元素类型为 "sql" 的内容必须匹配 "(include|trim|where|set|foreach|choose|if|bind)"。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:437)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:325)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1994)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:879)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2973)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:348)
+	at org.apache.ibatis.parsing.XPathParser.createDocument(XPathParser.java:257)
+	... 57 more
+2016-09-26 14:45:32,130 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 14:45:32,173 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 15:58:46,230 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 15:58:46,375 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612679d6: startup date [Mon Sep 26 15:58:46 CST 2016]; root of context hierarchy
+2016-09-26 15:58:46,436 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-09-26 15:58:46,660 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-09-26 15:58:46,818 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-09-26 15:58:47,128 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-09-26 15:58:51,175 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-09-26 15:58:51,990 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.stock.service.StockService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 15:58:52,191 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 15:58:52,192 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to url dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=765&side=provider&timestamp=1474876732033, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 15:58:52,440 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 15:58:52,443 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.trade.service.TradeService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 15:58:52,465 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.TradeService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 15:58:52,465 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.TradeService to url dubbo://10.0.1.56:30111/com.zx.modules.trade.service.TradeService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.TradeService&loadbalance=roundrobin&methods=test&pid=765&side=provider&timestamp=1474876732447, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 15:58:52,470 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 16:31:58,405 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 16:31:58,552 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612679d6: startup date [Mon Sep 26 16:31:58 CST 2016]; root of context hierarchy
+2016-09-26 16:31:58,602 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-09-26 16:31:58,852 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-09-26 16:31:59,048 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-09-26 16:31:59,365 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-09-26 16:32:03,809 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-09-26 16:32:04,565 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.stock.service.StockService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 16:32:04,761 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 16:32:04,762 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to url dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=779&side=provider&timestamp=1474878724591, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 16:32:04,948 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 16:32:04,950 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.trade.service.TradeService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 16:32:04,966 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.TradeService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 16:32:04,967 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.TradeService to url dubbo://10.0.1.56:30111/com.zx.modules.trade.service.TradeService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.TradeService&loadbalance=roundrobin&methods=test&pid=779&side=provider&timestamp=1474878724953, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-26 16:32:04,971 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1

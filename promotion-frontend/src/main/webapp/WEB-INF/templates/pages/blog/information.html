@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" th:href="@{/resources/image/logo.png}"></link>
+        <th:block th:replace="pages/head/head :: heading" />
+        <title>资讯</title>
+        <link rel="stylesheet"  th:href="@{/resources/css/blog/info.css}"/>
+        <link rel="icon" type="image/png" th:href="@{/resources/image/logo.png}"/>
+    </head>
+    <body>
+        <a class="header"  href="http://a.app.qq.com/o/simple.jsp?pkgname=cc.quanhai.youbiquan&amp;g_f=991653">
+            <div class="logo">
+                <img th:src="@{/resources/image/logo.png}"/>
+            </div>
+            <div class="ybq-introduction">
+                <div>
+                    邮币圈
+                </div>
+                <div class="ybq-content">
+                    邮币卡投资者的圈子
+                </div>
+            </div>
+            <div class="download">
+                点击下载
+            </div>
+        </a>
+        <div class="item-group">
+           <div class="slide" id="slide">
+                <div   class="recommend" onclick="clickItem(0)">
+                    <a id="type-0" name="item">
+                        推荐
+                    </a>
+                    <div name="underLine">
+                    </div>
+                </div>
+                <th:block th:if="${not #lists.isEmpty(dicts)}"  th:each="dict,stat:${dicts}">
+                    <div   class="item">
+                        <a   th:id="'type-'+${dict.dictKeyValue}" name="item" th:text="${dict.dictKeyDesc}" th:onclick="${'clickItem('+dict.dictKeyValue+')'}">
+                        </a>
+                        <div name="underLine">
+                        </div>
+                    </div>
+                </th:block>
+            </div>
+        </div>
+       <div class="item-group-underline">
+       </div>
+    </body>
+    <script th:src="@{/resources/js/blog/blog.js}">
+    </script>
+</html>

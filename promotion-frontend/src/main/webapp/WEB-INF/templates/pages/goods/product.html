@@ -1,0 +1,37 @@
+<th:block  th:fragment="part">
+    <th:block th:if="${not #lists.isEmpty(goodsProducts)}" th:each="goodsProduct,stat: ${goodsProducts}">
+        <tr th:onclick="${'getMerchantPrice('+goodsProduct.productId+')'}">
+	        <td colspan="2">
+	            <span class="product-name small-product-name"  th:text="${goodsProduct.name}"></span>
+	            <span class="buy-price small-buy-price" th:unless="${goodsProduct.sellBuyFlag}"  th:text="'求购价：￥'+${goodsProduct.productPrice}"></span>
+	            <span class="sell-price small-sell-price" th:if="${goodsProduct.sellBuyFlag}"  th:text="'出售价：￥'+${goodsProduct.productPrice}"></span>
+	        </td>
+        </tr>
+        <tr th:onclick="${'getMerchantPrice('+goodsProduct.productId+')'}">
+            <td class="attribute-transaction-type small-attribute-transaction-type" >
+            <th:block th:if="${not #lists.isEmpty(goodsProduct.productAttribute)}" th:each="productAttribute: ${goodsProduct.productAttribute}">
+                <th:block th:if="${not #lists.isEmpty(productAttribute.attributeValues)}"  th:each="attribute,count: ${productAttribute.attributeValues}">
+                    <span class="attribute"  th:text="${attribute}">
+                    </span>
+                </th:block>
+            </th:block>
+                <span class="transaction-type" th:if="${goodsProduct.transactionType==0}">
+                    担保交易
+                </span>
+                <span class="transaction-type"  th:unless="${goodsProduct.transactionType==0}" >
+                    自行交易
+                </span>
+            </td>
+            <td class="quantity small-quantity"  valign="top"  th:text="'数量：'+${goodsProduct.quantity}">
+            </td>
+        </tr>
+        <tr  th:onclick="${'getMerchantPrice('+goodsProduct.productId+')'}">
+            <td colspan="2" class="remark small-remark" th:text="'备注：'+${goodsProduct.remark}">
+            </td>
+        </tr>
+        <tr th:unless="${stat.count eq #lists.size(goodsProducts)}" th:onclick="${'getMerchantPrice('+goodsProduct.productId+')'}">
+            <td colspan="2" class="product-under-line" >
+            </td>
+        </tr>
+     </th:block>
+</th:block>

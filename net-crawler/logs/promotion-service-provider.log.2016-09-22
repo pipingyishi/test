@@ -1,0 +1,641 @@
+2016-09-22 00:25:03,715 [DubboServerHandler-10.0.1.56:30111-thread-24] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:55552,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=883&side=provider&timestamp=1474454665234, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 00:25:06,308 [dubbo-remoting-server-heartbeat-thread-1] WARN  dubbo.remoting.exchange.support.header.HeartBeatTask (HeartBeatTask.java:71) -  [DUBBO] Close channel NettyChannel [channel=[id: 0x4cee7c50, /10.0.1.56:54312 => /10.0.1.56:30111]], because heartbeat read idle time out: 180000ms, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 00:25:06,309 [dubbo-remoting-server-heartbeat-thread-1] INFO  alibaba.dubbo.remoting.transport.netty.NettyChannel (NettyChannel.java:135) -  [DUBBO] Close netty channel [id: 0x4cee7c50, /10.0.1.56:54312 => /10.0.1.56:30111], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 00:25:06,335 [DubboServerHandler-10.0.1.56:30111-thread-26] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:54312,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=883&side=provider&timestamp=1474454665234, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 08:52:39,248 [DubboServerHandler-10.0.1.56:30111-thread-28] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:55980,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=883&side=provider&timestamp=1474454665234, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 08:52:40,077 [dubbo-remoting-server-heartbeat-thread-1] WARN  dubbo.remoting.exchange.support.header.HeartBeatTask (HeartBeatTask.java:71) -  [DUBBO] Close channel NettyChannel [channel=[id: 0x00f6b9d4, /10.0.1.56:55981 => /10.0.1.56:30111]], because heartbeat read idle time out: 180000ms, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 08:52:40,078 [dubbo-remoting-server-heartbeat-thread-1] INFO  alibaba.dubbo.remoting.transport.netty.NettyChannel (NettyChannel.java:135) -  [DUBBO] Close netty channel [id: 0x00f6b9d4, /10.0.1.56:55981 => /10.0.1.56:30111], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 08:52:40,078 [dubbo-remoting-server-heartbeat-thread-1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 08:52:40,079 [DubboServerHandler-10.0.1.56:30111-thread-29] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:55981,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=883&side=provider&timestamp=1474454665234, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:18:09,686 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:18:09,939 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612679d6: startup date [Thu Sep 22 11:18:09 CST 2016]; root of context hierarchy
+2016-09-22 11:18:09,993 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-09-22 11:18:10,499 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-09-22 11:18:10,660 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-09-22 11:18:11,085 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-09-22 11:18:15,119 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-09-22 11:18:15,866 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.stock.service.StockService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:18:16,002 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:18:16,002 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to url dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1489&side=provider&timestamp=1474514295884, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:18:16,210 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Fail to start server(url: dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1489&side=provider&timestamp=1474514295884) Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+com.alibaba.dubbo.rpc.RpcException: Fail to start server(url: dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1489&side=provider&timestamp=1474514295884) Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:289)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.openServer(DubboProtocol.java:266)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.export(DubboProtocol.java:253)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:55)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:56)
+	at com.alibaba.dubbo.rpc.Protocol$Adpative.export(Protocol$Adpative.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:491)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:281)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:242)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:143)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:163)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:136)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:381)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:335)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:855)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:72)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.<init>(NettyServer.java:63)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyTransporter.bind(NettyTransporter.java:33)
+	at com.alibaba.dubbo.remoting.Transporter$Adpative.bind(Transporter$Adpative.java)
+	at com.alibaba.dubbo.remoting.Transporters.bind(Transporters.java:48)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchanger.bind(HeaderExchanger.java:41)
+	at com.alibaba.dubbo.remoting.exchange.Exchangers.bind(Exchangers.java:63)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:287)
+	... 20 more
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:30111
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:303)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.doOpen(NettyServer.java:94)
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:67)
+	... 27 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.bind(NioServerSocketPipelineSink.java:148)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleServerSocket(NioServerSocketPipelineSink.java:100)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:74)
+	at org.jboss.netty.channel.Channels.bind(Channels.java:468)
+	at org.jboss.netty.channel.AbstractChannel.bind(AbstractChannel.java:192)
+	at org.jboss.netty.bootstrap.ServerBootstrap$Binder.channelOpen(ServerBootstrap.java:348)
+	at org.jboss.netty.channel.Channels.fireChannelOpen(Channels.java:176)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannel.<init>(NioServerSocketChannel.java:85)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:142)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:90)
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:282)
+	... 29 more
+2016-09-22 11:18:16,212 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:18:16,215 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:18:16,215 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1489&side=provider&timestamp=1474514295884, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:18:16,216 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1489&side=provider&timestamp=1474514295884, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:18:40,582 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:18:40,750 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612679d6: startup date [Thu Sep 22 11:18:40 CST 2016]; root of context hierarchy
+2016-09-22 11:18:40,833 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-09-22 11:18:41,088 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-09-22 11:18:41,270 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-09-22 11:18:41,662 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-09-22 11:18:44,748 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-09-22 11:18:45,266 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.stock.service.StockService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:18:45,397 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:18:45,397 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to url dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1497&side=provider&timestamp=1474514325284, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:18:45,576 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Fail to start server(url: dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1497&side=provider&timestamp=1474514325284) Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+com.alibaba.dubbo.rpc.RpcException: Fail to start server(url: dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1497&side=provider&timestamp=1474514325284) Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:289)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.openServer(DubboProtocol.java:266)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.export(DubboProtocol.java:253)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:55)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:56)
+	at com.alibaba.dubbo.rpc.Protocol$Adpative.export(Protocol$Adpative.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:491)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:281)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:242)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:143)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:163)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:136)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:381)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:335)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:855)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:72)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.<init>(NettyServer.java:63)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyTransporter.bind(NettyTransporter.java:33)
+	at com.alibaba.dubbo.remoting.Transporter$Adpative.bind(Transporter$Adpative.java)
+	at com.alibaba.dubbo.remoting.Transporters.bind(Transporters.java:48)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchanger.bind(HeaderExchanger.java:41)
+	at com.alibaba.dubbo.remoting.exchange.Exchangers.bind(Exchangers.java:63)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:287)
+	... 20 more
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:30111
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:303)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.doOpen(NettyServer.java:94)
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:67)
+	... 27 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.bind(NioServerSocketPipelineSink.java:148)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleServerSocket(NioServerSocketPipelineSink.java:100)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:74)
+	at org.jboss.netty.channel.Channels.bind(Channels.java:468)
+	at org.jboss.netty.channel.AbstractChannel.bind(AbstractChannel.java:192)
+	at org.jboss.netty.bootstrap.ServerBootstrap$Binder.channelOpen(ServerBootstrap.java:348)
+	at org.jboss.netty.channel.Channels.fireChannelOpen(Channels.java:176)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannel.<init>(NioServerSocketChannel.java:85)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:142)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:90)
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:282)
+	... 29 more
+2016-09-22 11:18:45,585 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:18:45,587 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:18:45,588 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1497&side=provider&timestamp=1474514325284, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:18:45,588 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1497&side=provider&timestamp=1474514325284, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:20:59,268 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:20:59,398 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612679d6: startup date [Thu Sep 22 11:20:59 CST 2016]; root of context hierarchy
+2016-09-22 11:20:59,453 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-09-22 11:20:59,636 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-09-22 11:20:59,777 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-09-22 11:21:00,020 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-09-22 11:21:03,080 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-09-22 11:21:03,584 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.stock.service.StockService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:21:03,722 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:21:03,723 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to url dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1502&side=provider&timestamp=1474514463602, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:21:03,946 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 11:21:03,952 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:01:35,750 [DubboServerHandler-10.0.1.56:30111-thread-42] ERROR com.alibaba.dubbo.rpc.filter.ExceptionFilter (ExceptionFilter.java:87) -  [DUBBO] Got unchecked and undeclared exception which called by 10.0.1.56. service: com.zx.modules.stock.service.StockService, method: batchInsertUpdate, exception: java.lang.NullPointerException: null, dubbo version: 2.5.3, current host: 127.0.0.1
+java.lang.NullPointerException
+	at com.zx.modules.stock.service.impl.StockServiceImpl$1.setValues(StockServiceImpl.java:67)
+	at com.zx.modules.stock.service.impl.StockServiceImpl$1.setValues(StockServiceImpl.java:1)
+	at org.springframework.jdbc.core.JdbcTemplate$5.doInPreparedStatement(JdbcTemplate.java:1018)
+	at org.springframework.jdbc.core.JdbcTemplate$5.doInPreparedStatement(JdbcTemplate.java:1006)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:629)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658)
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:1006)
+	at com.zx.modules.stock.service.impl.StockServiceImpl.batchInsertUpdate(StockServiceImpl.java:61)
+	at com.alibaba.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-22 12:01:35,793 [DubboServerHandler-10.0.1.56:30111-thread-43] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58373,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1502&side=provider&timestamp=1474514463602, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:02:59,376 [DubboServerHandler-10.0.1.56:30111-thread-46] ERROR com.alibaba.dubbo.rpc.filter.ExceptionFilter (ExceptionFilter.java:87) -  [DUBBO] Got unchecked and undeclared exception which called by 10.0.1.56. service: com.zx.modules.stock.service.StockService, method: batchInsertUpdate, exception: java.lang.NullPointerException: null, dubbo version: 2.5.3, current host: 127.0.0.1
+java.lang.NullPointerException
+	at com.zx.modules.stock.service.impl.StockServiceImpl$1.setValues(StockServiceImpl.java:67)
+	at com.zx.modules.stock.service.impl.StockServiceImpl$1.setValues(StockServiceImpl.java:1)
+	at org.springframework.jdbc.core.JdbcTemplate$5.doInPreparedStatement(JdbcTemplate.java:1018)
+	at org.springframework.jdbc.core.JdbcTemplate$5.doInPreparedStatement(JdbcTemplate.java:1006)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:629)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658)
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:1006)
+	at com.zx.modules.stock.service.impl.StockServiceImpl.batchInsertUpdate(StockServiceImpl.java:61)
+	at com.alibaba.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-22 12:02:59,395 [DubboServerHandler-10.0.1.56:30111-thread-47] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58379,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1502&side=provider&timestamp=1474514463602, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:03:52,083 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:03:52,236 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612679d6: startup date [Thu Sep 22 12:03:52 CST 2016]; root of context hierarchy
+2016-09-22 12:03:52,297 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-09-22 12:03:52,537 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-09-22 12:03:52,684 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-09-22 12:03:52,974 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-09-22 12:03:55,648 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-09-22 12:03:56,201 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.stock.service.StockService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:03:56,339 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:03:56,339 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to url dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1535&side=provider&timestamp=1474517036222, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:03:56,497 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:03:56,503 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:04:09,909 [DubboServerHandler-10.0.1.56:30111-thread-5] ERROR com.alibaba.dubbo.rpc.filter.ExceptionFilter (ExceptionFilter.java:87) -  [DUBBO] Got unchecked and undeclared exception which called by 10.0.1.56. service: com.zx.modules.stock.service.StockService, method: batchInsertUpdate, exception: java.lang.NullPointerException: null, dubbo version: 2.5.3, current host: 127.0.0.1
+java.lang.NullPointerException
+	at com.zx.modules.stock.service.impl.StockServiceImpl$1.setValues(StockServiceImpl.java:67)
+	at com.zx.modules.stock.service.impl.StockServiceImpl$1.setValues(StockServiceImpl.java:1)
+	at org.springframework.jdbc.core.JdbcTemplate$5.doInPreparedStatement(JdbcTemplate.java:1018)
+	at org.springframework.jdbc.core.JdbcTemplate$5.doInPreparedStatement(JdbcTemplate.java:1006)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:629)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658)
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:1006)
+	at com.zx.modules.stock.service.impl.StockServiceImpl.batchInsertUpdate(StockServiceImpl.java:61)
+	at com.alibaba.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-22 12:04:09,927 [DubboServerHandler-10.0.1.56:30111-thread-6] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58405,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1535&side=provider&timestamp=1474517036222, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:05:57,658 [DubboServerHandler-10.0.1.56:30111-thread-9] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58411,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1535&side=provider&timestamp=1474517036222, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:06:26,225 [DubboServerHandler-10.0.1.56:30111-thread-12] ERROR com.alibaba.dubbo.rpc.filter.ExceptionFilter (ExceptionFilter.java:87) -  [DUBBO] Got unchecked and undeclared exception which called by 10.0.1.56. service: com.zx.modules.stock.service.StockService, method: batchInsertUpdate, exception: java.lang.NullPointerException: null, dubbo version: 2.5.3, current host: 127.0.0.1
+java.lang.NullPointerException
+	at com.zx.modules.stock.service.impl.StockServiceImpl$1.setValues(StockServiceImpl.java:67)
+	at com.zx.modules.stock.service.impl.StockServiceImpl$1.setValues(StockServiceImpl.java:1)
+	at org.springframework.jdbc.core.JdbcTemplate$5.doInPreparedStatement(JdbcTemplate.java:1018)
+	at org.springframework.jdbc.core.JdbcTemplate$5.doInPreparedStatement(JdbcTemplate.java:1006)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:629)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658)
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:1006)
+	at com.zx.modules.stock.service.impl.StockServiceImpl.batchInsertUpdate(StockServiceImpl.java:61)
+	at com.alibaba.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-22 12:06:26,260 [DubboServerHandler-10.0.1.56:30111-thread-13] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58416,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1535&side=provider&timestamp=1474517036222, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:07:43,616 [DubboServerHandler-10.0.1.56:30111-thread-16] ERROR com.alibaba.dubbo.rpc.filter.ExceptionFilter (ExceptionFilter.java:87) -  [DUBBO] Got unchecked and undeclared exception which called by 10.0.1.56. service: com.zx.modules.stock.service.StockService, method: batchInsertUpdate, exception: java.lang.NullPointerException: null, dubbo version: 2.5.3, current host: 127.0.0.1
+java.lang.NullPointerException
+	at com.zx.modules.stock.service.impl.StockServiceImpl$1.setValues(StockServiceImpl.java:67)
+	at com.zx.modules.stock.service.impl.StockServiceImpl$1.setValues(StockServiceImpl.java:1)
+	at org.springframework.jdbc.core.JdbcTemplate$5.doInPreparedStatement(JdbcTemplate.java:1018)
+	at org.springframework.jdbc.core.JdbcTemplate$5.doInPreparedStatement(JdbcTemplate.java:1006)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:629)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658)
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:1006)
+	at com.zx.modules.stock.service.impl.StockServiceImpl.batchInsertUpdate(StockServiceImpl.java:61)
+	at com.alibaba.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-22 12:07:49,594 [DubboServerHandler-10.0.1.56:30111-thread-17] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58420,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1535&side=provider&timestamp=1474517036222, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:13:34,822 [DubboServerHandler-10.0.1.56:30111-thread-20] ERROR com.alibaba.dubbo.rpc.filter.ExceptionFilter (ExceptionFilter.java:87) -  [DUBBO] Got unchecked and undeclared exception which called by 10.0.1.56. service: com.zx.modules.stock.service.StockService, method: batchInsertUpdate, exception: java.lang.NullPointerException: null, dubbo version: 2.5.3, current host: 127.0.0.1
+java.lang.NullPointerException
+	at com.zx.modules.stock.service.impl.StockServiceImpl$1.setValues(StockServiceImpl.java:67)
+	at com.zx.modules.stock.service.impl.StockServiceImpl$1.setValues(StockServiceImpl.java:1)
+	at org.springframework.jdbc.core.JdbcTemplate$5.doInPreparedStatement(JdbcTemplate.java:1018)
+	at org.springframework.jdbc.core.JdbcTemplate$5.doInPreparedStatement(JdbcTemplate.java:1006)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:629)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658)
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:1006)
+	at com.zx.modules.stock.service.impl.StockServiceImpl.batchInsertUpdate(StockServiceImpl.java:61)
+	at com.alibaba.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-22 12:13:39,000 [DubboServerHandler-10.0.1.56:30111-thread-21] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58429,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1535&side=provider&timestamp=1474517036222, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:18:59,287 [DubboServerHandler-10.0.1.56:30111-thread-24] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2016-09-22 12:18:59,384 [DubboServerHandler-10.0.1.56:30111-thread-24] INFO  org.springframework.jdbc.support.SQLErrorCodesFactory (SQLErrorCodesFactory.java:126) - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2016-09-22 12:18:59,390 [DubboServerHandler-10.0.1.56:30111-thread-24] ERROR com.alibaba.dubbo.rpc.filter.ExceptionFilter (ExceptionFilter.java:87) -  [DUBBO] Got unchecked and undeclared exception which called by 10.0.1.56. service: com.zx.modules.stock.service.StockService, method: batchInsertUpdate, exception: org.springframework.dao.TransientDataAccessResourceException: PreparedStatementCallback; SQL [insert into zx_stock_info (market, stock_code, is_del, update_date, stock_description)  values (?, ?, ?, ?, ?)  ON DUPLICATE KEY UPDATE market = VALUES(market),  stock_code = VALUES(stock_code) is_del = VALUES(is_del), update_date = VALUES(update_date),  stock_description = VALUES(stock_description) ]; Parameter index out of range (6 > number of parameters, which is 5).; nested exception is java.sql.SQLException: Parameter index out of range (6 > number of parameters, which is 5)., dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.dao.TransientDataAccessResourceException: PreparedStatementCallback; SQL [insert into zx_stock_info (market, stock_code, is_del, update_date, stock_description)  values (?, ?, ?, ?, ?)  ON DUPLICATE KEY UPDATE market = VALUES(market),  stock_code = VALUES(stock_code) is_del = VALUES(is_del), update_date = VALUES(update_date),  stock_description = VALUES(stock_description) ]; Parameter index out of range (6 > number of parameters, which is 5).; nested exception is java.sql.SQLException: Parameter index out of range (6 > number of parameters, which is 5).
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:108)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:645)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658)
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:1006)
+	at com.zx.modules.stock.service.impl.StockServiceImpl.batchInsertUpdate(StockServiceImpl.java:60)
+	at com.alibaba.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: Parameter index out of range (6 > number of parameters, which is 5).
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1078)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:989)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:975)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:920)
+	at com.mysql.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3813)
+	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3795)
+	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3840)
+	at com.mysql.jdbc.PreparedStatement.setBoolean(PreparedStatement.java:3342)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.setBoolean(DruidPooledPreparedStatement.java:277)
+	at com.zx.modules.stock.service.impl.StockServiceImpl$1.setValues(StockServiceImpl.java:65)
+	at com.zx.modules.stock.service.impl.StockServiceImpl$1.setValues(StockServiceImpl.java:1)
+	at org.springframework.jdbc.core.JdbcTemplate$5.doInPreparedStatement(JdbcTemplate.java:1018)
+	at org.springframework.jdbc.core.JdbcTemplate$5.doInPreparedStatement(JdbcTemplate.java:1006)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:629)
+	... 30 more
+2016-09-22 12:18:59,416 [DubboServerHandler-10.0.1.56:30111-thread-25] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58479,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1535&side=provider&timestamp=1474517036222, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:19:44,852 [DubboServerHandler-10.0.1.56:30111-thread-28] ERROR com.alibaba.dubbo.rpc.filter.ExceptionFilter (ExceptionFilter.java:87) -  [DUBBO] Got unchecked and undeclared exception which called by 10.0.1.56. service: com.zx.modules.stock.service.StockService, method: batchInsertUpdate, exception: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [insert into zx_stock_info (market, stock_code, is_del, update_date, stock_description)  values (?, ?, ?, ?, ?)  ON DUPLICATE KEY UPDATE market = VALUES(market),  stock_code = VALUES(stock_code) is_del = VALUES(is_del), update_date = VALUES(update_date),  stock_description = VALUES(stock_description) ]; nested exception is java.sql.BatchUpdateException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'is_del = VALUES(is_del), update_date = VALUES(update_date),  stock_description =' at line 1, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [insert into zx_stock_info (market, stock_code, is_del, update_date, stock_description)  values (?, ?, ?, ?, ?)  ON DUPLICATE KEY UPDATE market = VALUES(market),  stock_code = VALUES(stock_code) is_del = VALUES(is_del), update_date = VALUES(update_date),  stock_description = VALUES(stock_description) ]; nested exception is java.sql.BatchUpdateException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'is_del = VALUES(is_del), update_date = VALUES(update_date),  stock_description =' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:645)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658)
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:1006)
+	at com.zx.modules.stock.service.impl.StockServiceImpl.batchInsertUpdate(StockServiceImpl.java:60)
+	at com.alibaba.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.BatchUpdateException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'is_del = VALUES(is_del), update_date = VALUES(update_date),  stock_description =' at line 1
+	at com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2054)
+	at com.mysql.jdbc.PreparedStatement.executeBatch(PreparedStatement.java:1467)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeBatch(DruidPooledPreparedStatement.java:559)
+	at org.springframework.jdbc.core.JdbcTemplate$5.doInPreparedStatement(JdbcTemplate.java:1028)
+	at org.springframework.jdbc.core.JdbcTemplate$5.doInPreparedStatement(JdbcTemplate.java:1006)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:629)
+	... 30 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'is_del = VALUES(is_del), update_date = VALUES(update_date),  stock_description =' at line 1
+	at sun.reflect.GeneratedConstructorAccessor25.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4187)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4119)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2570)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2731)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2815)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2458)
+	at com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2006)
+	... 35 more
+2016-09-22 12:19:44,864 [DubboServerHandler-10.0.1.56:30111-thread-29] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58481,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1535&side=provider&timestamp=1474517036222, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:20:09,541 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:20:09,686 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612679d6: startup date [Thu Sep 22 12:20:09 CST 2016]; root of context hierarchy
+2016-09-22 12:20:09,735 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-09-22 12:20:09,946 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-09-22 12:20:10,081 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-09-22 12:20:10,375 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-09-22 12:20:13,504 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-09-22 12:20:13,994 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.stock.service.StockService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:20:14,129 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:20:14,129 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to url dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1554&side=provider&timestamp=1474518014009, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:20:14,279 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:20:14,285 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:20:41,551 [DubboServerHandler-10.0.1.56:30111-thread-3] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2016-09-22 12:20:41,578 [DubboServerHandler-10.0.1.56:30111-thread-3] INFO  org.springframework.jdbc.support.SQLErrorCodesFactory (SQLErrorCodesFactory.java:126) - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2016-09-22 12:20:41,585 [DubboServerHandler-10.0.1.56:30111-thread-3] ERROR com.alibaba.dubbo.rpc.filter.ExceptionFilter (ExceptionFilter.java:87) -  [DUBBO] Got unchecked and undeclared exception which called by 10.0.1.56. service: com.zx.modules.stock.service.StockService, method: batchInsertUpdate, exception: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [insert into zx_stock_info (market, stock_code, is_del, update_date, stock_description)  values (?, ?, ?, ?, ?)  ON DUPLICATE KEY UPDATE market = VALUES(market),  stock_code = VALUES(stock_code) is_del = VALUES(is_del), update_date = VALUES(update_date),  stock_description = VALUES(stock_description) ]; nested exception is java.sql.BatchUpdateException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'is_del = VALUES(is_del), update_date = VALUES(update_date),  stock_description =' at line 1, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [insert into zx_stock_info (market, stock_code, is_del, update_date, stock_description)  values (?, ?, ?, ?, ?)  ON DUPLICATE KEY UPDATE market = VALUES(market),  stock_code = VALUES(stock_code) is_del = VALUES(is_del), update_date = VALUES(update_date),  stock_description = VALUES(stock_description) ]; nested exception is java.sql.BatchUpdateException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'is_del = VALUES(is_del), update_date = VALUES(update_date),  stock_description =' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:645)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658)
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:1006)
+	at com.zx.modules.stock.service.impl.StockServiceImpl.batchInsertUpdate(StockServiceImpl.java:60)
+	at com.alibaba.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.BatchUpdateException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'is_del = VALUES(is_del), update_date = VALUES(update_date),  stock_description =' at line 1
+	at com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2054)
+	at com.mysql.jdbc.PreparedStatement.executeBatch(PreparedStatement.java:1467)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeBatch(DruidPooledPreparedStatement.java:559)
+	at org.springframework.jdbc.core.JdbcTemplate$5.doInPreparedStatement(JdbcTemplate.java:1028)
+	at org.springframework.jdbc.core.JdbcTemplate$5.doInPreparedStatement(JdbcTemplate.java:1006)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:629)
+	... 30 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'is_del = VALUES(is_del), update_date = VALUES(update_date),  stock_description =' at line 1
+	at sun.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1054)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4187)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4119)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2570)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2731)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2815)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2458)
+	at com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2006)
+	... 35 more
+2016-09-22 12:20:41,609 [New I/O server worker #1-1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:20:41,611 [DubboServerHandler-10.0.1.56:30111-thread-4] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58496,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1554&side=provider&timestamp=1474518014009, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:23:40,741 [New I/O server worker #1-2] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:23:40,742 [DubboServerHandler-10.0.1.56:30111-thread-8] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58502,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1554&side=provider&timestamp=1474518014009, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:31:06,222 [DubboServerHandler-10.0.1.56:30111-thread-21] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58544,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1554&side=provider&timestamp=1474518014009, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:33:24,803 [DubboServerHandler-10.0.1.56:30111-thread-33] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58555,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1554&side=provider&timestamp=1474518014009, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 12:34:31,291 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58573,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1554&side=provider&timestamp=1474518014009, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 13:10:26,587 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:59084,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1554&side=provider&timestamp=1474518014009, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:01:53,714 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:59450,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1554&side=provider&timestamp=1474518014009, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:07:52,011 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58534,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1554&side=provider&timestamp=1474518014009, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:08:23,239 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:59562,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1554&side=provider&timestamp=1474518014009, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:11:50,164 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:11:50,287 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612679d6: startup date [Thu Sep 22 15:11:50 CST 2016]; root of context hierarchy
+2016-09-22 15:11:50,338 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-09-22 15:11:50,529 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-09-22 15:11:50,686 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-09-22 15:11:50,931 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-09-22 15:11:53,900 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-09-22 15:11:54,419 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.stock.service.StockService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:11:54,548 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:11:54,549 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to url dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1642&side=provider&timestamp=1474528314437, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:11:54,705 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:11:54,711 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:13:53,957 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:59788,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1642&side=provider&timestamp=1474528314437, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:14:00,762 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:59793,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1642&side=provider&timestamp=1474528314437, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:17:08,234 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:60005,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1642&side=provider&timestamp=1474528314437, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:34:42,590 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:60106,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1642&side=provider&timestamp=1474528314437, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:35:01,000 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:60109,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1642&side=provider&timestamp=1474528314437, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:35:24,384 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:35:24,525 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612679d6: startup date [Thu Sep 22 15:35:24 CST 2016]; root of context hierarchy
+2016-09-22 15:35:24,586 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-09-22 15:35:24,799 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-09-22 15:35:24,938 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-09-22 15:35:25,203 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-09-22 15:35:31,138 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-09-22 15:35:31,705 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.stock.service.StockService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:35:31,826 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:35:31,827 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to url dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1665&side=provider&timestamp=1474529731724, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:35:31,977 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:35:31,982 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:36:53,802 [DubboServerHandler-10.0.1.56:30111-thread-5] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:60137,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1665&side=provider&timestamp=1474529731724, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:38:32,904 [DubboServerHandler-10.0.1.56:30111-thread-9] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:60139,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1665&side=provider&timestamp=1474529731724, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:50:24,438 [DubboServerHandler-10.0.1.56:30111-thread-33] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:60194,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1665&side=provider&timestamp=1474529731724, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 15:59:16,002 [DubboServerHandler-10.0.1.56:30111-thread-44] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:60208,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1665&side=provider&timestamp=1474529731724, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 16:00:51,561 [DubboServerHandler-10.0.1.56:30111-thread-49] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:60225,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1665&side=provider&timestamp=1474529731724, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 16:03:57,156 [DubboServerHandler-10.0.1.56:30111-thread-55] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:60239,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1665&side=provider&timestamp=1474529731724, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 16:45:43,749 [DubboServerHandler-10.0.1.56:30111-thread-69] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:60133,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1665&side=provider&timestamp=1474529731724, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 19:30:12,339 [New I/O server worker #1-4] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 19:30:12,340 [DubboServerHandler-10.0.1.56:30111-thread-95] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:60134,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1665&side=provider&timestamp=1474529731724, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-09-22 19:30:12,347 [DubboServerHandler-10.0.1.56:30111-thread-96] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:60502,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=1665&side=provider&timestamp=1474529731724, dubbo version: 2.5.3, current host: 127.0.0.1

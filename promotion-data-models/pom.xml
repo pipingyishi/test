@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<artifactId>ybq-promotion</artifactId>
+		<groupId>com.zx</groupId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>promotion-data-models</artifactId>
+	<name>promotion-data-models</name>
+	<packaging>jar</packaging>
+	<description>promotion-data-models</description>
+ 
+	<properties>
+		<java-version>1.7</java-version>
+		<skip_maven_deploy>true</skip_maven_deploy>
+		<gson_version>2.6.2</gson_version>
+	</properties>
+
+	<dependencies>   <dependency>
+            <groupId>com.zx</groupId>
+            <artifactId>ybq-data-models</artifactId>
+            <version>1.0</version>
+        </dependency>
+        
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>${gson_version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.2</version>
+				<configuration>
+					<source>${java-version}</source>
+					<target>${java-version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

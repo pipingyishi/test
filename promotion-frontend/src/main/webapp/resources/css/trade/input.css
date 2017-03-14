@@ -1,0 +1,173 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: Segoe UI,Lucida Grande,Helvetica,Arial,Microsoft YaHei,FreeSans,Arimo,
+	Droid Sans,wenquanyi micro hei,Hiragino Sans GB,Hiragino Sans GB W3,FontAwesome,sans-serif;
+}
+span
+{
+    color: red;
+}
+
+.head-description
+{
+    width: 100%;
+    margin-top: 15px; 
+    margin-left: 5%;
+    width:93%;
+}
+
+.char-desc
+{
+	padding:0 5px;
+	margin-left:3px;
+}
+
+.table
+{
+	border-collapse: separate; 
+	border-spacing: 14px 25px; 
+	width: 100%; 
+	height: 100%;
+}
+
+.left-line
+{
+    float: left;
+    border-left: solid 3px #f58220;
+    height: 35px;
+    margin-top: 5px;
+}
+
+
+.btn-stock
+{
+	border:1px;
+    background-color: #ff8941;
+    color: #ffffff;
+    float:left;
+    margin-left:5%;
+}
+
+.btn-electronic
+{
+    background-color: #FFFFFF;
+    color: #ff8941;
+    border: 1px;
+    border-style: solid;
+    border-color:#ff8941;
+    float:right;
+    margin-right:5%;
+}
+
+.btn
+{
+	text-align: center; /* 按钮控件中文本居中显示 */
+    line-height: 100%; /* 用百分比设置行高 */
+    padding-top: 0.55em; /* 文本顶部的内边距 */
+    padding-right: 2.5em; /* 文本右侧的内边距 */
+    padding-bottom: 0.55em; /* 文本底部的内边距 */
+    padding-left: 2.5em; /* 文本左侧的内边距 */
+    font-family: "Arial Black", Gadget, sans-serif; /* 字体 */ 
+    font-size: 14px; 
+    font-style: normal; /*字体样式*/
+    border-radius: 10px; /*圆角边框弧度*/
+    display:-moz-inline-box;
+    display:inline-block;
+}
+
+.large-screen-cname
+{
+   	 margin-left: 13%;
+     width: 40%; 
+}
+
+.input-line
+{
+	border: 0px;
+    border-bottom: #cccccc 1px solid;
+    outline-color: #FFFFFF;
+    font-size:14px;
+	color:#cccccc;
+}
+.large-screen-price
+{
+     margin-left: 13%;
+     width: 73%; 
+}
+
+.large-screen-amount
+{
+    margin-left:12.5%; 
+     width:40%; 
+}
+
+.large-screen-pname
+{
+    margin-left:8%; 
+    width: 75%; 
+}
+
+.large-screen-telphone
+{
+    width: 75%; 
+    margin-left:4%; 
+}
+
+.large-screen-unit
+{
+    width: 20.5%; 
+}
+
+
+.no-sign-spacing
+{
+	margin-left: 1.8%;
+}
+
+.large-screen-mvalue
+{
+	color:#000000;
+	margin-left:8%; 
+	width: 74%; 
+}
+
+.btn-sbt
+{
+    background-color: #ff8941;
+    color: #ffffff;
+    border:1px;
+    width:40%;
+    height:35px; 
+}
+
+
+.input-line-Single
+{
+	color:#ff8941;
+}
+
+.select-style
+{
+	 border: solid 1px #ccc;
+     appearance:none;
+     -moz-appearance:none;
+     -webkit-appearance:none;
+     padding-right: 14px;
+     font-size:14px;
+     color:#ccc;
+     background: url("../../image/pull-arrow.png") no-repeat scroll right center transparent;
+}
+
+.prompt
+{
+	font-size:15px;
+	color:#ff8941;
+	opacity: 0.5;
+	width:100%;"
+}

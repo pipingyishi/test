@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="pragma" content="no-cache"/>
+        <meta http-equiv="Cache-Control" content="no-cache, must-revalidate"/>
+        <meta http-equiv="expires" content="0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <title>包托管</title>
+        <link rel="icon" type="image/png"  th:href="@{/resources/image/logo.png}"/>
+        <link rel="stylesheet" type="text/css"  th:href="@{/resources/css/trust/product.css}"/>
+        <link rel="stylesheet" type="text/css"  th:href="@{/resources/css/trust/product-small.css}"  media="screen and (max-width:330px)"></link>
+        <link rel="stylesheet" type="text/css"  th:href="@{/resources/css/trust/product-mid.css}"  media="(min-width:331px) and (max-width:360px)"></link>
+        <link rel="stylesheet" type="text/css"  th:href="@{/resources/css/trust/pc-product.css}"  media="screen and (min-width:361px)"></link>
+    </head>
+    <body>
+        <div class="stock-top-border">
+            <div class="stock-left-right-border">
+                <table class="name-price-quantity" >
+                    <tbody>
+                        <tr>
+                            <td >
+                                <div class="stock-vertical-line" >
+                                </div>
+                            </td>
+                            <td class="stock stock-small stock-mid stock-name" th:text="${hostStocks.name}"></td>
+                            <td  class="stock stock-small stock-mid product-price" th:text="'出售价：'+${hostStocks.productPrice}"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table  class="stock-detail-small stock-detail-mid stock-info">
+                    <tbody>
+                        <tr>
+                            <td class="title"  valign="top">交易所</td>
+                            <td valign="top">
+                                <span  th:text="${hostStocks.title}"></span><span class="quantity" th:text="'数量：'+${hostStocks.quantity}"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="stock-detail"  valign="top">有效时间至</td>
+                            <td valign="top" th:text="${hostStocks.dateAvailable}"></td>
+                        </tr>
+                        <tr>
+                            <td  class="stock-detail"  valign="top">备注</td>
+                            <td valign="top" th:if="${hostStocks.remark==null}" th:text="无"></td>
+                            <td valign="top" th:unless="${hostStocks.remark==''}" th:text="${hostStocks.remark}"></td>
+                        </tr>
+                        <tr class="top-line-height" >
+                            <td colspan="2" class="top-line" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="stock-detail">交易方式</td>
+                            <td th:if="${hostStocks.transactionType==0}" >邮币圈担保交易</td>
+                            <td th:unless="${hostStocks.transactionType==0}" >自行交易</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input id="productId" type="hidden"  th:value="${hostStocks.productId}"/>
+                <input id="contentTypeOrder" type="hidden"  value="151"/>
+            </div>
+        </div>
+        <div class="up-down-line">
+        </div>
+        <div class="pic-name">
+            <div class="pic-position" >
+                <img class="pic"  th:if="${userMassage.avatar!=null}"  th:src="${userMassage.avatar}"/>
+                <img class="pic"   th:unless="${userMassage.avatar!=null}"  src="http://pic.youbiquan.com/generic_avatar_default.png"/>
+            </div>
+            <div   class="user-info user-info-small user-info-mid username" th:text="${userMassage.username}"></div>
+        </div>
+        <table  class="user-trade-small user-trade-mid stock-trade">
+            <tbody>
+                <tr class="bottom-line-height" >
+                    <td colspan="3" class="bottom-line">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="trade-value" >
+                        <span >交易金额</span>
+                        <span class="value"  th:text="${userMassage.sellerTurnover}"></span>
+                    </td>
+                    <td>
+                        <div class="mid-line" >
+                        </div>
+                    </td>
+                    <td class="trade-count" >
+                        <span>交易次数</span>
+                        <span class="count"  th:text="${userMassage.tradecount}+'次'"></span>
+                    </td>
+                </tr>
+                <tr class="line-height" >
+                    <td colspan="3" class="line" >
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pass-rate" >
+                        <span>入库率</span>
+                        <span class="rate"  th:text="${userMassage.passRate}"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="line-block line-block-large" >
+        </div>
+        <div class="order" >
+            <div id="openApp" class="btn-style" href="#" onclick="openApp('order')">
+                去下单
+            </div>
+        </div>
+        <img id="qqImg"  class="qq-img" src="/promotion-frontend/resources/image/qq.png"/>
+        <img id="weiXinImg" class="weixin-img" src="/promotion-frontend/resources/image/weixin.png"/> 
+    </body>
+    <script type="text/javascript"  th:src="@{/resources/js/trust/trust.js}"></script>
+</html>

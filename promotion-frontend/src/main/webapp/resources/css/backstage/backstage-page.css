@@ -1,0 +1,171 @@
+.title
+{
+	margin-left:20%;
+	font-size:30px;
+}
+.jump
+{
+	width:40px;
+}
+.jump-to
+{
+	margin-left:2%;
+}
+.currentPage
+{
+	margin-left:1%;
+}
+
+.select
+{
+	margin-left:18%;
+	margin-top:2%;
+	margin-bottom:2%
+}
+
+.table
+{
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+
+.table th,.table td
+{
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.btn
+{
+	height:20px;
+	width:100px;
+	padding: 0px;
+	border-style:solid;
+    border-width:1px;
+    border-color:#388BFF;
+    background-color:#fff;
+}
+
+.dropdown
+{
+	 border: solid 1px #ccc;
+     appearance:none;
+     -moz-appearance:none;
+     -webkit-appearance:none;
+     padding-right: 14px;
+     margin-right:25px;
+     font-size:13px;
+     color:#000;
+     background: url("../../image/pull-arrow.png") no-repeat scroll right center transparent;
+}
+
+.enddiv
+{
+	margin-top:1%;
+}
+
+.input-border
+{
+    border:0px;
+    outline:medium;
+}
+
+.box
+{
+	width:40px;
+}
+
+.identifier
+{
+	width:50px;
+}
+
+.style-col-width
+{
+	width:100px;
+}
+
+.cname
+{
+	width:120px;
+}
+.cname-col-width
+{
+	width:130px;
+}
+
+.varieties-col-width
+{
+	width:100px;
+}
+
+.price-col-width
+{
+	width:100px;
+}
+
+.price
+{
+	width:80px;
+}
+
+.amount-col-width
+{
+	width:100px;
+}
+
+.amount
+{
+	width:80px;
+}
+
+.marketvalue-col-width
+{
+	width:120px;
+}
+
+.unit-col-width
+{
+	width:60px;
+}
+
+.unit
+{
+	width:40px;
+}
+
+.pname-col-width
+{
+	width:100px;
+}
+
+.pname
+{
+	width:80px;
+}
+
+.telphone-col-width
+{
+	width:100px;
+}
+
+.telphone
+{
+	width:100px;
+}
+
+.flag-col-width
+{
+	width:100px;
+}
+
+.time-col-width
+{
+	width:180px;
+}
+
+.remark-col-width
+{
+	width:200px;
+}
+

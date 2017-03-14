@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title>藏品信息</title>
+<link rel="icon" type="image/png" th:href="@{/resources/image/logo.png}"></link>
+<link rel="stylesheet" type="text/css"  th:href="@{/resources/css/stock/stock.css}"></link>
+<link rel="stylesheet" type="text/css"  th:href="@{/resources/css/stock/stock_large.css}"  media="screen and (min-width:700px)"></link>
+</head>
+<body id="bd">
+    <table cellspacing="8" class="table">
+    <th:block  th:if="${not #lists.isEmpty(listInfo)}" th:each="record: ${listInfo}">
+        <tbody th:utext="${record.stockDescription}">
+        </tbody>
+        </th:block> 
+    </table>
+</body>
+</html>

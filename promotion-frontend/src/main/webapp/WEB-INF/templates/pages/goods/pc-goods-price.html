@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>
+            现货报价
+        </title>
+        <link rel="icon" type="image/png" th:href="@{/resources/image/logo.png}"></link>
+        <link rel="stylesheet" type="text/css"  th:href="@{/resources/css/goods/pc-goods-price.css}"/>
+    </head>
+    <body>
+        <div class="content">
+            <div class="pc-user-info">
+                <div class="pc-picture">
+                    <img class="pc-pic-info"  th:if="${ userInfo.avatar!=null}" th:src="${userInfo.avatar}"/>
+                    <img class="pc-pic-info"  th:unless="${userInfo.avatar!=null}" src="http://pic.youbiquan.com/generic_avatar_default.png"/>
+                </div>
+                <div class="pc-username">
+                    <div class="username" th:text="${userInfo.username}">
+                    </div>
+                    <img class="goods-pic" th:src="@{/resources/image/goods.png}"/>
+                </div>
+            </div>
+            <span class="pc-user-under-line" >
+            </span>
+            <div class="pc-trade small-trade">
+                <div class="pc-trade-value">
+                    <div class="pc-trade-value-left">
+                        交易金额
+                    </div>
+                    <div class="pc-trade-value-right"   th:text="${userInfo.sellerTurnover}">
+                    </div>
+                </div>
+                <div class="pc-trade-mid-line">
+                </div>
+                <div class="pc-trade-count" >
+                    <div class="pc-trade-count-left">
+                        交易次数
+                    </div>
+                    <div class="trade-count-right"  th:text="${userInfo.tradecount}+'次'">
+                    </div>
+                </div>
+            </div>
+            <input id="type" type="hidden" value="出售"/>
+            <input id="userId" type="hidden" th:value="${userInfo.userId}"/>
+            <div class="pc-trade-under-line" >
+            </div>
+            <a class="pc-sell small-sell"  href="#sell"  onclick="switchStatus('sell')">
+                他的出售
+            </a>
+            <div class="pc-sell-buy-mid-line">
+            </div>
+            <a class="pc-buy" href="#buy"  onclick="switchStatus('buy')">
+                他的求购
+            </a>
+            <div class="pc-sell-buy-under-line">
+            </div>
+            <div class="pc-sell-underline"  id="sell-underline" >
+            </div>
+            <div class="pc-buy-underline" id="buy-underline" >
+            </div>
+            <div class="pc-product-list" >
+                <table class="pc-product-table" id="goodsTable">
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pc-gray-line">
+            </div>
+            <div class="QR-code-download">
+	            <img class="QR-code"  th:src="@{/resources/image/qr-code.png}" />
+	            <div class="scan-download" >
+	                扫描下载APP
+	            </div>
+	        </div>
+        </div>
+    </body>
+    <script type="text/javascript"  th:src="@{/resources/js/goods/goods.js}">
+    </script>
+</html>

@@ -1,0 +1,330 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.name-picture-remark {
+	margin-left: 3%;
+}
+
+.trade-amount {
+	float: left;
+	width: 50%;
+}
+
+.trade-frequency {
+	float: right;
+	width: 50%;
+}
+
+.product-name {
+	padding-top: 8px;
+    color: #ff8941;
+    margin-left: 36px;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.product-name-underline {
+	border-bottom: solid 1px #f7f7f7;
+	width: 100%;
+	margin-top: 3%;
+}
+
+.picture-remark {
+	height: 15%;
+	margin-top: 3%;
+	mergin-bottom: 1%;
+}
+
+.picture {
+	float: left;
+	width: 20%;
+}
+
+.pic-info {
+	height: 90%;
+	width: 100%;
+}
+
+.default-pic-info {
+	height: 90%;
+}
+
+.remark {
+	margin-left: 10%;
+	float: left;
+	width: 68%;
+	height: 100%;
+}
+
+.remark-tips {
+	float: left;
+}
+
+.remark-content {
+	margin-left: 10%;
+	float: left;
+	width: 74%;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	display: -webkit-box; /** 将对象作为伸缩盒子模型显示 **/
+	-webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+	-webkit-line-clamp: 4; /** 显示的行数 **/
+	overflow: hidden;
+}
+
+.remark-under-line {
+	height: 1.5%;
+	background: #f7f7f7;
+	width: 100%;
+	clear:both;
+}
+
+.product-type{
+	height:32px;
+	margin-top:3%;
+}
+
+.sell-buy-pic{
+	float:left;
+}
+
+.sell-buy-pic img{
+	width:32px;
+}
+
+.product-attrubute {
+	margin-left: 3%;
+	width: 97%;
+	clear: both;
+}
+
+.section {
+	padding-top: 4%;
+	padding-bottom: 4%;
+	width: 100%;
+}
+
+.attrubute-tip-color {
+	color: #666666;
+	float: left;
+}
+
+.section-content {
+	display: block;
+	width: 70%;
+	float: right;
+}
+
+.attribute-value {
+	margin-left: 7%;
+}
+
+.under-line {
+	border-bottom: solid 1px #f7f7f7;
+	margin-top: 6%;
+}
+
+.product-phase {
+	padding-top: 4%;
+	padding-bottom: 4%;
+	width: 100%;
+}
+
+.product-phase-content {
+	display: block;
+	width: 70%;
+	float: right;
+}
+
+.rule {
+	padding-top: 4%;
+	padding-bottom: 4%;
+	width: 100%;
+}
+
+.rule-content {
+	display: block;
+	float: right;
+	width: 70%;
+}
+
+.address {
+	padding-bottom: 4%;
+	padding-top: 4%;
+}
+
+.address-tip-color {
+	float: left;
+	color: #666;
+}
+
+.address-content {
+	margin-left: 29%;
+}
+
+.attri {
+	padding-top: 4%;
+	padding-bottom: 4%;
+	width: 100%;
+}
+
+.address-under-line {
+	height: 0.75%;
+	background: #f7f7f7;
+	width: 100%;
+}
+
+.price-amount {
+	margin-left: 3%;
+}
+
+.price {
+	padding-bottom: 4%;
+	padding-top: 4%;
+}
+
+.price-value {
+	display: block;
+	float: right;
+	width: 70%;
+	color: #ff8941;
+}
+
+.quantity {
+	padding-bottom: 4%;
+	padding-top: 4%;
+}
+
+.quantity-content {
+	display: block;
+	float: right;
+	width: 70%;
+}
+
+.util-description {
+	font-size: 12px;
+	color: #666666;
+	margin-top: 6%;
+}
+
+.util-descriptionp-underline {
+	height: 1.5%;
+	background: #f7f7f7;
+	width: 100%;
+	margin-top: 3%;
+}
+
+.user {
+	width: 95%;
+	margin-left: 5%;
+}
+
+.avater {
+	float: left;
+	padding-bottom: 2%;
+	padding-top: 2%;
+}
+
+.avater-info {
+	height: 9%;
+	border-radius: 50%;
+}
+
+.username-member {
+	padding-top: 5.5%;
+	margin-left: 18%;
+	width: 82%;
+}
+
+.member {
+	float: right;
+	margin-right: 5%;
+	color: #ff8941;
+}
+
+.user-under-line {
+	border-bottom: solid 1px #f7f7f7;
+	width: 100%;
+	display: block;
+	clear: left;
+}
+
+.trade-value-tip {
+	float: left;
+	margin-left: 5%;
+	margin-top: 8%;
+}
+
+.trade-value {
+	float: left;
+	color: #ff8941;
+	margin-left: 7%;
+	margin-top: 8%;
+}
+
+.trade-mid-line {
+	float: right;
+	border-left: solid 1px #e9e9e9;
+	height: 5%;
+	margin-top: 4%;
+}
+
+.trade-count-tip {
+	float: left;
+	margin-left: 5%;
+	margin-top: 8%;
+}
+
+.attri-value-width {
+	width: 75%;
+	float: right;
+}
+
+.username {
+	margin-left: 5%;
+	float:left;
+}
+
+.trade-count {
+	float: right;
+	color: #ff8941;
+	margin-right:10px;
+	margin-top: 8%;
+}
+
+.real-name{
+    float:right;
+    margin-right:10px;	
+}
+
+.trade-under-block {
+	height: 12%;
+	background: #f7f7f7;
+	width: 100%;
+	margin-top: 13%;
+}
+
+.btn {
+	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-left: 7%;
+	padding-right: 7%;
+	background: #ff8941;
+	color: #fff;
+	float: right;
+}
+
+..qq-img, .weixin-img{
+    display:none;
+}

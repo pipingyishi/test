@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>
+            现货报价
+        </title>
+        <link rel="icon" type="image/png" th:href="@{/resources/image/logo.png}"></link>
+        <link rel="stylesheet"  type="text/css"  th:href="@{/resources/css/goods/merchant-price.css}"/>
+        <link rel="stylesheet"  type="text/css"  th:href="@{/resources/css/goods/pc-merchant-price.css}"/>
+    </head>
+    <body>
+        <div class="content">
+            <div class="name-picture-remark">
+                <div class="product-type">
+                    <div class="sell-buy-pic" th:if="${goodsProducts.sellBuyFlag}">
+                        <img th:src="@{/resources/image/sell.png}"/>
+                    </div>
+                    <div class="sell-buy-pic" th:unless="${goodsProducts.sellBuyFlag}">
+                        <img th:src="@{/resources/image/buy.png}"/>
+                    </div>
+	                <div class="product-name pc-product-name"   th:text="${goodsProducts.name}">
+	                </div>
+	            </div>
+                <div class="pc-product-name-underline">
+                </div>
+                <div class="pc-picture-remark">
+                    <div class="pc-picture">
+                        <img class="pc-pic-info" th:if="${ goodsProducts.picture!=''}" th:src="${goodsProducts.picture}"/>
+                        <img class="pc-default-pic-info" th:unless="${goodsProducts.picture!=''}" src="http://pic.youbiquan.com/generic_avatar_default.png"/>
+                    </div>
+                    <div class="pc-remark">
+                        <div class="pc-remark-tips">
+                            备注
+                        </div>
+                        <div class="pc-remark-content"  th:text="${goodsProducts.remark}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pc-remark-under-line">
+            </div>
+            <div class="product-attrubute">
+            <th:block th:if="${not #lists.isEmpty(goodsProducts.productAttribute)}" th:each="productAttribute: ${goodsProducts.productAttribute}">
+                <div class="attri">
+                    <div class="pc-attrubute-tip-color"   th:text="${productAttribute.attributeName}">
+                    </div>
+                    <div class="pc-attri-value-width" >
+                    <th:block th:if="${not #lists.isEmpty(productAttribute.attributeValues)}" th:each="productAttributeValue: ${productAttribute.attributeValues}">
+                        <span class="attribute-value" th:text="${productAttributeValue}">
+                        </span>
+                    </th:block>
+                    </div>
+                 </div>
+                 <div class="pc-under-line">
+                </div>
+            </th:block>
+        </div> 
+            <div class="pc-address-under-line">
+            </div>
+            <div  class="pc-price-amount">
+                <div class="pc-price">
+                    <span th:if="${goodsProducts.sellBuyFlag}" class="pc-attrubute-tip-color">
+                        他的出售价
+                    </span>
+                    <span th:unless="${goodsProducts.sellBuyFlag}" class="pc-attrubute-tip-color">
+                        他的求购价
+                    </span>
+                    <span class="pc-price-value"  th:text="'￥'+${goodsProducts. productPrice}">
+                    </span>
+                </div>
+                <div class="pc-under-line">
+                </div>
+                <div class="pc-quantity" >
+                    <span  class="pc-attrubute-tip-color">
+                        数量
+                    </span>
+                    <span class="pc-quantity-content"  th:text="${goodsProducts. quantity}">
+                    </span>
+                </div>
+                <div class="pc-util-description">
+                    *以枚/版/个/等为最小不可分单位，不可用刀/捆/分/箱等单位
+                </div>
+            </div>
+            <div class="pc-util-descriptionp-underline">
+            </div>
+            <div class="pc-user">
+                <div class="pc-avater">
+                    <img class="pc-avater-info" th:if="${ userInfo.avatar!=null}" th:src="${userInfo.avatar}"/>
+                    <img class="pc-avater-info" th:unless="${userInfo.avatar!=null}" src="http://pic.youbiquan.com/generic_avatar_default.png" />
+                </div>
+                <div class="pc-username-member">
+                    <span th:text="${userInfo.username}">
+                    </span>
+                    <span class="pc-real-name" th:text="${userInfo.merchantName}">
+                    </span>
+                </div>
+            </div>
+            <span class="pc-user-under-line">
+            </span>
+             <div class="pc-trade-value" >
+	            <div class="pc-trade-value-tip">交易金额</div>
+	            <div class="pc-trade-values"  th:text="${userInfo.sellerTurnover}"></div>
+	            <div class="trade-mid-line"></div>
+            </div>
+            <div class="pc-trade-count" >
+	            <div class="pc-trade-count-tip">交易次数</div>
+	            <div class="pc-trade-count-value" th:text="${userInfo.tradecount}+'次'"></div>
+            </div>
+            <div class="pc-trade-under-block">
+            </div>
+            <img class="RQ-code" src="/promotion-frontend/resources/image/qr-code.png"/>
+            <div class="scan-download">
+                扫描下载APP
+            </div>
+        </div>
+    </body>
+</html>

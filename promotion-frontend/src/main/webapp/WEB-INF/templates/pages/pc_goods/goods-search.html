@@ -1,0 +1,8 @@
+<th:block th:fragment="part"  th:if="${productMetaResult!=null}">
+	<th:block th:if="${not #lists.isEmpty(productMetaResult.results)}" th:each="ProductMeta:${productMetaResult.results}">
+		<a class="goods-name-list"   onclick="selectSearchGoods(this)">
+			<span  class="search-goods-name"  th:text="${ProductMeta.displayName}" th:attr="data-product=${ProductMeta.productMetaId}"></span>
+			<span  class="search-goods-cate"  th:text="${ProductMeta.cateLevel1Name}"></span>
+		</a>
+	</th:block>
+</th:block>

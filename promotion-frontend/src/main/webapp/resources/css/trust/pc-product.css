@@ -1,0 +1,59 @@
+.pc-content {
+	width: 600px;
+	margin: 20 auto;
+	height: 100%;
+}
+
+.pc-pic-name {
+	height: 13%;
+	margin-left: 5%;
+	border: solid 1px #fff;
+}
+
+.pc-pic-position {
+	float: left;
+	margin-top: 2%;
+}
+
+.pc-pic {
+	height: 80%;
+	border-radius: 50%;
+}
+
+.line-block-large {
+	width: 100%;
+	height: 18%;
+	background: #f7f7f7;
+}
+
+.pc-username {
+	margin-top: 9%;
+	float: right;
+	margin-right: 60%;
+}
+
+.pc-rate{
+	margin-left: 13%;
+}
+
+.pc-under-line {
+	border-bottom: solid 1px #e9e9e9;
+}
+
+.scan-download {
+	width: 600px;
+	position: relative;
+	margin: 0 auto;
+	bottom: 16%;
+	margin-left: 41.7%;
+}
+
+.RQ-code {
+	width: 100px;
+	height: 100px;
+}
+
+.scan-download-tip {
+	margin-left: 3px;
+	margin-top: 2%;
+}

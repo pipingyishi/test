@@ -1,0 +1,418 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background: #fafafa;
+	font-family: arial, "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", "宋体",
+		Tahoma, Arial, Helvetica, STHeiti;
+}
+
+.goods-search {
+	height: 80px;
+	width: 100%;
+	background: rgb(255, 255, 255);
+	margin-bottom: 40px;
+	color: rgb(51, 51, 51);
+	padding-left: 23px;
+	font-size: 0px;
+}
+
+.goods-search>span {
+	font-size: 16px;
+}
+
+.goods-search>input {
+	font-size: 14px;
+	color: #888;
+	width: 226px;
+	height: 34px;
+	margin-left: 663px;
+	outline: none;
+	padding-left: 10px;
+}
+
+.goods-search>div {
+	font-size: 14px;
+	position: absolute;
+	border: solid 1px #d9d9d9;
+	width: 240px;
+	max-height: 280px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background: #fff;
+	display: none;
+}
+
+.goods-search>div+span {
+	display: inline-block;
+	width: 90px;
+	height: 34px;
+	background: #ff9b21;
+	margin-top: 23px;
+	line-height: 34px;
+	text-align: center;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 16px;
+	margin-left: 30px;
+}
+
+.goods {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.item {
+	background: #fff;
+	border-radius: 15px;
+}
+
+.cate {
+	font-size: 0px;
+}
+
+.cate>span {
+	margin-left: 20px;
+	font-size: 16px;
+	display: inline-block;
+	color: #ff9b21;
+}
+
+.cate>div {
+	min-width: 1000px;
+	font-size: 0px;
+	height: 56px;
+	display: inline-block;
+	border-bottom: solid 1px #dadada;
+	margin-left: 30px;
+	width: 1118px;
+}
+
+.cate-all {
+	display: inline-block;
+	border-bottom: solid 2px #ff9b21;
+	height: 55px;
+	line-height: 55px;
+	font-size: 16px;
+	cursor:pointer;
+}
+
+.cate-detail {
+	margin-left: 30px;
+	display: inline-block;
+	height: 55px;
+	line-height: 55px;
+	font-size: 16px;
+	cursor:pointer;
+}
+
+.save-option {
+	display: none;
+}
+
+.section {
+	padding: 10px;
+	font-size: 0px;
+}
+
+.section-tip {
+	font-size: 16px;
+	margin-left: 20px;
+	color: #ff9b21;
+}
+
+.section-tip+span {
+	margin-left: 21px;
+	display: inline-block;
+	margin-top: 5px;
+	font-size: 16px;
+	border-bottom: solid 1px #ff9b21;
+}
+
+.section-detail {
+	margin-left: 21px;
+	display: inline-block;
+	margin-top: 5px;
+	font-size: 16px;
+}
+
+.goods-list {
+	margin-top: 20px;
+	width: 1200px;
+	background: #fff;
+	height: 200px;
+	border-radius: 15px;
+}
+
+.flip {
+	display: none;
+}
+
+.goods-pic {
+	float: left;
+	margin-top: 25px;
+	margin-left: 40px;
+}
+
+.goods-pic>img {
+	width: 150px;
+	height: 150px;
+	border-radius: 10px;
+}
+
+.goods-detail {
+	display: inline-block;
+	height: 175px;
+	float: left;
+	margin-left: 44px;
+	width: 666px;
+	margin-top: 25px;
+}
+
+.goods-type {
+	font-size: 20px;
+}
+
+.sell {
+	display: inline-block;
+	border-radius: 10px;
+	border: solid 1px #247de0;
+	font-size: 20px;
+	width: 65px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	color: #247de0;
+}
+
+.buy {
+	display: inline-block;
+	border-radius: 10px;
+	border: solid 1px #ff9b21;
+	font-size: 20px;
+	width: 65px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	color: #ff9b21;
+}
+
+.goods-name {
+	margin-left: 10px;
+	color: #333333;
+}
+
+.goods-attribute {
+	margin-left: 10px;
+	font-size: 16px;
+	color: #333333;
+}
+
+.goods-unit {
+	margin-top: 24px;
+	font-size: 18px;
+}
+
+.goods-price {
+	color: #ff9b21;
+}
+
+.goods-price-num {
+	color: #ff9b21;
+	font-size: 20px;
+}
+
+.goods-quantity {
+	color: #ff9b21;
+	margin-left: 20px;
+}
+
+.goods-quantity-existence {
+	display: none;
+}
+
+.goods-total-quantity {
+	margin-left: 20px;
+	color: #333333;
+}
+
+.goods-specifications {
+	margin-left: 20px;
+	color: #333333;
+}
+
+.goods-remark {
+	margin-top: 24px;
+	width: 582px;
+	line-height: 1.4;
+	color: #888888;
+	font-size: 16px;
+}
+
+.goods-remark-exit {
+	margin-top: 24px;
+	width: 582px;
+	height: 60px;
+	line-height: 1.8;
+	color: #888888;
+	font-size: 16px;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-o-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	-moz-line-clamp: 2;
+	-o-line-clamp: 2;
+	overflow: hidden;
+}
+
+.user {
+	float: left;
+}
+
+.user-left-dashedline {
+	border-left: dashed 1px #ccc;
+	height: 200px; px;
+	display: inline-block;
+	float: left;
+}
+
+.user-left-dashedline+div {
+	margin-left: 40px;
+	display: inline-block;
+	height: 200px;
+	width: 250px;
+}
+
+.user-avatar {
+	float: left;
+	width: 82px;
+	height: 82px;
+	border-radius: 50%;
+	border: solid 1px #ff9b21;
+}
+
+.username-mct {
+	float: left;
+	margin-left: 15px;
+	line-height: 1.4;
+	width: 150px;
+}
+
+.username {
+	color: #333333;
+	font-size: 20px;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-o-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	-moz-line-clamp: 1;
+	-o-line-clamp: 1;
+	overflow: hidden;
+}
+
+.goods-mat {
+	margin-top: 12px;
+	font-size: 16px;
+	color: #9f9f9f;
+}
+
+.clear-float {
+	clear: both;
+}
+
+.new-section {
+	font-size: 0px;
+}
+
+.new-section-tip {
+	font-size: 16px;
+	margin-left: 20px;
+	display: inline-block;
+	color: #ff9b21;
+}
+
+.new-section>div {
+	margin-left: 30px;
+	display: inline-block;
+	width: 1118px;
+	border-bottom: solid 1px #dadada;
+}
+
+.new-section-all {
+	display: inline-block;
+	border-bottom: solid 2px #ff9b21;
+	color: #333333;
+	height: 56px;
+	line-height: 56px;
+	font-size: 16px;
+}
+
+.new-section-detail {
+	display: inline-block;
+	margin-left: 30px;
+	color: #333333;
+	height: 56px;
+	line-height: 56px;
+	font-size: 16px;
+}
+
+.page {
+	display: inline-block;
+}
+
+.page-content {
+	padding: 6px 12px;
+	border: 1px solid #ddd;
+}
+
+.page-one {
+	padding: 6px 12px;
+	border: 1px solid #ff9b21;
+	background: #ff9b21;
+	color: #fff;
+}
+
+.total-page {
+	padding: 6px 12px;
+}
+
+.jump-page {
+	border: 1px solid #ddd;
+	width: 40px;
+	height: 30px;
+	outline: none;
+	font-size: 16px;
+	text-align: center;
+}
+
+.goods-name-list {
+	margin-top: 10px;
+	height: 26px;
+	line-height: 26px;
+	display:block;
+}
+
+a.goods-name-list:hover{
+	color:#cdcdcd;
+}
+
+.search-goods-name {
+	display: inline-block;
+	text-align: left;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	margin-left: 5px;
+}
+
+.search-goods-cate {
+	display: inline-block;
+	text-align: right;
+	float: right;
+	margin-right: 5px;
+}

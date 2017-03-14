@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<th:block th:replace="pages/head/head :: heading" />
+<title>藏品信息</title>
+<link rel="icon" type="image/png" th:href="@{/resources/image/logo.png}"></link>
+<link rel="stylesheet" type="text/css"  th:href="@{/resources/css/stock/stock.css}"></link>
+<script th:src="@{/resources/js/stock/stock.js}"></script>
+</head>
+<body>
+    <div class="stock" th:utext="${stockInfo.f10}" >
+    </div>
+</body>
+</html>

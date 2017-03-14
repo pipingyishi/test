@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>大宗出售管理</title>
+
+<script type="text/javascript" th:src="@{/resources/js/trade/jquery-1.10.2.js}"></script>
+<script type="text/javascript" th:src="@{/resources/js/trade/bootstrap.min.js}"></script>
+<script type="text/javascript" th:src="@{/resources/js/trade/backstage.js}"></script>
+<link rel="icon" type="image/png" th:href="@{/resources/image/logo.png}"></link>
+<link rel="stylesheet" type="text/css"  th:href="@{/resources/css/backstage/bootstrap.min.css}"></link>
+<link rel="stylesheet" type="text/css"  th:href="@{/resources/css/backstage/backstage-page.css}"></link>
+</head>
+<body>
+<div class="title">大宗出售管理</div>
+<div class="select">
+	类型:  <select  id="tradeStyle"  class="dropdown" onchange="changeCondition(1)">      
+											<option value="全部">全部</option>
+											<option value="现货盘">现货盘</option>
+											<option value="电子盘">电子盘</option>
+			  </select>
+	种类:   <select id="tradeVarieties" class="dropdown" onchange="changeCondition(1)">     
+	                                        <option value="全部">全部</option> 
+											<option value="大陆邮票">大陆邮票</option>
+											<option value="港澳邮票">港澳邮票</option>
+											<option value="钱币">钱币</option>
+											<option value="磁卡">磁卡</option>
+											<option value="封片">封片</option>
+											<option value="其他">其他</option>
+				</select>
+</div>
+				<table class="table"  id="tb" >
+					<tbody>
+						<tr>
+							<th></th>
+							<th>编号</th>
+							<th>类型</th>
+							<th>名称</th>
+							<th>种类</th>
+							<th>价格</th>
+							<th>数量</th>
+							<th>市值</th>
+							<th>单位</th>
+							<th>联系人</th>
+							<th>电话</th>
+							<th>状态</th>
+							<th>提交时间</th>
+							<th>备注</th>
+						</tr>
+					</tbody>
+				</table>
+				<button class="btn" onclick="saveRecord()">保存</button>    <button class="btn" onclick="deleteselectedRecord()">删除</button>
+				<div class="enddiv">
+					<button  class="btn" onclick="homePage()">首页</button>  <button class="btn" onclick="previousPage()">上一页</button>  <button class="btn" onclick="nextPage()">下一页</button>  <button class="btn" onclick="endPage()">尾页</button>
+				 	<span class="jump-to">跳转至</span><input class="jump" id="jump" type="text" />页 <button onclick="jump()">跳转</button>  <span class="currentPage">当前第</span> <span  id="currentPage"/>页,共<span id="page"></span>页
+				</div>
+				
+</body>
+</html>

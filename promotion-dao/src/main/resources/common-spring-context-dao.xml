@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+						http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+						http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd">
+
+	<bean id="serviceSqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+
+		<property name="configLocation" value="classpath:mybatis-config.xml" />   <!--  管理mybatis-->
+
+		<property name="dataSource" ref="serviceDataSource" />
+		<property name="mapperLocations"
+			value="classpath:com/zx/promotion/mybatis/mapper/*.xml"></property>
+		<property name="plugins">
+			<array>
+				<bean class="com.github.pagehelper.PageHelper">
+					<!-- http://git.oschina.net/free/Mybatis_PageHelper/blob/master/wikis/HowToUse.markdown -->
+					<property name="properties">
+						<value>
+							dialect=hsqldb
+							offsetAsPageNum=false
+							rowBoundsWithCount=true
+							pageSizeZero=true
+							reasonable=true
+							supportMethodsArguments=true
+						</value>
+					</property>
+				</bean>
+			</array>
+		</property>
+	</bean>
+
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage"
+			value="com.zx.promotion.mybatis.dao,com.zx.modules.mybatis.dao" />
+		<property name="sqlSessionFactoryBeanName" value="serviceSqlSessionFactory"></property>
+	</bean>
+
+	<bean id="serviceDataSource" class="com.alibaba.druid.pool.DruidDataSource"
+		init-method="init" destroy-method="close">
+		<property name="url" value="${jdbc.service_url}" />
+		<property name="username" value="${jdbc.service_username}" />
+		<property name="password" value="${jdbc.service_password}" />
+		<property name="initialSize" value="${jdbc.service_initialSize}" />
+		<property name="minIdle" value="${jdbc.service_minIdle}" />
+		<property name="maxActive" value="${jdbc.service_maxActive}" />
+		<property name="maxWait" value="60000" />
+		<property name="timeBetweenEvictionRunsMillis" value="60000" />
+		<property name="minEvictableIdleTimeMillis" value="300000" />
+		<property name="validationQuery" value="SELECT 'x'" />
+		<property name="testWhileIdle" value="true" />
+		<property name="testOnBorrow" value="false" />
+		<property name="testOnReturn" value="false" />
+		<property name="poolPreparedStatements" value="true" />
+		<property name="maxPoolPreparedStatementPerConnectionSize"
+			value="20" />
+	</bean>
+
+    <!-- <bean id="serviceTxManager"
+        class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="serviceDataSource" />
+        <qualifier value="serviceTxManager" />
+    </bean>
+	<tx:annotation-driven transaction-manager="serviceTxManager" />
+ -->
+	<bean id="serviceTxManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="serviceDataSource" />  <!-- ref对应上面的id -->
+		<qualifier value="serviceTxManager" />
+	</bean>
+
+	<bean id="template" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="serviceDataSource" />  <!-- ref对应上面的id -->
+	</bean>
+</beans>

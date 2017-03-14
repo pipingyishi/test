@@ -1,0 +1,51 @@
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title>现货电子盘大宗出售</title>
+	<script type="text/javascript"  th:src="@{/resources/js/trade/select.js}"></script>
+	<link rel="stylesheet" type="text/css"  th:href="@{/resources/css/trade/show.css}"></link>
+	<link rel="stylesheet" type="text/css"  th:href="@{/resources/css/trade/page.css}"></link>
+	<link rel="icon" type="image/png" th:href="@{/resources/image/logo.png}"></link>
+</head> 
+<body>
+	<table id="tb" class="tb-border-collapse" >
+		<tbody>
+			<tr class="row-height">
+				<td colspan="4">
+					<div class="head-desc">
+						<div class="top-massage">
+							<div class="left-line" ></div>
+							<div class="right-massage">邮币圈提供大宗现货出售,电子盘大宗出售业务,有意向购买请拨打电话。</div>
+						</div>
+						<div>
+							<span id="stock" th:class="${tradeType=='现货盘' ? 'orangeBtn btn-right top-button':'whiteBtn btn-right top-button'}" onclick="showOnclickStock()">现货盘</span>
+						    <span id="electronic" th:class="${tradeType=='电子盘' ? 'orangeBtn btn-left top-button':'whiteBtn btn-left top-button'}" onclick="showOnclickElectronic()">电子盘</span>
+						</div>
+						<div class="head-middle-line"></div>
+						<div class="head-bottom">
+							<span class="hbottom-left-massage" >名称・种类</span>
+							<span class="hbottom-right-massage" >价格・数量・总市值</span>
+						</div>
+						<div class="hbottom-line"></div>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="spacing"></div>
+	<div class="bottom">
+		<div class="line"></div>
+		<div class="bottom-spacing">
+			<a class="btn-massage"  th:href="@{'/trade/input'}">发布信息</a>
+			<a class="btn-telphone"  th:href="@{tel:4008065360 }" >拨打电话</a>
+		</div>
+	</div>
+	<div class="loading" style="display:none;" id="div">
+            <img class="load-img" th:src="@{/resources/image/loading.gif}"/>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<th:block  th:fragment="paging">
+    <th:block th:if="${not #lists.isEmpty(hostStocks)}" th:each="hostStock,stat: ${hostStocks}">
+		<tr class="small-stock-price mid-stock-price" th:onclick="${'getStockInfo('+hostStock.productId+')'}">
+            <td colspan="3" class="stock-msg">
+                <div >
+					  <div class="product-name"  th:text="${hostStock.name}"> 
+					  </div>
+					  <div >
+					      <button class="title pc-title"  th:text="${hostStock.title}"></button> 
+			         </div>
+				</div>
+                <div class="product-buy-price"  th:unless="${hostStock.sellBuyFlag}"  th:text="'求购价：￥'+${hostStock.productPrice}">
+                </div>
+                <div class="product-sell-price"  th:if="${hostStock.sellBuyFlag}"  th:text="'出售价：￥'+${hostStock.productPrice}">
+                </div>
+            </td>
+        </tr>
+		<tr class="date-data small-date-data mid-date-data" th:onclick="${'getStockInfo('+hostStock.productId+')'}">
+		    <td colspan="3" class="date-amount" >
+		        <span th:text="'有效时间至'+${hostStock.dateAvailable}">
+		        </span>
+		        <span th:text="' 数量：'+ ${hostStock.quantity}"   class="amount" >
+		        </span>
+		        <input id="remark" type="hidden"  th:value="${hostStock.remark}"/>
+		        <input id="transactionType" type="hidden"  th:value="${hostStock.transactionType}"/>
+		    </td>
+		</tr>
+		<tr  th:unless="${stat.count eq #lists.size(hostStocks)}">
+		    <td colspan="3" class="dividing-line" >
+		    </td>
+		</tr>
+    </th:block>
+    <th:block th:if="${#lists.isEmpty(hostStocks)}">
+        <tr>
+            <td>
+                <center>
+                    <div class="block">
+                        该用户不是包托商，请到APP内查看
+                    </div>
+                    </center>
+            </td>
+         </tr>
+     </th:block>
+</th:block>

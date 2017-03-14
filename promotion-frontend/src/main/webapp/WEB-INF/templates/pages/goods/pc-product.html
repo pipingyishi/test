@@ -1,0 +1,38 @@
+<th:block  th:fragment="part">
+    <th:block th:if="${not #lists.isEmpty(goodsProducts)}" th:each="goodsProduct,stat: ${goodsProducts}">
+        <tr th:onclick="${'getMerchantPrice('+goodsProduct.productId+')'}">
+            <td class="pc-product-name"  th:text="${goodsProduct.name}">
+            </td>
+            <td class="pc-sell-price" th:unless="${goodsProduct.sellBuyFlag}"  th:text="'求购价：￥'+${goodsProduct.productPrice}">
+            </td>
+            <td class="pc-buy-price" th:if="${goodsProduct.sellBuyFlag}"  th:text="'出售价：￥'+${goodsProduct.productPrice}">
+            </td>
+        </tr>
+        <tr th:onclick="${'getMerchantPrice('+goodsProduct.productId+')'}">
+            <td class="pc-attribute-transaction-type" >
+            <th:block th:if="${not #lists.isEmpty(goodsProduct.productAttribute)}" th:each="productAttribute: ${goodsProduct.productAttribute}">
+                <th:block th:if="${not #lists.isEmpty(productAttribute.attributeValues)}"  th:each="attribute,count: ${productAttribute.attributeValues}">
+                    <span class="pc-attribute"  th:text="${attribute}">
+                </span>
+                </th:block>
+            </th:block>
+                <span class="pc-transaction-type" th:if="${goodsProduct.transactionType==0}">
+                    担保交易
+                </span>
+                <span class="pc-transaction-type"  th:unless="${goodsProduct.transactionType==0}" >
+                    自行交易
+                </span>
+            </td>
+            <td class="pc-quantity"  valign="top" th:text="'数量：'+${goodsProduct.quantity}">
+            </td>
+        </tr>
+        <tr  th:onclick="${'getMerchantPrice('+goodsProduct.productId+')'}">
+            <td colspan="2" class="pc-remark" th:text="'备注：'+${goodsProduct.remark}">
+            </td>
+        </tr>
+        <tr th:onclick="${'getMerchantPrice('+goodsProduct.productId+')'}">
+            <td colspan="2" class="pc-product-under-line" >
+            </td>
+        </tr>
+     </th:block>
+</th:block>

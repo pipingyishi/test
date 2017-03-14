@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <th:block th:replace="pages/head/head :: heading" />
+        <title>邮币圈-邮币卡文交所电子盘投资者的圈子</title>
+        <link rel="icon" type="image/png" th:href="@{/resources/image/logo.png}"/>
+        <link rel="stylesheet" type="text/css" th:href="@{/resources/css/blog/blog.css}"/>
+    </head>
+    <body>
+        <a class="header" href="http://a.app.qq.com/o/simple.jsp?pkgname=cc.quanhai.youbiquan&amp;g_f=991653">
+            <div class="logo">
+                <img  th:src="@{/resources/image/logo.png}"/>
+            </div>
+            <div class="ybq-introduction" >
+                <div>
+                    邮币圈
+                </div>
+                <div class="ybq-content" >
+                    邮币卡投资者的圈子
+                </div>
+            </div>
+            <div class="download">
+                点击下载
+            </div>
+        </a>
+        <div class="publish-person" >
+            <img class="public-person-avatar" th:if="${blogModel.user.avatar!=null}" th:src="${blogModel.user.avatar}"/>
+            <img class="public-person-avatar"  th:unless="${blogModel.user.avatar!=null}" src="http://pic.youbiquan.com/generic_avatar_default.png"/>
+            <span class="public-person-username"  th:text="${blogModel.user.userName}">
+            </span>
+        </div>
+        <div class="top-line" >
+        </div>
+        <div class="title" >
+            <h2  th:text="${blogModel.blog.blogTitle}">
+            </h2>
+        </div>
+        <div class="readNum-publishDate" >
+            <span class="read-num" >
+                阅读量：
+            </span>
+            <span  th:text="${blogModel.blog.readNum}">
+            </span>
+            <span class="publish-date" >
+                发表于：
+            </span>
+            <span th:text="${blogModel.blog.createDateStr}">
+            </span>
+        </div>
+        <div th:utext="${blogModel.blog.blogContent}">
+        </div>
+        <div th:if="${blogModel.openAccount=='true'}">
+	        <div class="notice-content-down-line">
+	        </div>
+	        <a class="open-account"  th:href="${blogModel.openAccountUrl}">我要开户</a>
+	    </div>    
+        <div class="comment-tip" th:if="${not #lists.isEmpty(blogModel.bizFeeds)}">
+            <span>
+                评论
+            </span>
+        </div>
+        <th:block th:if="${not #lists.isEmpty(blogModel.bizFeeds)}" th:each="bizFeed,stat: ${blogModel.bizFeeds}">
+            <div class="comment">
+                <img class="comment-user-avatar" th:if="${bizFeed.feed.user.avatar!=null}" th:src="${bizFeed.feed.user.avatar}" />
+                <img class="comment-user-avatar" th:unless="${bizFeed.feed.user.avatar!=null}" src="http://pic.youbiquan.com/generic_avatar_default.png"/>
+                <div class="comment-user-content" >
+                    <div>
+                        <span th:text="${bizFeed.feed.user.userName}">
+                        </span>
+                        <img class="comment-level-pic"  th:src="@{/resources/image/coppercoin.png}"/>
+                        <span class="comment-level">
+                            <strong th:text="${bizFeed.feed.user.level}">
+                            </strong>
+                        </span>
+                        <span class="comment-date"  th:text="${bizFeed.feed.datelineStr}">
+                        </span>
+                    </div>
+                    <div class="comment-content"  th:text="${bizFeed.feed.feedcontent}">
+                    </div>
+                </div>
+                <div class="comment-line" th:if="${stat.count  ne #lists.size(blogModel.bizFeeds)}">
+                </div>
+                <div class="comment-content-tip" th:if="${#lists.size(blogModel.bizFeeds) eq 10}">
+                    更多评论，请下载邮币圈APP查看
+                </div>
+            </div>
+        </th:block>
+    </body>
+</html>

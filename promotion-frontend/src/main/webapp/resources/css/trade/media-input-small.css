@@ -1,0 +1,42 @@
+.small-screen-cname
+{
+   	 margin-left: 14%;
+     width: 25%; 
+}
+
+ .small-screen-price
+{
+     margin-left: 14%;
+     width: 68%; 
+}
+
+.small-screen-amount
+{
+    margin-left:14%; 
+     width: 24%; 
+}
+
+.small-screen-unit
+{
+    width: 26%;
+}
+
+.small-screen-mvalue
+{
+	margin-left:10%; 
+	width: 68%; 
+}
+
+
+.small-screen-pname
+{
+    margin-left:10%; 
+    width: 68%; 
+}
+
+
+.small-screen-telphone
+{
+    width: 66%; 
+    margin-left:5%; 
+} 

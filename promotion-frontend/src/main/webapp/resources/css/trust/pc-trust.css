@@ -1,0 +1,97 @@
+.pc-user-info {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.pc-trade {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.pc-user-name{
+	font-size:18px;
+	padding-top: 6%;
+    margin-left: 22.2%;
+}
+
+.pc-trust-pic{
+    margin-left:22.2%;
+}
+
+.pc-trust-picture{
+    width:16%;
+    margin-top:2%;
+}
+
+.pc-sell {
+	text-decoration: none;
+	color: #000;
+	outline: none;
+	font-size:18px;
+}
+
+.pc-title{
+	width:12%;
+}
+
+.pc-buy {
+	text-decoration: none;
+	color: #000;
+	outline: none;
+	font-size:18px;
+}
+
+.pc-rate{
+	margin-left:6%;
+}
+
+.pc-product {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.pc-sell-underline {
+	border-top: solid 2px #ff8941;
+	width: 100px;
+	float: left;
+	margin-left: 19%;
+}
+
+.pc-buy-underline {
+	border-top: solid 2px #ffffff;
+	width: 100px;
+	float: right;
+	margin-right: 16%;
+}
+
+.pc-stock-info {
+	width: 600px;
+	height: 330px;
+	margin: 0 auto;
+	overflow: auto;
+	position: inherit;
+}
+
+.pc-gray-line {
+	width: 600px;
+	height: 14%;
+	background: #e9e9e9;
+	margin: 0 auto;
+}
+
+.pc-scan-download {
+	width: 600px;
+	position: relative;
+	margin: 0 auto;
+	bottom: 13.5%;
+	margin-left: 48%;
+}
+
+.RQ-code {
+	width: 100px;
+	height: 100px;
+}
+
+.scan-download-tip {
+	margin-left: 3px;
+}

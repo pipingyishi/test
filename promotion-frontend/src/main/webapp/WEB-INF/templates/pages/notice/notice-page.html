@@ -1,0 +1,23 @@
+<th:block th:fragment="notice" th:if="${not #lists.isEmpty(notices)}" th:each="notice:${notices}">
+    <div name="detailNoticeList"  class="notice-list"  th:onclick="${'showNoticeInfo('+notice.noticeId+')'}">
+        <div class="exchange-logo" >
+            <img  th:src="${notice.exchange.logo}"/>
+        </div>
+        <div class="notice-list-detail">
+        <th:block th:if="${not #lists.isEmpty(dicts)}" th:each="dict:${dicts}">
+            <div class="notice-title" th:if="${#strings.toString(notice.noticeType)==dict.dictKeyValue and notice.noticeType==1}"  th:text="'[其他]'+${notice.noticeTitle}">
+            </div>
+            <div class="notice-title" th:if="${#strings.toString(notice.noticeType)==dict.dictKeyValue and notice.noticeType!=1}"   th:text="'['+${dict.dictKeyDesc}+']'+${notice.noticeTitle}">
+            </div>
+          </th:block>
+            <div class="exchange-name">
+                <span th:text="${notice.exchange.name}">
+                </span>
+                <span  class="publish-date"  th:text="${notice.createDateStr}">
+                </span>
+            </div>
+        </div>
+        <div class="notice-list-underline">
+        </div>
+    </div>
+</th:block>

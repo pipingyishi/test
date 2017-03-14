@@ -1,0 +1,28 @@
+@import 'px2rem.scss';
+
+
+.content{
+	font-size: px2rem(16);
+    [data-dpr="2"] &{
+        font-size: px2rem(32);
+    }
+    [data-dpr="3"] &{
+        font-size: px2rem(40);
+    }
+}
+
+.img{
+	width: px2rem(100);
+	height: px2rem(100);
+    [data-dpr="2"] &{
+        width: px2rem(200);
+		height: px2rem(200);
+    }
+    [data-dpr="3"] &{
+        width: px2rem(250);
+		height: px2rem(250);
+    }
+}
+
+
+

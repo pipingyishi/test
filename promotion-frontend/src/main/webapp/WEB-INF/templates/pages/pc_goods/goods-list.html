@@ -1,0 +1,152 @@
+<th:block th:fragment="part">
+	<th:block th:fragment="product">
+		<th:block  th:if="${not #lists.isEmpty(goodsProducts)}"  th:each="goodsProduct,stat:${goodsProducts}">
+	       	<div class="goods-list">
+	       		<div class="flip" id="flip"   th:attr="data-totalpage=${totalPage}"></div> 
+	            <div class="goods-pic" >
+	                <img class=".goods-pic > img"  th:if="${goodsProduct.picture!=''}" th:src="${goodsProduct.picture}"/>
+	                <img class=".goods-pic > img" th:unless="${goodsProduct.picture!=''}" th:src="@{/resources/image/product-default.png}"/> 
+	            </div>
+	            <div class="goods-detail"  name="background">
+	                <div class="goods-type">
+	                    <span class="sell" th:if="${goodsProduct.sellBuyFlag}">出售</span>
+	                    <span class="buy"  th:unless="${goodsProduct.sellBuyFlag}">求购</span>
+	                    <span class="goods-name"  th:text="${goodsProduct.name}"></span>
+	                    <th:block th:if="${not #lists.isEmpty(goodsProduct.productAttribute)}" th:each="productAttribute:${goodsProduct.productAttribute}">
+	                    	<th:block th:if="${productAttribute.attributeName=='版块'}">
+	                    		<span  class="goods-attribute"  th:text="${productAttribute.attributeValues}" ></span>
+	                    	</th:block>
+	                    </th:block>
+	                </div>
+	                <div class="goods-unit">
+	                    <span class="goods-price">单价：</span><strong class="goods-price-num" th:text="${goodsProduct.productPrice}"> </strong>
+	                    <span class="goods-quantity" th:text="'剩余数量：'+${goodsProduct.quantity}" ></span>
+	                   	<p class="goods-quantity-existence" th:if="${goodsProduct.quantity==0}"></p>
+	                    <span  class="goods-total-quantity"  th:text="'总量：'+${goodsProduct.quantityTotal}"></span>
+	                    <th:block th:if="${not #lists.isEmpty(goodsProduct.productAttribute)}" th:each="productAttribute:${goodsProduct.productAttribute}">
+	                    	<th:block th:if="${productAttribute.attributeName=='规格'}">
+	                    		<span class=" goods-specifications"  th:text="'规格：'+${productAttribute.attributeValues}" ></span>
+	                    	</th:block>
+	                    </th:block>
+	                </div>
+	                <div class="goods-remark"   th:if="${goodsProduct.remark==null}">
+	                    备注：该商家暂时没有填写备注哦~
+	                </div>
+	                <div class="goods-remark-exit"  th:text="'备注：'+${goodsProduct.remark}"  th:unless="${goodsProduct.remark==null}">
+	                </div>
+	       			<input  type="hidden" th:if="${goodsProduct.dateAvailable lt #dates.createToday()}"  value="已过期"/>
+	       			<input  type="hidden" th:unless="${goodsProduct.dateAvailable lt #dates.createToday()}"  value="未过期"/>
+	            </div>
+	            <th:block th:if="#{not #lists.isEmpty(users)}" th:each="user,ustat:${users}">
+	            	<div th:if="${ustat.count==stat.count}" class="user">
+			            <div class="user-left-dashedline" ></div>
+			            <div class=".user-left-dashedline + div" >
+			                <img  class="user-avatar" th:if="${user.avatar!=null}" th:src="${user.avatar}"/>
+			                <img class="user-avatar" th:unless="${user.avatar!=null}"  src="http://pic.youbiquan.com/generic_avatar_default.png"/>
+			                <div class="username-mct" name="user" >
+			                    <div class="username" th:text="${user.userName}" >
+			                    </div>
+			                    <div class="goods-mat"   th:if="${user.goodsMct}" >高级商家</div>
+			                    <div class="goods-mat"   th:unless="${user.goodsMct}">初级商家</div>
+		                	</div>
+		            	</div>
+		        	</div>
+				</th:block>				       
+	       	</div>
+	        <div class="clear-float">
+	        </div>
+		</th:block>
+	</th:block>
+	<th:block th:if="${#strings.contains(type,'category')}"> 
+		<br/>
+		<div  class="new-section">
+			<span class="new-section-tip">
+   				版块
+			</span>
+			<div class="new-section > div">
+				<span  class="new-section-all" onclick="section(this)"  data-optionid="0"  data-optionvalueid="0">
+	   				全部
+				</span>
+	      		<th:block th:if="${not #lists.isEmpty(optionsForCategory) and type=='category'}" th:each="optionForCategory,stat:${optionsForCategory}">
+	      			<th:block th:if="${stat.count==1 and not #lists.isEmpty(optionForCategory.subOptions)}" th:each="subOption:${optionForCategory.subOptions}" >
+	      				<span  class="new-section-detail"   th:text="${subOption.itemName}" onclick="section(this)"     th:attr="data-optionId=${optionForCategory.itemId},data-optionValueId=${subOption.itemId}">
+	           				小版张 
+	       				</span>
+	      			</th:block>
+	      		</th:block>
+	      		<th:block th:if="${not #lists.isEmpty(optionsForCategorys) and type=='categoryAll'}" th:each="optionsForCategory:${optionsForCategorys}">
+	          		<th:block th:if="${not #lists.isEmpty(optionsForCategory)}" th:each="optionForCategory,stat:${optionsForCategory}">
+	          			<th:block th:if="${stat.count==1 and not #lists.isEmpty(optionForCategory.subOptions)}" th:each="subOption:${optionForCategory.subOptions}" >
+	          				<span  class="new-section-detail"   th:text="${subOption.itemName}" onclick="section(this)"     th:attr="data-optionId=${optionForCategory.itemId},data-optionValueId=${subOption.itemId}">
+	               				小版张 
+	           			</span>
+	          			</th:block>
+	          		</th:block>
+			     </th:block>
+			 </div>
+		</div>
+	</th:block>  
+	<th:block th:if="${totalPage gt 1 and totalPage lt 8}">
+		<br/>
+		<ul id="pageList">
+	      	<li class="page">
+	      		<span class="page-content"  onclick="flipPage(this)" data-page="1">上一页</span>
+	      	</li>
+	      	<th:block th:each="page,stat:${#numbers.sequence(1,totalPage)}">
+	      		<li class="page" >
+			      		<span class="page-content"  onclick="flipPage(this)" th:text="${stat.count}">2</span>
+			    </li>
+	      	</th:block>
+	      	<li id="nextPage" class="page">
+			     <span  class="page-content"  onclick="flipPage(this)" data-page="2">下一页</span>
+	      	</li>
+		</ul>
+	</th:block>
+	<th:block th:if="${totalPage gt 7}">
+	     <br/>
+	     <ul id="pageList">
+	     	<li class="page">
+	     		<span class="page-content"  onclick="flipPage(this)" data-page="1">首页</span>
+	     	</li>
+	     	<li class="page">
+	     		<span class="page-content"  onclick="flipPage(this)" data-page="">上一页</span>
+	     	</li>
+	     	<li class="page"  >
+	     		<span class="page-one"  onclick="flipPage(this)">1</span>
+	     	</li>
+	     	<li class="page" >
+	     		<span class="page-content"  onclick="flipPage(this)">2</span>
+	     	</li>
+	     	<li class="page" >
+	     		<span class="page-content"  onclick="flipPage(this)">3</span>
+	     	</li>
+	     	<li class="page"  >
+	     		<span class="page-content"  onclick="flipPage(this)">4</span>
+	     	</li>
+	     	<li class="page" >
+	     		<span class="page-content"  onclick="flipPage(this)">5</span>
+	     	</li>
+	     	<li class="page" >
+	     		<span class="page-content"  onclick="flipPage(this)">6</span>
+	     	</li>
+	     	<li class="page" >
+	     		<span class="page-content"  onclick="flipPage(this)">7</span>
+	     	</li>
+	     	<li class="page"  id="nextPage" >
+	     		<span  class="page-content"  onclick="flipPage(this)" data-page="">下一页</span>
+	     	</li>
+	     	<li class="page"  id="endPage" >
+	     		<span  class="page-content"  onclick="flipPage(this)" data-page="${page}">尾页</span>
+	     	</li>
+	     	<li class="page" >
+	     		共<span class="total-page"  id="totalPage" th:text="${totalPage}">50</span>页
+	     	</li>
+	     	<li class="page" >
+	     		到&nbsp;&nbsp;<input id="jumpPage" class="jump-page"   value=""/>&nbsp;&nbsp;页
+	     	</li>
+	     	<li class="page"  >
+	     		<span class="page-content"   onclick="flipPage(this)">确定</span>
+	     	</li>
+	     </ul>
+	</th:block>
+</th:block>

@@ -1,0 +1,262 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.date-data {
+	color: #666666;
+	font-size: 14px;
+}
+
+.user-info {
+	height: 12%;
+	padding-left: 5%;
+}
+
+.picture {
+	float: left;
+	margin-top: 3.5%;
+	margin-bottom: 3%;
+}
+
+.pic-info {
+	height: 80%;
+	border-radius: 50%;
+}
+
+.user-name {
+	padding-top: 4%;
+	margin-left: 22.2%;
+}
+
+
+.hot-stock {
+	width: 100%;
+	height: 30%;
+	border-collapse: separate;
+	border-spacing: 0px;
+}
+
+.trust{
+	margin-left: 22.2%;
+}
+
+.trust-pic{
+	width:20%;
+	height:30%;
+	margin-top:1%;
+}
+
+.line-heigth {
+	height: 0%;
+}
+
+.line {
+	border-bottom: solid 1px #e9e9e9;
+}
+
+.value-count-height {
+	height: 8%;
+}
+
+.trade-value {
+	width: 49%;
+	padding-left: 5%;
+}
+
+.value {
+	margin-left: 8%;
+	color: #ff8941;
+}
+
+.mid-line {
+	border-left: solid 1px #e9e9e9;
+	height: 80%;
+}
+
+.trade-count {
+	width: 49%;
+	padding-left: 5%;
+}
+
+.count {
+	margin-left: 8%;
+	color: #ff8941;
+}
+
+.pass-rate-height {
+	height: 8%;
+}
+
+.pass-rate {
+	width: 49%;
+	padding-left: 5%;
+}
+
+.rate {
+	margin-left: 8%;
+	color: #ff8941;
+}
+
+.up-down-line-height {
+	height: 2%;
+}
+
+.up-down-line {
+	border-bottom: solid 1px #e9e9e9;
+	background-color: #e9e9e9;
+}
+
+.sell-buy-height {
+	height: 8%;
+}
+
+.sell {
+	width: 49%;
+	padding-left: 5%;
+	text-align: center;
+	color:#000;
+}
+
+.sell-buy-mid-line {
+	border-left: solid 1px #e9e9e9;
+	height: 80%;
+}
+
+.buy {
+	width: 49%;
+	text-align: center;
+	color:#000;
+}
+
+.sell-underline {
+	border-top: solid 2px #ff8941;
+	width: 23%;
+	position: absolute;
+	left: 15.5%;
+}
+
+.buy-underline {
+	border-top: solid 2px #ffffff;
+	width: 23%;
+	position: absolute;
+	right: 13%;
+}
+
+.stock-info {
+	position: absolute;
+	top: 42%;
+	height: 46%;
+	margin-top: 3%;
+	overflow: auto;
+	width: 100%;
+}
+
+.stock-info-table {
+	width: 100%;
+}
+
+.block {
+	padding-top: 15%;
+	color: #9e9e9e;
+}
+
+.small-info {
+	width: 100%;
+	height: 15%;
+	background-color: #e9e9e9;
+	position: fixed;
+	bottom: 8%;
+}
+
+.bottom {
+	width: 100%;
+	height: 8%;
+	position: fixed;
+	bottom: 0px;
+	background: #ffffff;
+}
+
+.bottom-line {
+	height: 4px;
+	background: #e9e9e9;
+	width: 100%;
+}
+
+.btn-style {
+	text-align: center;
+	padding-top: 3%;
+	padding-right: 1%;
+	padding-bottom: 3%;
+	padding-left: 1%;
+	font-size: 16px;
+	display: inline-block;
+	border-color: #ff8941;
+	background-color: #ff8941;
+	color: #ffffff;
+	float: right;
+	font-size: 14px;
+}
+
+.stock-msg {
+	padding-left: 5%;
+	padding-top: 4%;
+}
+
+.title {
+	border: solid 1px #ff8941;
+    border-radius: 5px;
+    color: #ff8941;
+    background-color: #fff;
+    outline: white;
+    float: left;
+    margin-left: 2%;
+}
+
+.product-name{
+	word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    float: left;
+}
+
+.product-buy-price {
+	float: right;
+	margin-right: 5%;
+	color: #ff8941;
+}
+
+.product-sell-price {
+	float: right;
+	margin-right: 5%;
+	color: #135ab3;
+}
+
+.date-amount {
+	width: 49%;
+	padding-left: 5%;
+	padding-bottom: 4%;
+	padding-top: 3%;
+}
+
+.amount {
+	float: right;
+	margin-right: 5%;
+}
+
+.dividing-line {
+	border-bottom: solid 4px #e9e9e9;
+}
+
+.qq-img,.weixin-img{
+    display:none;
+}
+

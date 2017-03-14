@@ -1,0 +1,13 @@
+.page{
+	border:solid 1px #000;
+	margin:0 auto;
+}
+
+.link-error{
+	background:cornflowerblue;
+}
+
+.access-page{
+	padding-top:30px;
+	padding-bottom:30px;
+}

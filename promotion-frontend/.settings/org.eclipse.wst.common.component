@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="promotion-frontend">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="promotion-data-models-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/promotion-data-models/promotion-data-models">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="promotion-service-api-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/promotion-service-api/promotion-service-api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ybq-data-models-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ybq-data-models/ybq-data-models">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="promotion-frontend"/>
+        <property name="java-output-path" value="/promotion-frontend/target/classes"/>
+    </wb-module>
+</project-modules>

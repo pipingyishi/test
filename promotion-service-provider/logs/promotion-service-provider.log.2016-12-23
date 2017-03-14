@@ -1,0 +1,332 @@
+2016-12-23 14:27:41,658 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 14:27:42,094 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1060b431: startup date [Fri Dec 23 14:27:42 CST 2016]; root of context hierarchy
+2016-12-23 14:27:42,286 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-12-23 14:27:43,150 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-12-23 14:27:43,547 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-12-23 14:27:44,138 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-12-23 14:27:50,664 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-12-23 14:27:51,429 [main] WARN  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:546) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+2016-12-23 14:27:51,436 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:1383) - {dataSource-1} closed
+2016-12-23 14:27:51,450 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:698)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:284)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 16 more
+2016-12-23 14:27:51,454 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 14:27:51,490 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 14:46:53,813 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 14:46:53,994 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5d3411d: startup date [Fri Dec 23 14:46:53 CST 2016]; root of context hierarchy
+2016-12-23 14:46:54,038 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-12-23 14:46:54,226 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-12-23 14:46:54,357 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-12-23 14:46:54,571 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-12-23 14:46:57,472 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-12-23 14:46:57,792 [main] WARN  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:546) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+2016-12-23 14:46:57,814 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:1383) - {dataSource-1} closed
+2016-12-23 14:46:57,821 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:698)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:284)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 16 more
+2016-12-23 14:46:57,827 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 14:46:57,832 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 14:47:19,580 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 14:47:19,777 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612fc6eb: startup date [Fri Dec 23 14:47:19 CST 2016]; root of context hierarchy
+2016-12-23 14:47:19,838 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-12-23 14:47:20,028 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-12-23 14:47:20,163 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-12-23 14:47:20,375 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-12-23 14:47:25,483 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-12-23 14:47:25,766 [main] WARN  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:546) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+2016-12-23 14:47:25,775 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:1383) - {dataSource-1} closed
+2016-12-23 14:47:25,792 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:698)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:284)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 16 more
+2016-12-23 14:47:25,797 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 14:47:25,809 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 14:57:22,360 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 14:57:22,607 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612fc6eb: startup date [Fri Dec 23 14:57:22 CST 2016]; root of context hierarchy
+2016-12-23 14:57:22,684 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-12-23 14:57:22,882 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-12-23 14:57:23,017 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-12-23 14:57:23,251 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-12-23 14:57:26,510 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-12-23 14:57:26,869 [main] WARN  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:546) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+2016-12-23 14:57:26,883 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:1383) - {dataSource-1} closed
+2016-12-23 14:57:26,894 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:698)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:284)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 16 more
+2016-12-23 14:57:26,898 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 14:57:26,901 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 14:58:02,183 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 14:58:02,418 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612fc6eb: startup date [Fri Dec 23 14:58:02 CST 2016]; root of context hierarchy
+2016-12-23 14:58:02,509 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-12-23 14:58:02,774 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-12-23 14:58:02,902 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-12-23 14:58:03,109 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-12-23 14:58:05,592 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-12-23 14:58:05,897 [main] WARN  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:546) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+2016-12-23 14:58:05,903 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:1383) - {dataSource-1} closed
+2016-12-23 14:58:05,910 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:698)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:284)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 16 more
+2016-12-23 14:58:05,914 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 14:58:05,934 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 14:59:49,905 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 14:59:50,132 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612fc6eb: startup date [Fri Dec 23 14:59:50 CST 2016]; root of context hierarchy
+2016-12-23 14:59:50,206 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-12-23 14:59:50,422 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-12-23 14:59:50,545 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-12-23 14:59:50,736 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-12-23 14:59:53,371 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-12-23 14:59:53,682 [main] WARN  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:546) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+2016-12-23 14:59:53,689 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:1383) - {dataSource-1} closed
+2016-12-23 14:59:53,695 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:698)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:284)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 16 more
+2016-12-23 14:59:53,696 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 14:59:53,699 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:02:15,843 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:02:16,034 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612fc6eb: startup date [Fri Dec 23 15:02:16 CST 2016]; root of context hierarchy
+2016-12-23 15:02:16,099 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-12-23 15:02:16,344 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-12-23 15:02:16,555 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-12-23 15:02:17,136 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-12-23 15:02:21,102 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-12-23 15:02:21,706 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.promotion.service.TradeService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:02:21,876 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TradeService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:02:21,876 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TradeService to url dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TradeService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TradeService&loadbalance=roundrobin&methods=backstagePage,selectTradeData,saveRecord,findAllData,addTradeData,deleteRecord&pid=25382&side=provider&timestamp=1482476541720, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:02:22,290 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:02:22,295 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:19:04,714 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:19:04,935 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612fc6eb: startup date [Fri Dec 23 15:19:04 CST 2016]; root of context hierarchy
+2016-12-23 15:19:05,070 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-12-23 15:19:05,285 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-12-23 15:19:05,463 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-12-23 15:19:05,741 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-12-23 15:19:09,193 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-12-23 15:19:09,694 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.promotion.service.TradeService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:19:09,837 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TradeService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:19:09,838 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TradeService to url dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TradeService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TradeService&loadbalance=roundrobin&methods=backstagePage,selectTradeData,saveRecord,findAllData,addTradeData,deleteRecord&pid=25407&side=provider&timestamp=1482477549708, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:19:09,989 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:19:09,994 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:43:59,774 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:44:00,047 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612fc6eb: startup date [Fri Dec 23 15:44:00 CST 2016]; root of context hierarchy
+2016-12-23 15:44:00,127 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-12-23 15:44:00,347 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-12-23 15:44:00,487 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-12-23 15:44:00,946 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-12-23 15:44:04,362 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-12-23 15:44:04,726 [main] WARN  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:546) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+2016-12-23 15:44:04,745 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:1383) - {dataSource-1} closed
+2016-12-23 15:44:04,755 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:698)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:284)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 16 more
+2016-12-23 15:44:04,761 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:44:04,765 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:50:38,808 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:50:39,031 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612fc6eb: startup date [Fri Dec 23 15:50:39 CST 2016]; root of context hierarchy
+2016-12-23 15:50:39,097 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-12-23 15:50:39,302 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-12-23 15:50:39,447 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-12-23 15:50:39,697 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-12-23 15:50:42,615 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-12-23 15:50:43,069 [main] WARN  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:546) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+2016-12-23 15:50:43,082 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:1383) - {dataSource-1} closed
+2016-12-23 15:50:43,093 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.zx.modules.store.service.MerchantService': Cannot resolve reference to bean 'merchantService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'merchantService' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:698)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:284)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 16 more
+2016-12-23 15:50:43,097 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:50:43,104 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:51:17,571 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:51:17,911 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612fc6eb: startup date [Fri Dec 23 15:51:17 CST 2016]; root of context hierarchy
+2016-12-23 15:51:18,021 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-12-23 15:51:18,378 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-12-23 15:51:18,660 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-12-23 15:51:19,032 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-12-23 15:51:21,941 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-12-23 15:51:22,399 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.promotion.service.TradeService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:51:22,533 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TradeService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:51:22,533 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TradeService to url dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TradeService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TradeService&loadbalance=roundrobin&methods=backstagePage,selectTradeData,saveRecord,findAllData,addTradeData,deleteRecord&pid=26439&side=provider&timestamp=1482479482417, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:51:22,691 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-23 15:51:22,696 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1

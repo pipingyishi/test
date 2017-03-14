@@ -1,0 +1,305 @@
+2016-08-30 11:38:11,609 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:38:11,785 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@11758f2a: startup date [Tue Aug 30 11:38:11 CST 2016]; root of context hierarchy
+2016-08-30 11:38:11,837 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-08-30 11:38:12,275 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-08-30 11:38:12,436 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-08-30 11:38:12,822 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-08-30 11:38:16,294 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-08-30 11:38:17,030 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.stock.service.StockService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:38:17,147 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:38:17,147 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to url dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockCode,saveStockInfo&pid=568&side=provider&timestamp=1472528297047, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:38:17,374 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:38:17,379 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:38:48,871 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:38:49,036 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612679d6: startup date [Tue Aug 30 11:38:49 CST 2016]; root of context hierarchy
+2016-08-30 11:38:49,093 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-08-30 11:38:49,285 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-08-30 11:38:49,422 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-08-30 11:38:49,661 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-08-30 11:38:52,401 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-08-30 11:38:52,899 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.stock.service.StockService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:38:53,009 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:38:53,009 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to url dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockCode,saveStockInfo&pid=569&side=provider&timestamp=1472528332915, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:38:53,153 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Fail to start server(url: dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockCode,saveStockInfo&pid=569&side=provider&timestamp=1472528332915) Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+com.alibaba.dubbo.rpc.RpcException: Fail to start server(url: dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockCode,saveStockInfo&pid=569&side=provider&timestamp=1472528332915) Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:289)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.openServer(DubboProtocol.java:266)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.export(DubboProtocol.java:253)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:56)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:55)
+	at com.alibaba.dubbo.rpc.Protocol$Adpative.export(Protocol$Adpative.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:491)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:281)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:242)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:143)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:163)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:136)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:381)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:335)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:855)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:72)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.<init>(NettyServer.java:63)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyTransporter.bind(NettyTransporter.java:33)
+	at com.alibaba.dubbo.remoting.Transporter$Adpative.bind(Transporter$Adpative.java)
+	at com.alibaba.dubbo.remoting.Transporters.bind(Transporters.java:48)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchanger.bind(HeaderExchanger.java:41)
+	at com.alibaba.dubbo.remoting.exchange.Exchangers.bind(Exchangers.java:63)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:287)
+	... 20 more
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:30111
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:303)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.doOpen(NettyServer.java:94)
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:67)
+	... 27 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.bind(NioServerSocketPipelineSink.java:148)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleServerSocket(NioServerSocketPipelineSink.java:100)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:74)
+	at org.jboss.netty.channel.Channels.bind(Channels.java:468)
+	at org.jboss.netty.channel.AbstractChannel.bind(AbstractChannel.java:192)
+	at org.jboss.netty.bootstrap.ServerBootstrap$Binder.channelOpen(ServerBootstrap.java:348)
+	at org.jboss.netty.channel.Channels.fireChannelOpen(Channels.java:176)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannel.<init>(NioServerSocketChannel.java:85)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:142)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:90)
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:282)
+	... 29 more
+2016-08-30 11:38:53,158 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:38:53,160 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:38:53,161 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockCode,saveStockInfo&pid=569&side=provider&timestamp=1472528332915, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:38:53,161 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockCode,saveStockInfo&pid=569&side=provider&timestamp=1472528332915, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:39:03,610 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:39:03,760 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612679d6: startup date [Tue Aug 30 11:39:03 CST 2016]; root of context hierarchy
+2016-08-30 11:39:03,816 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-08-30 11:39:03,995 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-08-30 11:39:04,113 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-08-30 11:39:04,333 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-08-30 11:39:07,174 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-08-30 11:39:07,628 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.stock.service.StockService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:39:07,749 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:39:07,749 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to url dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockCode,saveStockInfo&pid=571&side=provider&timestamp=1472528347645, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:39:07,907 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:39:07,914 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:39:38,023 [New I/O server worker #1-1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 11:39:38,024 [DubboServerHandler-10.0.1.56:30111-thread-171] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:51309,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockCode,saveStockInfo&pid=571&side=provider&timestamp=1472528347645, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 13:36:44,016 [New I/O server worker #1-2] INFO  alibaba.dubbo.rpc.protocol.dubbo.CallbackServiceCodec (CallbackServiceCodec.java:265) -  [DUBBO] Not found exported service: com.zx.modules.promotion.service.TradeService:30111 in [com.zx.modules.stock.service.StockService:30111], may be version or group mismatch , channel: consumer: /10.0.1.56:51458 --> provider: /10.0.1.56:30111, message:RpcInvocation [methodName=backstagePage, parameterTypes=[class java.lang.String, class java.lang.String, int, int], arguments=null, attachments={path=com.zx.modules.promotion.service.TradeService, dubbo=2.5.3, interface=com.zx.modules.promotion.service.TradeService, version=0.0.0, timeout=30000}], dubbo version: 2.5.3, current host: 127.0.0.1
+com.alibaba.dubbo.remoting.RemotingException: Not found exported service: com.zx.modules.promotion.service.TradeService:30111 in [com.zx.modules.stock.service.StockService:30111], may be version or group mismatch , channel: consumer: /10.0.1.56:51458 --> provider: /10.0.1.56:30111, message:RpcInvocation [methodName=backstagePage, parameterTypes=[class java.lang.String, class java.lang.String, int, int], arguments=null, attachments={path=com.zx.modules.promotion.service.TradeService, dubbo=2.5.3, interface=com.zx.modules.promotion.service.TradeService, version=0.0.0, timeout=30000}]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.getInvoker(DubboProtocol.java:217)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.CallbackServiceCodec.decodeInvocationArgument(CallbackServiceCodec.java:262)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation.decode(DecodeableRpcInvocation.java:130)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation.decode(DecodeableRpcInvocation.java:71)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:137)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:274)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:261)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:349)
+	at org.jboss.netty.channel.socket.nio.NioWorker.processSelectedKeys(NioWorker.java:280)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:200)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:44)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-30 13:36:44,017 [New I/O server worker #1-2] INFO  alibaba.dubbo.rpc.protocol.dubbo.CallbackServiceCodec (CallbackServiceCodec.java:265) -  [DUBBO] Not found exported service: com.zx.modules.promotion.service.TradeService:30111 in [com.zx.modules.stock.service.StockService:30111], may be version or group mismatch , channel: consumer: /10.0.1.56:51458 --> provider: /10.0.1.56:30111, message:RpcInvocation [methodName=backstagePage, parameterTypes=[class java.lang.String, class java.lang.String, int, int], arguments=null, attachments={path=com.zx.modules.promotion.service.TradeService, dubbo=2.5.3, interface=com.zx.modules.promotion.service.TradeService, version=0.0.0, timeout=30000}], dubbo version: 2.5.3, current host: 127.0.0.1
+com.alibaba.dubbo.remoting.RemotingException: Not found exported service: com.zx.modules.promotion.service.TradeService:30111 in [com.zx.modules.stock.service.StockService:30111], may be version or group mismatch , channel: consumer: /10.0.1.56:51458 --> provider: /10.0.1.56:30111, message:RpcInvocation [methodName=backstagePage, parameterTypes=[class java.lang.String, class java.lang.String, int, int], arguments=null, attachments={path=com.zx.modules.promotion.service.TradeService, dubbo=2.5.3, interface=com.zx.modules.promotion.service.TradeService, version=0.0.0, timeout=30000}]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.getInvoker(DubboProtocol.java:217)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.CallbackServiceCodec.decodeInvocationArgument(CallbackServiceCodec.java:262)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation.decode(DecodeableRpcInvocation.java:130)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation.decode(DecodeableRpcInvocation.java:71)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:137)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:274)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:261)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:349)
+	at org.jboss.netty.channel.socket.nio.NioWorker.processSelectedKeys(NioWorker.java:280)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:200)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:44)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-30 13:36:44,018 [New I/O server worker #1-2] INFO  alibaba.dubbo.rpc.protocol.dubbo.CallbackServiceCodec (CallbackServiceCodec.java:265) -  [DUBBO] Not found exported service: com.zx.modules.promotion.service.TradeService:30111 in [com.zx.modules.stock.service.StockService:30111], may be version or group mismatch , channel: consumer: /10.0.1.56:51458 --> provider: /10.0.1.56:30111, message:RpcInvocation [methodName=backstagePage, parameterTypes=[class java.lang.String, class java.lang.String, int, int], arguments=null, attachments={path=com.zx.modules.promotion.service.TradeService, dubbo=2.5.3, interface=com.zx.modules.promotion.service.TradeService, version=0.0.0, timeout=30000}], dubbo version: 2.5.3, current host: 127.0.0.1
+com.alibaba.dubbo.remoting.RemotingException: Not found exported service: com.zx.modules.promotion.service.TradeService:30111 in [com.zx.modules.stock.service.StockService:30111], may be version or group mismatch , channel: consumer: /10.0.1.56:51458 --> provider: /10.0.1.56:30111, message:RpcInvocation [methodName=backstagePage, parameterTypes=[class java.lang.String, class java.lang.String, int, int], arguments=null, attachments={path=com.zx.modules.promotion.service.TradeService, dubbo=2.5.3, interface=com.zx.modules.promotion.service.TradeService, version=0.0.0, timeout=30000}]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.getInvoker(DubboProtocol.java:217)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.CallbackServiceCodec.decodeInvocationArgument(CallbackServiceCodec.java:262)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation.decode(DecodeableRpcInvocation.java:130)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation.decode(DecodeableRpcInvocation.java:71)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:137)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:274)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:261)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:349)
+	at org.jboss.netty.channel.socket.nio.NioWorker.processSelectedKeys(NioWorker.java:280)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:200)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:44)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-30 13:36:44,018 [New I/O server worker #1-2] INFO  alibaba.dubbo.rpc.protocol.dubbo.CallbackServiceCodec (CallbackServiceCodec.java:265) -  [DUBBO] Not found exported service: com.zx.modules.promotion.service.TradeService:30111 in [com.zx.modules.stock.service.StockService:30111], may be version or group mismatch , channel: consumer: /10.0.1.56:51458 --> provider: /10.0.1.56:30111, message:RpcInvocation [methodName=backstagePage, parameterTypes=[class java.lang.String, class java.lang.String, int, int], arguments=null, attachments={path=com.zx.modules.promotion.service.TradeService, dubbo=2.5.3, interface=com.zx.modules.promotion.service.TradeService, version=0.0.0, timeout=30000}], dubbo version: 2.5.3, current host: 127.0.0.1
+com.alibaba.dubbo.remoting.RemotingException: Not found exported service: com.zx.modules.promotion.service.TradeService:30111 in [com.zx.modules.stock.service.StockService:30111], may be version or group mismatch , channel: consumer: /10.0.1.56:51458 --> provider: /10.0.1.56:30111, message:RpcInvocation [methodName=backstagePage, parameterTypes=[class java.lang.String, class java.lang.String, int, int], arguments=null, attachments={path=com.zx.modules.promotion.service.TradeService, dubbo=2.5.3, interface=com.zx.modules.promotion.service.TradeService, version=0.0.0, timeout=30000}]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.getInvoker(DubboProtocol.java:217)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.CallbackServiceCodec.decodeInvocationArgument(CallbackServiceCodec.java:262)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation.decode(DecodeableRpcInvocation.java:130)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation.decode(DecodeableRpcInvocation.java:71)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:137)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:274)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:261)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:349)
+	at org.jboss.netty.channel.socket.nio.NioWorker.processSelectedKeys(NioWorker.java:280)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:200)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:44)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-30 13:36:44,556 [New I/O server worker #1-2] INFO  alibaba.dubbo.rpc.protocol.dubbo.CallbackServiceCodec (CallbackServiceCodec.java:265) -  [DUBBO] Not found exported service: com.zx.modules.promotion.service.TradeService:30111 in [com.zx.modules.stock.service.StockService:30111], may be version or group mismatch , channel: consumer: /10.0.1.56:51458 --> provider: /10.0.1.56:30111, message:RpcInvocation [methodName=backstagePage, parameterTypes=[class java.lang.String, class java.lang.String, int, int], arguments=null, attachments={path=com.zx.modules.promotion.service.TradeService, dubbo=2.5.3, interface=com.zx.modules.promotion.service.TradeService, version=0.0.0, timeout=30000}], dubbo version: 2.5.3, current host: 127.0.0.1
+com.alibaba.dubbo.remoting.RemotingException: Not found exported service: com.zx.modules.promotion.service.TradeService:30111 in [com.zx.modules.stock.service.StockService:30111], may be version or group mismatch , channel: consumer: /10.0.1.56:51458 --> provider: /10.0.1.56:30111, message:RpcInvocation [methodName=backstagePage, parameterTypes=[class java.lang.String, class java.lang.String, int, int], arguments=null, attachments={path=com.zx.modules.promotion.service.TradeService, dubbo=2.5.3, interface=com.zx.modules.promotion.service.TradeService, version=0.0.0, timeout=30000}]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.getInvoker(DubboProtocol.java:217)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.CallbackServiceCodec.decodeInvocationArgument(CallbackServiceCodec.java:262)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation.decode(DecodeableRpcInvocation.java:130)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation.decode(DecodeableRpcInvocation.java:71)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:137)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:274)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:261)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:349)
+	at org.jboss.netty.channel.socket.nio.NioWorker.processSelectedKeys(NioWorker.java:280)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:200)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:44)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-30 13:36:44,556 [New I/O server worker #1-2] INFO  alibaba.dubbo.rpc.protocol.dubbo.CallbackServiceCodec (CallbackServiceCodec.java:265) -  [DUBBO] Not found exported service: com.zx.modules.promotion.service.TradeService:30111 in [com.zx.modules.stock.service.StockService:30111], may be version or group mismatch , channel: consumer: /10.0.1.56:51458 --> provider: /10.0.1.56:30111, message:RpcInvocation [methodName=backstagePage, parameterTypes=[class java.lang.String, class java.lang.String, int, int], arguments=null, attachments={path=com.zx.modules.promotion.service.TradeService, dubbo=2.5.3, interface=com.zx.modules.promotion.service.TradeService, version=0.0.0, timeout=30000}], dubbo version: 2.5.3, current host: 127.0.0.1
+com.alibaba.dubbo.remoting.RemotingException: Not found exported service: com.zx.modules.promotion.service.TradeService:30111 in [com.zx.modules.stock.service.StockService:30111], may be version or group mismatch , channel: consumer: /10.0.1.56:51458 --> provider: /10.0.1.56:30111, message:RpcInvocation [methodName=backstagePage, parameterTypes=[class java.lang.String, class java.lang.String, int, int], arguments=null, attachments={path=com.zx.modules.promotion.service.TradeService, dubbo=2.5.3, interface=com.zx.modules.promotion.service.TradeService, version=0.0.0, timeout=30000}]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.getInvoker(DubboProtocol.java:217)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.CallbackServiceCodec.decodeInvocationArgument(CallbackServiceCodec.java:262)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation.decode(DecodeableRpcInvocation.java:130)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation.decode(DecodeableRpcInvocation.java:71)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:137)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:274)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:261)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:349)
+	at org.jboss.netty.channel.socket.nio.NioWorker.processSelectedKeys(NioWorker.java:280)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:200)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:44)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-30 13:36:44,557 [New I/O server worker #1-2] INFO  alibaba.dubbo.rpc.protocol.dubbo.CallbackServiceCodec (CallbackServiceCodec.java:265) -  [DUBBO] Not found exported service: com.zx.modules.promotion.service.TradeService:30111 in [com.zx.modules.stock.service.StockService:30111], may be version or group mismatch , channel: consumer: /10.0.1.56:51458 --> provider: /10.0.1.56:30111, message:RpcInvocation [methodName=backstagePage, parameterTypes=[class java.lang.String, class java.lang.String, int, int], arguments=null, attachments={path=com.zx.modules.promotion.service.TradeService, dubbo=2.5.3, interface=com.zx.modules.promotion.service.TradeService, version=0.0.0, timeout=30000}], dubbo version: 2.5.3, current host: 127.0.0.1
+com.alibaba.dubbo.remoting.RemotingException: Not found exported service: com.zx.modules.promotion.service.TradeService:30111 in [com.zx.modules.stock.service.StockService:30111], may be version or group mismatch , channel: consumer: /10.0.1.56:51458 --> provider: /10.0.1.56:30111, message:RpcInvocation [methodName=backstagePage, parameterTypes=[class java.lang.String, class java.lang.String, int, int], arguments=null, attachments={path=com.zx.modules.promotion.service.TradeService, dubbo=2.5.3, interface=com.zx.modules.promotion.service.TradeService, version=0.0.0, timeout=30000}]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.getInvoker(DubboProtocol.java:217)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.CallbackServiceCodec.decodeInvocationArgument(CallbackServiceCodec.java:262)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation.decode(DecodeableRpcInvocation.java:130)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation.decode(DecodeableRpcInvocation.java:71)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:137)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:274)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:261)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:349)
+	at org.jboss.netty.channel.socket.nio.NioWorker.processSelectedKeys(NioWorker.java:280)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:200)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:44)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-30 13:36:44,558 [New I/O server worker #1-2] INFO  alibaba.dubbo.rpc.protocol.dubbo.CallbackServiceCodec (CallbackServiceCodec.java:265) -  [DUBBO] Not found exported service: com.zx.modules.promotion.service.TradeService:30111 in [com.zx.modules.stock.service.StockService:30111], may be version or group mismatch , channel: consumer: /10.0.1.56:51458 --> provider: /10.0.1.56:30111, message:RpcInvocation [methodName=backstagePage, parameterTypes=[class java.lang.String, class java.lang.String, int, int], arguments=null, attachments={path=com.zx.modules.promotion.service.TradeService, dubbo=2.5.3, interface=com.zx.modules.promotion.service.TradeService, version=0.0.0, timeout=30000}], dubbo version: 2.5.3, current host: 127.0.0.1
+com.alibaba.dubbo.remoting.RemotingException: Not found exported service: com.zx.modules.promotion.service.TradeService:30111 in [com.zx.modules.stock.service.StockService:30111], may be version or group mismatch , channel: consumer: /10.0.1.56:51458 --> provider: /10.0.1.56:30111, message:RpcInvocation [methodName=backstagePage, parameterTypes=[class java.lang.String, class java.lang.String, int, int], arguments=null, attachments={path=com.zx.modules.promotion.service.TradeService, dubbo=2.5.3, interface=com.zx.modules.promotion.service.TradeService, version=0.0.0, timeout=30000}]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.getInvoker(DubboProtocol.java:217)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.CallbackServiceCodec.decodeInvocationArgument(CallbackServiceCodec.java:262)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation.decode(DecodeableRpcInvocation.java:130)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation.decode(DecodeableRpcInvocation.java:71)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:137)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:80)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:274)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:261)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:349)
+	at org.jboss.netty.channel.socket.nio.NioWorker.processSelectedKeys(NioWorker.java:280)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:200)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:44)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-08-30 13:36:59,812 [New I/O server worker #1-2] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 13:36:59,813 [DubboServerHandler-10.0.1.56:30111-thread-175] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:51458,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockCode,saveStockInfo&pid=571&side=provider&timestamp=1472528347645, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 17:02:30,918 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 17:02:31,078 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612679d6: startup date [Tue Aug 30 17:02:31 CST 2016]; root of context hierarchy
+2016-08-30 17:02:31,130 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-08-30 17:02:31,333 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-08-30 17:02:31,458 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-08-30 17:02:31,678 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-08-30 17:02:36,913 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-08-30 17:02:37,562 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.stock.service.StockService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 17:02:37,704 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 17:02:37,705 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to url dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStock,saveStockInfo&pid=964&side=provider&timestamp=1472547757581, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 17:02:37,848 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 17:02:37,853 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 17:02:46,114 [DubboServerHandler-10.0.1.56:30111-thread-4] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:52312,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStock,saveStockInfo&pid=964&side=provider&timestamp=1472547757581, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 21:25:01,260 [New I/O server worker #1-1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-30 21:25:01,279 [DubboServerHandler-10.0.1.56:30111-thread-5] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:52311,url:dubbo://10.0.1.56:30111/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStock,saveStockInfo&pid=964&side=provider&timestamp=1472547757581, dubbo version: 2.5.3, current host: 127.0.0.1

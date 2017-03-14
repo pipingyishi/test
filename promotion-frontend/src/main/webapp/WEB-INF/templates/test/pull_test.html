@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>This is TEST page</title>
+
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"></meta>
+<meta name="apple-mobile-web-app-capable" content="yes"></meta>
+<meta name="description"></meta>
+
+</head>
+
+<body>
+    <th:block th:each="vo: ${vos}">
+        <div>
+            <span th:text="${vo.testId}"></span>
+            <span th:text="${vo.testName}"></span>
+        </div>
+    </th:block>
+</body>
+</html>

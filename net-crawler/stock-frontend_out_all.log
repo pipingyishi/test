@@ -1,0 +1,1560 @@
+13:13:56.253 [main] INFO  com.zx.crawler.trade.entity.Entrace - see information from yichen grand:3
+13:14:14.707 [main] INFO  com.zx.crawler.trade.entity.Entrace - see information from yichen grand:3
+13:16:26.995 [main] INFO  com.zx.crawler.trade.entity.Entrace - see information from yichen grand:3
+13:18:50.928 [main] WARN  com.zx.crawler.trade.entity.Entrace - An error occours when saving all data
+com.alibaba.dubbo.rpc.RpcException: Invoke remote method timeout. method: addStockTrade, provider: dubbo://localhost:30111/com.zx.modules.trade.service.TradeService?application=startups&check=false&dubbo=2.5.3&interface=com.zx.modules.trade.service.TradeService&methods=addUserMassage,queryUrl,saveAbnormalUrl,addStockTrade,selectMassage,selectUrl&pid=10622&side=consumer&timeout=30000&timestamp=1477458749166, cause: Waiting server-side response timeout by scan timer. start time: 2016-10-26 13:18:20.916, end time: 2016-10-26 13:18:50.924, client elapsed: 9 ms, server elapsed: 29997 ms, timeout: 30000 ms, request: Request [id=6, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=addStockTrade, parameterTypes=[class com.zx.trade.datamodel.TradeResult], arguments=[com.zx.trade.datamodel.TradeResult@6ae7deac], attachments={path=com.zx.modules.trade.service.TradeService, interface=com.zx.modules.trade.service.TradeService, version=0.0.0, timeout=30000}]], channel: /10.0.1.56:59716 -> /10.0.1.56:30111
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:99) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:144) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:74) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:53) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.common.bytecode.proxy0.addStockTrade(proxy0.java) ~[?:2.5.3]
+	at com.zx.crawler.trade.entity.Entrace.analysis(Entrace.java:340) [classes/:?]
+	at com.zx.crawler.trade.entity.Entrace.getText(Entrace.java:283) [classes/:?]
+	at com.zx.crawler.trade.entity.Entrace.getUserMassage(Unknown Source) [classes/:?]
+	at com.zx.crawler.trade.entity.Entrace.craw(Unknown Source) [classes/:?]
+	at com.zx.crawler.trade.entity.Entrace.crawContent(Unknown Source) [classes/:?]
+	at com.zx.crawler.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:12) [classes/:?]
+	at com.zx.crawler.trade.entity.StockGrab.main(StockGrab.java:13) [classes/:?]
+Caused by: com.alibaba.dubbo.remoting.TimeoutException: Waiting server-side response timeout by scan timer. start time: 2016-10-26 13:18:20.916, end time: 2016-10-26 13:18:50.924, client elapsed: 9 ms, server elapsed: 29997 ms, timeout: 30000 ms, request: Request [id=6, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=addStockTrade, parameterTypes=[class com.zx.trade.datamodel.TradeResult], arguments=[com.zx.trade.datamodel.TradeResult@6ae7deac], attachments={path=com.zx.modules.trade.service.TradeService, interface=com.zx.modules.trade.service.TradeService, version=0.0.0, timeout=30000}]], channel: /10.0.1.56:59716 -> /10.0.1.56:30111
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.returnFromResponse(DefaultFuture.java:188) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:110) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:84) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:96) ~[dubbo-2.5.3.jar:2.5.3]
+	... 17 more
+13:22:41.904 [main] INFO  com.zx.crawler.trade.entity.Entrace - see information from yichen grand:3
+13:23:35.955 [main] INFO  com.zx.crawler.trade.entity.Entrace - see information from yichen grand:3
+13:27:39.161 [main] INFO  com.zx.crawler.trade.entity.Entrace - see information from yichen grand:3
+13:28:44.865 [main] WARN  com.zx.crawler.trade.entity.Entrace - An error occours when saving all data
+com.alibaba.dubbo.rpc.RpcException: Invoke remote method timeout. method: addStockTrade, provider: dubbo://localhost:30111/com.zx.modules.trade.service.TradeService?application=startups&check=false&dubbo=2.5.3&interface=com.zx.modules.trade.service.TradeService&methods=addUserMassage,queryUrl,saveAbnormalUrl,addStockTrade,selectMassage,selectUrl&pid=10648&side=consumer&timeout=30000&timestamp=1477459323186, cause: Waiting server-side response timeout. start time: 2016-10-26 13:28:14.849, end time: 2016-10-26 13:28:44.862, client elapsed: 4 ms, server elapsed: 30008 ms, timeout: 30000 ms, request: Request [id=3, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=addStockTrade, parameterTypes=[class com.zx.trade.datamodel.TradeResult], arguments=[com.zx.trade.datamodel.TradeResult@6345e7b9], attachments={path=com.zx.modules.trade.service.TradeService, interface=com.zx.modules.trade.service.TradeService, version=0.0.0, timeout=30000}]], channel: /10.0.1.56:59769 -> /10.0.1.56:30111
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:99) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:144) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:74) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:53) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.common.bytecode.proxy0.addStockTrade(proxy0.java) ~[?:2.5.3]
+	at com.zx.crawler.trade.entity.Entrace.analysis(Entrace.java:340) [classes/:?]
+	at com.zx.crawler.trade.entity.Entrace.getText(Entrace.java:283) [classes/:?]
+	at com.zx.crawler.trade.entity.Entrace.getUserMassage(Entrace.java:179) [classes/:?]
+	at com.zx.crawler.trade.entity.Entrace.craw(Entrace.java:150) [classes/:?]
+	at com.zx.crawler.trade.entity.Entrace.crawContent(Unknown Source) [classes/:?]
+	at com.zx.crawler.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:12) [classes/:?]
+	at com.zx.crawler.trade.entity.StockGrab.main(StockGrab.java:13) [classes/:?]
+Caused by: com.alibaba.dubbo.remoting.TimeoutException: Waiting server-side response timeout. start time: 2016-10-26 13:28:14.849, end time: 2016-10-26 13:28:44.862, client elapsed: 4 ms, server elapsed: 30008 ms, timeout: 30000 ms, request: Request [id=3, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=addStockTrade, parameterTypes=[class com.zx.trade.datamodel.TradeResult], arguments=[com.zx.trade.datamodel.TradeResult@6345e7b9], attachments={path=com.zx.modules.trade.service.TradeService, interface=com.zx.modules.trade.service.TradeService, version=0.0.0, timeout=30000}]], channel: /10.0.1.56:59769 -> /10.0.1.56:30111
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:107) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:84) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:96) ~[dubbo-2.5.3.jar:2.5.3]
+	... 17 more
+13:50:18.614 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%CE%A8%D3%D0%C5%AC%C1%A6grand:3
+13:50:21.209 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%CE%A8%D3%D0%C5%AC%C1%A6grand:4
+13:50:37.644 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%BA%E9%D2%BB%D3%CA%B1%D2grand:3
+13:50:40.216 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%BA%E9%D2%BB%D3%CA%B1%D2grand:4
+13:51:33.003 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%BA%E9%D2%BB%D3%CA%B1%D2grand:3
+13:52:13.609 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%C7%A7%D1%B0%D3%CA%B1%D2%C9%E7grand:3
+13:52:16.167 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%C7%A7%D1%B0%D3%CA%B1%D2%C9%E7grand:4
+13:55:48.198 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occours when entering main page from hudong
+org.jsoup.HttpStatusException: HTTP error fetching URL
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:537) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:493) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:205) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:194) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:73) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+13:56:27.703 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7784592grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7784592
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7784592
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:27.986 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7783498grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7783498
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7783498
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:28.430 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7783472grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7783472
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7783472
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:28.713 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7782322grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7782322
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7782322
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:28.951 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786023grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786023
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786023
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:29.147 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786008grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786008
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786008
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:29.398 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7783014grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7783014
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7783014
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:29.618 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7785950grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7785950
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7785950
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:29.864 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7785614grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7785614
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7785614
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:30.035 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7785610grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7785610
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7785610
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:30.204 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7784726grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7784726
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7784726
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:30.373 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7784557grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7784557
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7784557
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:30.807 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7784556grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7784556
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7784556
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:31.005 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7784555grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7784555
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7784555
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:31.195 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7783046grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7783046
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7783046
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:31.687 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7783027grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7783027
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7783027
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:31.912 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7782809grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7782809
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7782809
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:32.141 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786062grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786062
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786062
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:32.301 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786061grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786061
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786061
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:32.469 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786060grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786060
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786060
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:32.644 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786059grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786059
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786059
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:32.814 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786057grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786057
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786057
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:32.975 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786056grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786056
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786056
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:33.177 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786055grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786055
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786055
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:33.367 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786054grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786054
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786054
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:33.518 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786053grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786053
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786053
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:33.665 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786052grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786052
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786052
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:33.887 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786051grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786051
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786051
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:34.067 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786049grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786049
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786049
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:34.245 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786048grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786048
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786048
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:34.690 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786047grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786047
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786047
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:34.896 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786045grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786045
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786045
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:35.055 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786046grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786046
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786046
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:35.236 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786044grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786044
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786044
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:35.408 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786043grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786043
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786043
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:35.617 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786042grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786042
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786042
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:35.791 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786041grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786041
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786041
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:36.033 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786040grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786040
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786040
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:36.212 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786039grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786039
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786039
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:36.415 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7784383grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7784383
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7784383
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:36.570 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagegrand:2 from hudong
+java.lang.IllegalArgumentException: Must supply a valid URL
+	at org.jsoup.helper.Validate.notEmpty(Validate.java:102) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:74) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+13:56:39.276 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786038grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786038
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786038
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:39.441 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786037grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786037
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786037
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:56:39.584 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786036grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786036
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786036
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:13.087 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7784592grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7784592
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7784592
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:13.106 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7783498grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7783498
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7783498
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:13.106 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7783472grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7783472
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7783472
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:13.111 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7782322grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7782322
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7782322
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:13.112 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786023grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786023
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786023
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:13.113 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786008grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786008
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786008
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:13.113 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7783014grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7783014
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7783014
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:13.114 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7785950grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7785950
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7785950
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:13.114 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7785614grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7785614
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7785614
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:13.115 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7785610grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7785610
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7785610
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:13.116 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7784726grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7784726
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7784726
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:13.117 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7784557grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7784557
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7784557
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:13.118 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7784556grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7784556
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7784556
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:13.118 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7784555grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7784555
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7784555
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:13.119 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7783046grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7783046
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7783046
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:13.119 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7783027grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7783027
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7783027
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:13.120 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7782809grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7782809
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7782809
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:13.602 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786086grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786086
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786086
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:13.927 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786085grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786085
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786085
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:14.192 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786084grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786084
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786084
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:14.449 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786083grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786083
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786083
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:14.694 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786082grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786082
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786082
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:14.921 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786081grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786081
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786081
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:15.104 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786080grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786080
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786080
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:15.338 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786079grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786079
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786079
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:15.530 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7784527grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7784527
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7784527
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:15.702 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786078grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786078
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786078
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:15.886 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786077grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786077
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786077
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:16.271 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786076grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786076
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786076
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:16.497 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786075grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786075
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786075
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:16.715 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786074grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786074
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786074
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:16.864 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786073grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786073
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786073
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:17.214 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7783597grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7783597
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7783597
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:17.431 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7783599grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7783599
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7783599
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:17.638 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786072grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786072
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786072
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:17.945 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786071grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786071
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786071
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:18.219 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786070grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786070
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786070
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:18.411 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7783600grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7783600
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7783600
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:18.766 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786069grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786069
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786069
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:18.901 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagetrade_show.asp?id=7786068grand:2 from hudong
+java.lang.IllegalArgumentException: Malformed URL: trade_show.asp?id=7786068
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:78) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: java.net.MalformedURLException: no protocol: trade_show.asp?id=7786068
+	at java.net.URL.<init>(URL.java:586) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:483) ~[?:1.8.0_40]
+	at java.net.URL.<init>(URL.java:432) ~[?:1.8.0_40]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76) ~[jsoup-1.8.3.jar:?]
+	... 7 more
+13:59:18.902 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when getting a link inside a pagegrand:2 from hudong
+java.lang.IllegalArgumentException: Must supply a valid URL
+	at org.jsoup.helper.Validate.notEmpty(Validate.java:102) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:74) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:38) ~[jsoup-1.8.3.jar:?]
+	at org.jsoup.Jsoup.connect(Jsoup.java:73) ~[jsoup-1.8.3.jar:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:174) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+14:01:14.404 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%CE%A8%D3%D0%C5%AC%C1%A6grand:3
+14:01:16.981 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%CE%A8%D3%D0%C5%AC%C1%A6grand:4
+14:02:35.973 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when the all data into the database from hudong
+com.alibaba.dubbo.rpc.RpcException: Invoke remote method timeout. method: addUserMassage, provider: dubbo://localhost:30111/com.zx.modules.trade.service.TradeService?application=startups&check=false&dubbo=2.5.3&interface=com.zx.modules.trade.service.TradeService&methods=addUserMassage,queryUrl,saveAbnormalUrl,addStockTrade,selectMassage,selectUrl&pid=10758&side=consumer&timeout=30000&timestamp=1477461576033, cause: Waiting server-side response timeout by scan timer. start time: 2016-10-26 14:02:05.962, end time: 2016-10-26 14:02:35.971, client elapsed: 39 ms, server elapsed: 29968 ms, timeout: 30000 ms, request: Request [id=1, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=addUserMassage, parameterTypes=[class com.zx.trade.datamodel.TradeSrtockResult], arguments=[com.zx.trade.datamodel.TradeSrtockResult@4b54af3d], attachments={path=com.zx.modules.trade.service.TradeService, interface=com.zx.modules.trade.service.TradeService, version=0.0.0, timeout=30000}]], channel: /10.0.1.56:59982 -> /10.0.1.56:30111
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:99) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:144) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:53) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:74) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.common.bytecode.proxy0.addUserMassage(proxy0.java) ~[?:2.5.3]
+	at com.zx.crawler.stock.trade.entity.Entrace.saveUserMassage(Entrace.java:288) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:184) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: com.alibaba.dubbo.remoting.TimeoutException: Waiting server-side response timeout by scan timer. start time: 2016-10-26 14:02:05.962, end time: 2016-10-26 14:02:35.971, client elapsed: 39 ms, server elapsed: 29968 ms, timeout: 30000 ms, request: Request [id=1, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=addUserMassage, parameterTypes=[class com.zx.trade.datamodel.TradeSrtockResult], arguments=[com.zx.trade.datamodel.TradeSrtockResult@4b54af3d], attachments={path=com.zx.modules.trade.service.TradeService, interface=com.zx.modules.trade.service.TradeService, version=0.0.0, timeout=30000}]], channel: /10.0.1.56:59982 -> /10.0.1.56:30111
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.returnFromResponse(DefaultFuture.java:188) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:110) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:84) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:96) ~[dubbo-2.5.3.jar:2.5.3]
+	... 16 more
+14:07:43.662 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%CE%A8%D3%D0%C5%AC%C1%A6grand:3
+14:07:46.226 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%CE%A8%D3%D0%C5%AC%C1%A6grand:4
+14:08:29.818 [main] WARN  com.zx.crawler.stock.trade.entity.Entrace - An error occurs when the all data into the database from hudong
+com.alibaba.dubbo.rpc.RpcException: Invoke remote method timeout. method: addUserMassage, provider: dubbo://localhost:30111/com.zx.modules.trade.service.TradeService?application=startups&check=false&dubbo=2.5.3&interface=com.zx.modules.trade.service.TradeService&methods=addUserMassage,queryUrl,saveAbnormalUrl,addStockTrade,selectMassage,selectUrl&pid=10762&side=consumer&timeout=30000&timestamp=1477462041559, cause: Waiting server-side response timeout. start time: 2016-10-26 14:07:59.806, end time: 2016-10-26 14:08:29.818, client elapsed: 5 ms, server elapsed: 30007 ms, timeout: 30000 ms, request: Request [id=1, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=addUserMassage, parameterTypes=[class com.zx.trade.datamodel.TradeSrtockResult], arguments=[com.zx.trade.datamodel.TradeSrtockResult@2c708440], attachments={path=com.zx.modules.trade.service.TradeService, interface=com.zx.modules.trade.service.TradeService, version=0.0.0, timeout=30000}]], channel: /10.0.1.56:60036 -> /10.0.1.56:30111
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:99) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:144) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:53) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:74) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.common.bytecode.proxy0.addUserMassage(proxy0.java) ~[?:2.5.3]
+	at com.zx.crawler.stock.trade.entity.Entrace.saveUserMassage(Entrace.java:288) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.getUserName(Entrace.java:184) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.analysis(Entrace.java:123) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.Entrace.crawContent(Entrace.java:91) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.AbsStockCrawler.execute(AbsStockCrawler.java:8) [classes/:?]
+	at com.zx.crawler.stock.trade.entity.StockTradeGrab.main(StockTradeGrab.java:13) [classes/:?]
+Caused by: com.alibaba.dubbo.remoting.TimeoutException: Waiting server-side response timeout. start time: 2016-10-26 14:07:59.806, end time: 2016-10-26 14:08:29.818, client elapsed: 5 ms, server elapsed: 30007 ms, timeout: 30000 ms, request: Request [id=1, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=addUserMassage, parameterTypes=[class com.zx.trade.datamodel.TradeSrtockResult], arguments=[com.zx.trade.datamodel.TradeSrtockResult@2c708440], attachments={path=com.zx.modules.trade.service.TradeService, interface=com.zx.modules.trade.service.TradeService, version=0.0.0, timeout=30000}]], channel: /10.0.1.56:60036 -> /10.0.1.56:30111
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:107) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:84) ~[dubbo-2.5.3.jar:2.5.3]
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:96) ~[dubbo-2.5.3.jar:2.5.3]
+	... 16 more
+14:11:19.384 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%CE%A8%D3%D0%C5%AC%C1%A6grand:3
+14:11:22.000 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%CE%A8%D3%D0%C5%AC%C1%A6grand:4
+14:11:27.335 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%B8%D3%D6%DD%CD%F5%B2%CE%C4%B1grand:3
+14:11:29.894 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%B8%D3%D6%DD%CD%F5%B2%CE%C4%B1grand:4
+14:11:35.175 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%B8%D3%D6%DD%CD%F5%B2%CE%C4%B1grand:3
+14:11:37.739 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%B8%D3%D6%DD%CD%F5%B2%CE%C4%B1grand:4
+14:12:01.465 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%CE%A8%D3%D0%C5%AC%C1%A6grand:3
+14:12:04.080 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%CE%A8%D3%D0%C5%AC%C1%A6grand:4
+14:12:09.535 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%B8%D3%D6%DD%CD%F5%B2%CE%C4%B1grand:3
+14:12:12.091 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%B8%D3%D6%DD%CD%F5%B2%CE%C4%B1grand:4
+14:12:17.472 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%B8%D3%D6%DD%CD%F5%B2%CE%C4%B1grand:3
+14:12:20.059 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%B8%D3%D6%DD%CD%F5%B2%CE%C4%B1grand:4
+14:12:25.435 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%C0%B6%C9%AB%CC%AB%D1%F4grand:3
+14:12:28.009 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%C0%B6%C9%AB%CC%AB%D1%F4grand:4
+14:12:33.537 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%BE%A9%B6%BC%BA%EC%C5%A3grand:3
+14:12:36.105 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%BE%A9%B6%BC%BA%EC%C5%A3grand:4
+14:12:41.438 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%BE%A9%B6%BC%BA%EC%C5%A3grand:3
+14:12:44.026 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%BE%A9%B6%BC%BA%EC%C5%A3grand:4
+14:12:49.390 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%BE%A9%B6%BC%BA%EC%C5%A3grand:3
+14:12:51.948 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%BE%A9%B6%BC%BA%EC%C5%A3grand:4
+14:12:57.284 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%BE%A9%B6%BC%BA%EC%C5%A3grand:3
+14:12:59.838 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%BE%A9%B6%BC%BA%EC%C5%A3grand:4
+14:13:05.291 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%BE%A9%B6%BC%BA%EC%C5%A3grand:3
+14:13:07.840 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%BE%A9%B6%BC%BA%EC%C5%A3grand:4
+14:13:13.199 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%BE%A9%B6%BC%BA%EC%C5%A3grand:3
+14:13:15.788 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%BE%A9%B6%BC%BA%EC%C5%A3grand:4
+14:13:21.196 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%BE%A9%B6%BC%BA%EC%C5%A3grand:3
+14:13:23.749 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%BE%A9%B6%BC%BA%EC%C5%A3grand:4
+14:13:29.094 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%E3%F2%D6%DD%BC%AF%D3%CAgrand:3
+14:13:31.652 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%E3%F2%D6%DD%BC%AF%D3%CAgrand:4
+14:13:36.951 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%CD%E2%B9%FA%B1%D2grand:3
+14:13:39.513 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%CD%E2%B9%FA%B1%D2grand:4
+14:13:44.834 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%CD%E2%B9%FA%B1%D2grand:3
+14:13:47.386 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%CD%E2%B9%FA%B1%D2grand:4
+14:13:52.675 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%CD%E2%B9%FA%B1%D2grand:3
+14:13:55.236 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%CD%E2%B9%FA%B1%D2grand:4
+14:14:00.951 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%BE%A9%B6%BC%BA%EC%C5%A3grand:3
+14:14:03.506 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%BE%A9%B6%BC%BA%EC%C5%A3grand:4
+14:14:09.014 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%BE%A9%B6%BC%BA%EC%C5%A3grand:3
+14:14:11.573 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%BE%A9%B6%BC%BA%EC%C5%A3grand:4
+14:14:17.332 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%BC%C3%C4%CF%C9%E3%D3%B0grand:3
+14:14:19.893 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%BC%C3%C4%CF%C9%E3%D3%B0grand:4
+14:14:32.077 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%CE%E2%BE%FC%D3%CA%C9%E7grand:3
+14:14:34.647 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%CE%E2%BE%FC%D3%CA%C9%E7grand:4
+14:14:39.929 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%CE%E2%BE%FC%D3%CA%C9%E7grand:3
+14:14:42.515 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%CE%E2%BE%FC%D3%CA%C9%E7grand:4
+14:14:47.837 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%C9%CF%BA%A3%D0%A1%D0%A4grand:3
+14:14:50.440 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%C9%CF%BA%A3%D0%A1%D0%A4grand:4
+14:14:55.757 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%B0%A1%D5%E4grand:3
+14:14:58.314 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%B0%A1%D5%E4grand:4
+14:15:03.653 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%C5%A3%D7%D3grand:3
+14:15:06.235 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%C5%A3%D7%D3grand:4
+14:15:11.674 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%CE%E2%BE%FC%D3%CA%C9%E7grand:3
+14:15:14.235 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%CE%E2%BE%FC%D3%CA%C9%E7grand:4
+14:37:44.264 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%CE%A8%D3%D0%C5%AC%C1%A6grand:3
+14:37:46.911 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%CE%A8%D3%D0%C5%AC%C1%A6grand:4
+14:37:56.934 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%BD%AD%CE%F7%D0%A1%B2%CCgrand:3
+14:37:59.520 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%BD%AD%CE%F7%D0%A1%B2%CCgrand:4
+14:38:08.010 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%BA%DA%CD%C1%BC%B4%C4%ABgrand:3
+14:38:10.586 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%BA%DA%CD%C1%BC%B4%C4%ABgrand:4
+14:38:16.049 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%B7%E7%B5%F7%D3%EA%CB%B3grand:3
+14:38:18.611 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%B7%E7%B5%F7%D3%EA%CB%B3grand:4
+14:38:24.933 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%BA%DA%CD%C1%BC%B4%C4%ABgrand:3
+14:38:33.290 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%B0%A1%D5%E4grand:3
+14:38:36.142 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%B0%A1%D5%E4grand:4
+14:38:44.411 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%D0%A1%C7%BF%B8%E7grand:3
+14:38:47.012 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%D0%A1%C7%BF%B8%E7grand:4
+14:38:52.508 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%B0%B2%B5%C2%C1%D2grand:3
+14:38:55.066 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%B0%B2%B5%C2%C1%D2grand:4
+14:39:03.568 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%BA%EC%D3%A1%BB%A8%D3%CA%C9%E7grand:3
+14:39:06.141 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%BA%EC%D3%A1%BB%A8%D3%CA%C9%E7grand:4
+14:39:14.566 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%C7%A7%D1%B0%D3%CA%B1%D2%C9%E7grand:3
+14:39:17.145 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%C7%A7%D1%B0%D3%CA%B1%D2%C9%E7grand:4
+14:39:25.579 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%B1%B1%BE%A9%C1%A2%D0%C2grand:3
+14:39:28.136 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%B1%B1%BE%A9%C1%A2%D0%C2grand:4
+14:39:33.782 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%B7%E7%B5%F7%D3%EA%CB%B3grand:3
+14:39:42.219 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%C2%FA%BD%AD%BA%ECgrand:3
+14:39:44.776 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%C2%FA%BD%AD%BA%ECgrand:4
+14:39:50.348 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%B8%F6%B8%DF%C8%CB%BA%C3grand:3
+14:39:52.923 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%B8%F6%B8%DF%C8%CB%BA%C3grand:4
+14:40:01.620 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%BD%F5%C8%AA%B2%D8%C6%B7grand:3
+14:40:04.167 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%BD%F5%C8%AA%B2%D8%C6%B7grand:4
+14:40:09.650 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userinfo.asp?username=%C9%E1%B5%C3%CA%D5%B2%D8grand:3
+14:40:12.196 [main] INFO  com.zx.crawler.stock.util.UserMassage - see information from hudonghttp://shop.ybk001.com/userxy.asp?username=%C9%E1%B5%C3%CA%D5%B2%D8grand:4

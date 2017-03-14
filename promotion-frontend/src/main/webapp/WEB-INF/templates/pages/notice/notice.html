@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <th:block th:replace="pages/head/head :: heading" />
+        <title>邮币圈-邮币卡文交所电子盘投资者的圈子</title>
+        <link rel="icon" type="image/png" th:href="@{/resources/image/logo.png}"/>
+        <link rel="stylesheet" type="text/css" th:href="@{/resources/css/notice/notice.css}"/>
+    </head>
+    <body>
+        <a class="header"  href="http://a.app.qq.com/o/simple.jsp?pkgname=cc.quanhai.youbiquan&amp;g_f=991653">
+            <div class="logo">
+                <img class="" th:src="@{/resources/image/logo.png}" />
+            </div>
+            <div class="ybq-introduction">
+                <div>
+                    邮币圈
+                </div>
+                <div class="ybq-content">
+                    邮币卡投资者的圈子
+                </div>
+            </div>
+            <div class="download">
+                点击下载
+            </div>
+        </a>
+        <div class="publish-person">
+            <img   class="public-person-avatar" th:if="${noticeModel.exchange.logo!=null}"  th:src="${noticeModel.exchange.logo}"  />
+                <img  class="public-person-avatar" th:unless="${noticeModel.exchange.logo!=null}"  src="http://pic.youbiquan.com/generic_avatar_default.png"/>
+            <span class="public-person-username"  th:text="${noticeModel.exchange.name}">
+            </span>
+        </div>
+        <div class="top-line">
+        </div>
+        <div class="title">
+            <h2 th:text="${noticeModel.notice.noticeTitle}">
+            </h2>
+        </div>
+        <div class="readNum-publishDate">
+            <span class="read-num">
+                阅读量：
+            </span>
+            <span th:text="${noticeModel.notice.readNum}">
+            </span>
+            <span class="publish-date">
+                发表于：
+            </span>
+            <span th:text="${noticeModel.notice.createDateStr}">
+            </span>
+        </div>
+        <div class="notice-content" th:utext="${noticeModel.notice.noticeContent}">
+        </div>
+        <div th:if="${noticeModel.openAccount=='true'}">
+	        <div class="notice-content-down-line">
+	        </div>
+	        <a class="open-account"  th:href="${noticeModel.openAccountUrl }">我要开户</a>
+	    </div>
+        <div class="comment-tip" th:if="${not #lists.isEmpty(noticeModel.bizFeeds)}">
+            <span>评论</span>
+        </div>
+        <th:block th:if="${not #lists.isEmpty(noticeModel.bizFeeds)}" th:each="bizFeed,stat:${noticeModel.bizFeeds}">
+        <div class="comment">
+            <img   class="comment-user-avatar" th:if="${bizFeed.feed.user.avatar!=null}"  th:src="${bizFeed.feed.user.avatar}"/>
+                <img  class="comment-user-avatar" th:unless="${bizFeed.feed.user.avatar!=null}"  src="http://pic.youbiquan.com/generic_avatar_default.png"/>
+            <div class="comment-user-content" >
+                <div>
+                    <span th:text="${bizFeed.feed.user.userName}"></span>
+                    <img class="comment-level-pic"  th:src="@{/resources/image/coppercoin.png}"/>
+                    <span class="comment-level">
+                        <strong th:text="${bizFeed.feed.user.level}">0</strong>
+                    </span>
+                    <span  class="comment-date"   th:text="${bizFeed.feed.datelineStr}"></span>    
+                </div>
+                <div class="comment-content"  th:text="${bizFeed.feed.feedcontent}"></div>        
+             </div>
+             <div class="comment-line" th:if="${stat.count  ne #lists.size(noticeModel.bizFeeds)}">
+            </div>
+            <div class="comment-content-tip" th:if="${#lists.size(noticeModel.bizFeeds) eq 10}">
+                更多评论，请下载邮币圈APP查看
+            </div>
+        </div>
+        </th:block>
+    </body>
+</html>

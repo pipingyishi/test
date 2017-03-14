@@ -1,0 +1,191 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.stock {
+	font-size: 18px;
+}
+
+.user-info {
+	font-size: 16px;
+}
+
+.stock-top-border {
+	border: solid 1px #f7f7f7;
+	background-color: #f7f7f7;
+}
+
+.stock-left-right-border {
+	margin-left: 2%;
+	margin-right: 2%;
+	background-color: white;
+	margin-top: 5%;
+}
+
+.name-price-quantity {
+	width: 100%;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+.stock-vertical-line {
+	border-left: solid 2px #f58220;
+	height: 18px;
+}
+
+.stock-name {
+	padding-left: 3%;
+}
+
+.product-price {
+	text-align: right;
+	color: #ff8941;
+}
+
+.quantity {
+	float: right;
+}
+
+.top-line-height {
+	height: 0%;
+}
+
+.stock-info {
+	width: 100%;
+	height: 23%;
+	padding-left: 3%;
+	margin-top: 4%;
+	padding-right: 3%;
+}
+
+.title {
+	width: 30%;
+	color: #666666;
+}
+
+.stock-detail {
+	color: #666666;
+}
+
+.op-line-height {
+	style ="height: 0%;
+}
+
+.top-line {
+	border-top: solid 1px #e9e9e9;
+}
+
+.up-down-line {
+	width: 100%;
+	height: 8%;
+	background: #f7f7f7;
+}
+
+.pic-name {
+	height: 11%;
+	padding-left: 5%;
+}
+
+.pic-position {
+	float: left;
+	margin-top: 4%;
+}
+
+.pic {
+	height: 90%;
+	border-radius: 30px;
+	margin-top: 7%;
+}
+
+.username {
+	padding-top: 10%;
+	margin-left: 22.2%;
+}
+
+.stock-trade {
+	width: 100%;
+	height: 18%;
+}
+
+.line-height {
+	height: 0%;
+}
+
+.bottom-line-height {
+	heigth: 0%;
+}
+
+.bottom-line {
+	border-bottom: solid 1px #e9e9e9;
+}
+
+.trade-value {
+	width: 49%;
+	padding-left: 5%;
+}
+
+.value {
+	margin-left: 8%;
+}
+
+.mid-line {
+	border-left: solid 1px #e9e9e9;
+	height: 80%;
+}
+
+.trade-count {
+	width: 49%;
+	padding-left: 5%;
+}
+
+.count {
+	margin-left: 8%;
+}
+
+.line {
+	border-bottom: solid 1px #e9e9e9;
+}
+
+.pass-rate {
+	width: 49%;
+	padding-left: 5%;
+}
+
+.rate {
+	margin-left: 15.5%;
+}
+
+.line-block {
+	width: 100%;
+	height: 20%;
+	background: #f7f7f7;
+}
+
+.order {
+	width: 100%;
+	height: 8%;
+	/* position: fixed;
+	bottom: 0px; */
+}
+
+.btn-style {
+	text-align: center;
+	padding-top: 2.5%;
+	padding-right: 5%;
+	padding-bottom: 2.5%;
+	padding-left: 5%;
+	font-size: 16px;
+	margin-bottom: 0px;
+	display: inline-block;
+	border-color: #ff8941;
+	background-color: #ff8941;
+	color: #ffffff;
+	float: right;
+	text-decoration: none;
+}

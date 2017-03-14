@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="icon" type="image/png" th:href="@{/resources/image/logo.png}"></link>
+        <link rel="stylesheet" type="text/css" href="/promotion-frontend/resources/css/trust/trust.css"/>
+        <link rel="stylesheet" type="text/css" href="/promotion-frontend/resources/css/trust/pc-trust.css"/>
+    </head>
+    <body>
+        <div class="user-info pc-user-info">
+            <div class="picture">
+                <img id="avatar" class="pic-info"  th:if="${ userInfo.avatar!=null}"  th:src="${userInfo.avatar}"/>
+                <img id="avatar" class="pic-info"  th:unless="${userInfo.avatar!=null}"  src="http://pic.youbiquan.com/generic_avatar_default.png"/>
+            </div>
+            <div>
+	            <div id="username pc-username" class="pc-user-name" th:text="${userInfo.username}">
+	            </div>
+	            <div class="pc-trust-pic">
+	               <img class="pc-trust-picture" th:src="@{/resources/image/trust.png}"/>
+	            </div>
+            </div>
+            <input id="userId" type="hidden" th:value="${userInfo.userId}"/>
+            <input id="type" type="hidden" value="出售"/>
+            <th:block th:if="${merchant==null}">
+                <input id="merchant" type="hidden"  value="普通用户"/>
+            </th:block>
+        </div>
+        <div class="pc-trade">
+            <table class="hot-stock">
+                <tbody>
+                    <tr class="line-heigth">
+                        <td colspan="3" class="line">
+                        </td>
+                    </tr>
+                    <tr class="value-count-height">
+                        <td class="trade-value">
+                            <span>
+                                交易金额
+                            </span>
+                            <span id="sellerTurnover" class="value"  th:text="${userInfo.sellerTurnover}">
+                            </span>
+                        </td>
+                        <td>
+                            <div class="mid-line">
+                            </div>
+                        </td>
+                        <td class="trade-count">
+                            <span>
+                                交易次数
+                            </span>
+                            <span id="tradecount" class="count" th:text="${userInfo.tradecount}+'次'">
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="line-heigth">
+                        <td colspan="3" class="line">
+                        </td>
+                    </tr>
+                    <tr class="pass-rate-height">
+                        <td class="pass-rate" colspan="3">
+                            <span>
+                                入库率
+                            </span>
+                            <span id="passRate" class="rate pc-rate"  th:text="${userInfo.passRate}">
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="up-down-line-height">
+                        <td colspan="3" class="up-down-line">
+                        </td>
+                    </tr>
+                    <tr class="sell-buy-height">
+                        <td class="sell">
+                            <a id="sell" href="#sell" onclick="switchStatus('sell')" class="pc-sell" >
+                                他的出售
+                            </a>
+                        </td>
+                        <td>
+                            <div class="sell-buy-mid-line">
+                            </div>
+                        </td>
+                        <td class="buy">
+                            <a id="buy" href="#buy" onclick="switchStatus('buy')" class="pc-buy" >
+                                他的求购
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="line-heigth">
+                        <td colspan="3" class="line">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pc-product" >
+	        <div id="sell-underline"  class="pc-sell-underline" >
+	        </div>
+	        <div id="buy-underline"  class="pc-buy-underline">
+	        </div>
+        </div>
+        <div id="stockInfo" class="stock-info pc-stock-info" >
+            <table id="productTable" class="stock-info-table">
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="pc-gray-line">
+        </div>
+        <div class="pc-scan-download">
+            <img class="RQ-code" src="/promotion-frontend/resources/image/qr-code.png"/>
+            <div class="scan-download-tip">
+                扫描下载APP
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="/promotion-frontend/resources/js/trust/trust.js">
+        </script>
+</html>

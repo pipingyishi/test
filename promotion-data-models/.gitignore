@@ -1,0 +1,29 @@
+.classpath
+.project
+.settings/
+
+# Mac
+.DS_Store
+
+# Maven
+target/
+
+*.log
+*.class
+src/main/webapp/WEB-INF/class
+src/main/webapp/WEB-INF/classes
+
+
+# STS
+.springBeans
+
+*.bak
+
+logs/
+log/
+
+!**/src/main/bin
+~
+ybq-data-models.iml
+proguard-rules.pro
+build

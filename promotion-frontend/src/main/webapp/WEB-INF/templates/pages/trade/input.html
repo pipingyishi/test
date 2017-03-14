@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>现货电子盘大宗出售</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<script type="text/javascript" th:src="@{/resources/js/trade/input.js}"></script>
+<link rel="icon" type="image/png" th:href="@{/resources/image/logo.png}"></link>
+<link rel="stylesheet" type="text/css"  th:href="@{/resources/css/trade/input.css}"></link>
+<link rel="stylesheet" type="text/css"  th:href="@{/resources/css/trade/media-input-small.css}"  media="screen and (max-width:380px)"></link>
+</head>
+<body>
+	<div class="head-description">
+		<div class="left-line">
+		</div>
+		<div>
+			<div class="char-desc" >邮币圈提供大宗现货出售，电子盘大宗出售业务，填写以下信息提交。</div>
+		</div>
+	</div>
+	<form id="trade"  th:action="@{/trade/addPage}"  method="post"  onsubmit="return testTradeImformation()">
+		<table class="table">
+			<tbody>
+				<tr>
+					<td>
+						<span>*</span>类型
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span id="stock-value" class="btn btn-stock" onclick="styleChoice('stock')">现货盘</span>
+						<span id="electronic-value" class="btn btn-electronic" onclick="styleChoice('electronic')">电子盘</span>
+						<input id="tradeStyle" type="hidden"  name="tradeType" value="现货盘" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<span>*</span>名称:
+							 <input id="tradeCname" class="input-line large-screen-cname small-screen-cname" type="text"  name="tradeCname"  value="请输入"  onclick="tradeCnameDelete()" />
+							 <span>*</span>种类:
+							<select id="tradeVarieties" class="select-style" name="tradeVarieties">
+											<option value="大陆邮票">大陆邮票</option>
+											<option value="港澳邮票">港澳邮票</option>
+											<option value="钱币">钱币</option>
+											<option value="磁卡">磁卡</option>
+											<option value="封片">封片</option>
+											<option value="其他">其他</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<span>*</span>价格:
+							<input id="tradePrice" class=" input-line large-screen-price small-screen-price" type="text"  name="tradePrice"  value="请输入"  onblur="isEnptyTradePrice()" onclick="tradePriceDelete()" />
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>*</span>数量:
+						<input id="tradeAmount" class="input-line large-screen-amount small-screen-amount"  type="text"  name="tradeAmount"  value="请输入"   onblur="isEnptyTradeAmount()" onclick="tradeAmountDelete()" /> 
+						<span>*</span>单位:
+						<input id="tradeUnit" class="input-line large-screen-unit small-screen-unit" type="text"  name="tradeUnit"   value="包/捆等"  onclick="tradeUnitDelete()" onblur="isEnptyTradeUtil()" />
+					</td>
+				</tr>
+				<tr>
+				    <td>
+				        <span class="prompt">请确认填写的价格与单位对应,如单位为包,请填写一包的价格。</span>
+				    </td>
+				</tr>
+				<tr>
+					<td>
+						<span class="no-sign-spacing"></span>总市值:
+						<input id="marketValue" class=" input-line  large-screen-mvalue small-screen-mvalue input-line-Single" type="text"  name="tradeMarketValue"  value=""   readonly="true"/>
+				  </td>
+				</tr>
+				<tr>
+					<td>
+						<span class="no-sign-spacing"></span>联系人:
+						<input id="tradePname" class=" input-line large-screen-pname small-screen-pname" type="text"  name="tradePname"  value="请输入"  onclick="tradePnameDelete()" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<span>*</span>联系电话:
+							<input id="tradeTelphone" class=" input-line large-screen-telphone  small-screen-telphone" type="text"  name="tradeTelphone"  value="请输入" onblur="isEnptyTradeTelphone()" onclick="tradeTelphoneDelete()" />
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<center><input  class="btn btn-sbt" value="提交" type="submit"/></center>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</body>
+</html>

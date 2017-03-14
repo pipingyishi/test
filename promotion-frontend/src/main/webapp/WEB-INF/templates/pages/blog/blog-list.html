@@ -1,0 +1,28 @@
+<th:block th:fragment="blog">
+    <div th:if="${blogModel.blog!=null}" >
+            <img class="top-blog-img" th:src="${blogModel.blog.blogImage}"/>
+            <div class="top-blog-title" th:text="${blogModel.blog.blogTitle}">
+            </div>
+    </div>
+	<th:block th:if="${not #lists.isEmpty(blogModel.blogs)}"  th:each="blog:${blogModel.blogs}">
+	    <div class="blog-page" th:onclick="${'showBlogInfo('+blog.blogId+')'}">
+	        <div class="open-blog">
+	            <div class="open-blog-title">
+	                <div th:text="${blog.blogTitle}">
+	                </div>
+	            </div>
+	            <div class="open-blog-img">
+	                <img th:src="${blog.blogImage}"/>
+	            </div>
+	        </div>
+	        <div class="publish">
+	            <div class="publish-user"  th:text="${blog.user.userName}">
+	            </div>
+	            <div class="publish-date" th:text="${blog.createDateStr}">
+	            </div>
+	        </div>
+	        <div class="publish-underline">
+	        </div>
+	    </div>
+	</th:block>
+</th:block>

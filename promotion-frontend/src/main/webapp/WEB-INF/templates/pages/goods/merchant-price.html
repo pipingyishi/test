@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="pragma" content="no-cache"/>
+        <meta http-equiv="Cache-Control" content="no-cache, must-revalidate"/>
+        <meta http-equiv="expires" content="0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <title>现货报价</title>
+        <link rel="icon" type="image/png" th:href="@{/resources/image/logo.png}"></link>
+        <link rel="stylesheet"  type="text/css"  th:href="@{/resources/css/goods/merchant-price.css}"/>
+    </head>
+    <body>
+        <div class="name-picture-remark" >
+            <div class="product-type">
+                <div class="sell-buy-pic" th:if="${goodsProducts.sellBuyFlag}">
+                    <img th:src="@{/resources/image/sell.png}"/>
+                </div>
+                <div class="sell-buy-pic" th:unless="${goodsProducts.sellBuyFlag}">
+                    <img th:src="@{/resources/image/buy.png}"/>
+                </div>
+	            <div class="product-name"   th:text="${goodsProducts.name}">
+	            </div>
+	        </div>
+            <div class="product-name-underline">
+            </div>
+            <div class="picture-remark">
+                <div  class="picture" >
+                    <img  th:if="${ goodsProducts.picture!=''}"  th:src="${goodsProducts.picture}"  class="pic-info" />
+                <img  th:unless="${goodsProducts.picture!=''}"  src="http://pic.youbiquan.com/generic_avatar_default.png"   class="default-pic-info" />
+                </div>
+                <div class="remark" >
+                    <div class="remark-tips">
+                        备注
+                    </div>
+                    <div class="remark-content"  th:text="${goodsProducts.remark}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input id="productId" type="hidden"  th:value="${goodsProducts.productId}"/>
+        <div class="remark-under-line">
+        </div>
+        <div class="product-attrubute">
+            <th:block th:if="${not #lists.isEmpty(goodsProducts.productAttribute)}" th:each="productAttribute: ${goodsProducts.productAttribute}">
+                <div class="attri">
+	                <div class="attrubute-tip-color"   th:text="${productAttribute.attributeName}">
+	                </div>
+	                <div class="attri-value-width">
+	                <th:block th:if="${not #lists.isEmpty(productAttribute.attributeValues)}" th:each="productAttributeValue: ${productAttribute.attributeValues}">
+	                    <span class="attribute-value" th:text="${productAttributeValue}">
+	                    </span>
+	                </th:block>
+	                </div>
+	             </div>
+	             <div class="under-line" >
+                </div>
+            </th:block>
+        </div> 
+        <div class="address-under-line">
+        </div>
+        <div class="price-amount">
+            <div class="price">
+                <span th:if="${goodsProducts.sellBuyFlag}" class="attrubute-tip-color" >
+                    他的出售价
+                </span>
+                <span th:unless="${goodsProducts.sellBuyFlag}" class="attrubute-tip-color" >
+                    他的求购价
+                </span>
+                <span class="price-value"  th:text="'￥'+${goodsProducts. productPrice}">
+                </span>
+            </div>
+            <div class="under-line" >
+            </div>
+            <div  class="quantity" >
+                <span class="attrubute-tip-color" >
+                    数量
+                </span>
+                <span class="quantity-content"  th:text="${goodsProducts. quantity}">
+                </span>
+            </div>
+            <div class="util-description">
+                *以枚/版/个/等为最小不可分单位，不可用刀/捆/分/箱等单位
+            </div>
+        </div>
+        <div class="util-descriptionp-underline" >
+        </div>
+        <div class="user" >
+            <div class="avater">
+                <img th:if="${ userInfo.avatar!=null}"  th:src="${userInfo.avatar}"  class="avater-info" />
+                <img   th:unless="${userInfo.avatar!=null}"  src="http://pic.youbiquan.com/generic_avatar_default.png"  class="avater-info" />
+            </div>
+            <div class="username-member" >
+                <div class="username" th:text="${userInfo.username}">
+                </div>
+                <div class="real-name" th:text="${userInfo.merchantName}">
+                </div>
+            </div>
+        </div>
+        <span class="user-under-line">
+        </span>
+        <div class="trade-amount" >
+            <div class="trade-value-tip">交易金额</div>
+            <div class="trade-value"  th:text="${userInfo.sellerTurnover}"></div>
+            <div class="trade-mid-line"></div>
+        </div>
+        <div class="trade-frequency">
+            <div class="trade-count-tip">交易次数</div>
+            <div class="trade-count" th:text="${userInfo.tradecount}+'次'"></div>
+        </div>
+        <div class="trade-under-block" >
+        </div>
+        <div class="btn" onclick="openApp('merchant')">
+            去下单
+        </div>
+        <img id="qqImg"  class="qq-img"  th:src="@{/resources/image/qq.png}"/>
+        <img id="weiXinImg" class="weixin-img"  th:src="@{/resources/image/weixin.png}"/>
+    </body>
+    <script type="text/javascript" th:src="@{/resources/js/goods/goods.js}">
+        </script> 
+</html>

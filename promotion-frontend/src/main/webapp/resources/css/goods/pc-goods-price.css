@@ -1,0 +1,239 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.pc-product-name {
+	width: 60%;
+	padding-left: 10px;
+	padding-top: 20px;
+}
+
+.pc-sell-price {
+	padding-top: 20px;
+	color: #135ab3;
+	float: right;
+	margin-right: 10px;
+}
+
+.pc-buy-price {
+	padding-top: 20px;
+	color: #ff8941;
+	float: right;
+	margin-right: 10px;
+}
+
+.pc-attribute-transaction-type {
+	padding-left: 10px;
+	font-size: 14px;
+}
+
+.pc-attribute {
+	display: -webkit-inline-box;
+	background: #fee5c9;
+	color: #ff8941;
+	padding: 7px;
+	margin-top: 15px;
+	border-radius: 8px;
+}
+
+.pc-transaction-type {
+	display: inline-flex;
+	background: #fee5c9;
+	color: #ff8941;
+	padding: 7px;
+	margin-top: 15px;
+	border-radius: 8px;
+}
+
+.pc-quantity {
+	padding-top: 15px;
+	font-size: 14px;
+	float: right;
+	margin-right: 10px;
+}
+
+.pc-remark {
+	padding-left: 10px;
+	padding-top: 15px;
+	color: #7f7f7f;
+	font-size: 14px;
+}
+
+.pc-product-under-line {
+	border-bottom: solid 5px #f7f7f7;
+	padding-top: 20px;
+}
+
+.content {
+	margin: 30 auto;
+	width: 600px;
+	height: 100%;
+}
+
+.pc-user-info {
+	margin-left: 30px;
+}
+
+.pc-picture {
+	float: left;
+}
+
+.pc-pic-info {
+	width: 100px;
+	border-radius: 50%;
+}
+
+.pc-username {
+	text-align: -webkit-auto;
+	margin-left: 160px;
+	padding-top: 42px;
+}
+
+.username{
+	font-size:18px;
+}
+
+.goods-pic{
+	width:16%;
+	margin-top:2%;
+}
+
+.pc-user-under-line {
+	border-bottom: solid 1px #f7f7f7;
+	display: block;
+	clear: left;
+	padding-top: 20px;
+}
+
+.pc-trade small-trade {
+	text-align: -webkit-auto;
+	margin-left: 30px;
+}
+
+.pc-trade-value {
+	float: left;
+	width: 270px;
+	margin-top: 20px;
+	margin-left: 30px;
+}
+
+.pc-trade-value-left {
+	float: left;
+}
+
+.pc-trade-value-right {
+	margin-left: 100px;
+}
+
+.pc-trade-mid-line {
+	float: left;
+	border-left: solid 1px #e9e9e9;
+	height: 36px;
+	margin-top: 10px;
+}
+
+.pc-trade-count {
+	float: left;
+	margin-top: 20px;
+}
+
+.pc-trade-count-left {
+	margin-left: 30px;
+	float: left;
+}
+
+.trade-count-right {
+	margin-left: 36px;
+	float: left;
+}
+
+.pc-trade-under-line {
+	height: 10px;
+	background: #f7f7f7;
+	width: 100%;
+	margin-top: 56px;
+}
+
+.pc-sell , .small-sell {
+	color: #000;
+	text-decoration: none;
+	text-align: -webkit-center;
+	float: left;
+	width: 50%;
+	margin-top: 27px;
+	font-size:18px;
+}
+
+.pc-sell-buy-mid-line {
+	float: left;
+	border-left: solid 1px #e9e9e9;
+	height: 58px;
+	margin-top: 6px;
+}
+
+.pc-buy {
+	color: #000;
+	text-decoration: none;
+	margin-top: 27px;
+	float: left;
+	margin-left: 118px;
+	font-size:18px;
+}
+
+.pc-sell-buy-under-line {
+	border-bottom: solid 1px #f7f7f7;
+	margin-top: 70px;
+}
+
+.pc-sell-underline {
+	border-top: solid 2px #ff8941;
+	width: 100px;
+	margin-left: 100px;
+	float: left;
+}
+
+.pc-buy-underline {
+	border-top: solid 2px red;
+	width: 100px;
+	float: left;
+	margin-left: 200px;
+}
+
+.pc-product-list {
+	width: 600px;
+	height: 370px;
+	overflow: auto;
+}
+
+.pc-product-table {
+	width: 100%;
+}
+
+.pc-gray-line {
+	height: 140px;
+	background: #f7f7f7;
+	width: 600px;
+}
+
+.QR-code-download{
+	position: relative;
+	bottom: 16%;
+}
+
+.QR-code {
+	width: 100px;
+	height: 100px;
+	margin-left: 250px;
+	margin-top: 8px;
+}
+
+.scan-download {
+	margin-top: 8px;
+	margin-left: 253px;
+}

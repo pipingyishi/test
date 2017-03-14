@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <Property name="path">.</Property>
+        <Property name="frontend">net-crawler</Property>
+    </Properties>
+    
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout charset="UTF8"
+            pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %m%n" />
+        </Console>
+        <RollingFile name="ErrorFile" fileName="${path}/net-crawler_error.log"
+            filePattern="${path}/${frontend}_error_%d{yyyy-MM-dd}_%i.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %m%n" />
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="250 MB" />
+            </Policies>
+        </RollingFile>
+        
+        <RollingFile name="AllFile" fileName="${path}/${frontend}_out_all.log"
+            filePattern="${path}/${frontend}_out_all_%d{yyyy-MM-dd}_%i.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %m%n" />
+            <ThresholdFilter level="INFO" onMatch="ACCEPT"
+            onMismatch="DENY" />
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="250MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="20" />
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <logger name="com.zx" level="INFO" additivity="false">
+            <AppenderRef ref="AllFile" />
+            <AppenderRef ref="Console" />
+        </logger>
+    </Loggers>
+</Configuration>

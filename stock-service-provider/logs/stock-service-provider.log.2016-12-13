@@ -1,0 +1,493 @@
+2016-12-13 14:23:47,540 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:23:47,873 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@11758f2a: startup date [Tue Dec 13 14:23:47 CST 2016]; root of context hierarchy
+2016-12-13 14:23:47,992 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-12-13 14:23:48,467 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-12-13 14:23:48,808 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-12-13 14:23:49,513 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-12-13 14:23:52,678 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-12-13 14:23:54,258 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.stock.service.StockService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:23:54,634 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:23:54,635 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to url dubbo://10.0.1.56:30333/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=738&side=provider&timestamp=1481610234342, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:23:55,156 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30333, export /10.0.1.56:30333, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:23:55,160 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.trade.service.TradeService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:23:55,188 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.TradeService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:23:55,189 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.TradeService to url dubbo://10.0.1.56:30333/com.zx.modules.trade.service.TradeService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.TradeService&loadbalance=roundrobin&methods=addUserMassage,queryUserInfo,queryUrl,saveAbnormalUrl,queryUserMassage,addStockTrade,selectMassage,selectUrl,selectExisteAbnormalUrl,selectUserMassage&pid=738&side=provider&timestamp=1481610235165, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:23:55,190 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.trade.service.AbnormalUrlService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:23:55,237 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.AbnormalUrlService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:23:55,237 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.AbnormalUrlService to url dubbo://10.0.1.56:30333/com.zx.modules.trade.service.AbnormalUrlService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.AbnormalUrlService&loadbalance=roundrobin&methods=selectAbnormalUrl&pid=738&side=provider&timestamp=1481610235197, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:23:55,238 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.trade.service.UserUrlService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:23:55,295 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.UserUrlService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:23:55,296 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.UserUrlService to url dubbo://10.0.1.56:30333/com.zx.modules.trade.service.UserUrlService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.UserUrlService&loadbalance=roundrobin&methods=updateId,selectId,addUrl,batchInsertUpdate&pid=738&side=provider&timestamp=1481610235243, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:23:55,297 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.user.massage.service.CardNoInfoService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:23:55,366 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.user.massage.service.CardNoInfoService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:23:55,367 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.user.massage.service.CardNoInfoService to url dubbo://10.0.1.56:30333/com.zx.modules.user.massage.service.CardNoInfoService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.user.massage.service.CardNoInfoService&loadbalance=roundrobin&methods=addCardNoInfo&pid=738&side=provider&timestamp=1481610235301, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:23:55,369 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.user.massage.service.UserMassageService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:23:55,394 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.user.massage.service.UserMassageService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:23:55,395 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.user.massage.service.UserMassageService to url dubbo://10.0.1.56:30333/com.zx.modules.user.massage.service.UserMassageService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.user.massage.service.UserMassageService&loadbalance=roundrobin&methods=addUserMassage&pid=738&side=provider&timestamp=1481610235373, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:23:55,408 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 14:48:40,376 [DubboServerHandler-10.0.1.56:30333-thread-3] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:52827,url:dubbo://10.0.1.56:30333/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=738&side=provider&timestamp=1481610234342, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:08,172 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:08,355 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5fe5c6f: startup date [Tue Dec 13 18:17:08 CST 2016]; root of context hierarchy
+2016-12-13 18:17:08,416 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-12-13 18:17:08,636 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-12-13 18:17:08,896 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-12-13 18:17:09,292 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-12-13 18:17:11,985 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:12,109 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-12-13 18:17:12,186 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612679d6: startup date [Tue Dec 13 18:17:12 CST 2016]; root of context hierarchy
+2016-12-13 18:17:12,303 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-12-13 18:17:12,763 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-12-13 18:17:13,176 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-12-13 18:17:13,668 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.stock.service.StockService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:13,838 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-12-13 18:17:13,887 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:13,887 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to url dubbo://10.0.1.56:30333/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=879&side=provider&timestamp=1481624233688, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:14,160 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30333, export /10.0.1.56:30333, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:14,163 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.trade.service.TradeService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:14,175 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.TradeService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:14,176 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.TradeService to url dubbo://10.0.1.56:30333/com.zx.modules.trade.service.TradeService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.TradeService&loadbalance=roundrobin&methods=addUserMassage,queryUserInfo,queryUrl,saveAbnormalUrl,queryUserMassage,addStockTrade,selectMassage,selectUrl,selectExisteAbnormalUrl,selectUserMassage&pid=879&side=provider&timestamp=1481624234166, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:14,178 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.trade.service.AbnormalUrlService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:14,196 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.AbnormalUrlService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:14,196 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.AbnormalUrlService to url dubbo://10.0.1.56:30333/com.zx.modules.trade.service.AbnormalUrlService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.AbnormalUrlService&loadbalance=roundrobin&methods=selectAbnormalUrl&pid=879&side=provider&timestamp=1481624234183, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:14,197 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.trade.service.UserUrlService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:14,221 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.UserUrlService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:14,221 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.UserUrlService to url dubbo://10.0.1.56:30333/com.zx.modules.trade.service.UserUrlService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.UserUrlService&loadbalance=roundrobin&methods=updateId,selectId,addUrl,batchInsertUpdate&pid=879&side=provider&timestamp=1481624234200, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:14,222 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.user.massage.service.CardNoInfoService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:14,255 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.user.massage.service.CardNoInfoService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:14,255 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.user.massage.service.CardNoInfoService to url dubbo://10.0.1.56:30333/com.zx.modules.user.massage.service.CardNoInfoService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.user.massage.service.CardNoInfoService&loadbalance=roundrobin&methods=addCardNoInfo&pid=879&side=provider&timestamp=1481624234238, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:14,260 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.user.massage.service.UserMassageService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:14,312 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.user.massage.service.UserMassageService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:14,312 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.user.massage.service.UserMassageService to url dubbo://10.0.1.56:30333/com.zx.modules.user.massage.service.UserMassageService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.user.massage.service.UserMassageService&loadbalance=roundrobin&methods=addUserMassage&pid=879&side=provider&timestamp=1481624234263, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:14,322 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:16,889 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-12-13 18:17:17,816 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.stock.service.StockService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:17,965 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:17,966 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to url dubbo://10.0.1.56:30333/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=880&side=provider&timestamp=1481624237836, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:18,188 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Fail to start server(url: dubbo://10.0.1.56:30333/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=880&side=provider&timestamp=1481624237836) Failed to bind NettyServer on /10.0.1.56:30333, cause: Failed to bind to: /0.0.0.0:30333, dubbo version: 2.5.3, current host: 127.0.0.1
+com.alibaba.dubbo.rpc.RpcException: Fail to start server(url: dubbo://10.0.1.56:30333/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=880&side=provider&timestamp=1481624237836) Failed to bind NettyServer on /10.0.1.56:30333, cause: Failed to bind to: /0.0.0.0:30333
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:289)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.openServer(DubboProtocol.java:266)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.export(DubboProtocol.java:253)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:55)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:56)
+	at com.alibaba.dubbo.rpc.Protocol$Adpative.export(Protocol$Adpative.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:491)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:281)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:242)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:143)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:163)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:136)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:381)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:335)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:855)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: Failed to bind NettyServer on /10.0.1.56:30333, cause: Failed to bind to: /0.0.0.0:30333
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:72)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.<init>(NettyServer.java:63)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyTransporter.bind(NettyTransporter.java:33)
+	at com.alibaba.dubbo.remoting.Transporter$Adpative.bind(Transporter$Adpative.java)
+	at com.alibaba.dubbo.remoting.Transporters.bind(Transporters.java:48)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchanger.bind(HeaderExchanger.java:41)
+	at com.alibaba.dubbo.remoting.exchange.Exchangers.bind(Exchangers.java:63)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:287)
+	... 20 more
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:30333
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:303)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.doOpen(NettyServer.java:94)
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:67)
+	... 27 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.bind(NioServerSocketPipelineSink.java:148)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleServerSocket(NioServerSocketPipelineSink.java:100)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:74)
+	at org.jboss.netty.channel.Channels.bind(Channels.java:468)
+	at org.jboss.netty.channel.AbstractChannel.bind(AbstractChannel.java:192)
+	at org.jboss.netty.bootstrap.ServerBootstrap$Binder.channelOpen(ServerBootstrap.java:348)
+	at org.jboss.netty.channel.Channels.fireChannelOpen(Channels.java:176)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannel.<init>(NioServerSocketChannel.java:85)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:142)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:90)
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:282)
+	... 29 more
+2016-12-13 18:17:18,194 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:18,211 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:18,211 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30333/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=880&side=provider&timestamp=1481624237836, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:18,211 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=880&side=provider&timestamp=1481624237836, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:33,876 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:33,877 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:33,878 [DubboShutdownHook] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol (DubboProtocol.java:393) -  [DUBBO] Close dubbo server: /10.0.1.56:30333, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:33,880 [DubboShutdownHook] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:146) -  [DUBBO] Close NettyServer bind /0.0.0.0:30333, export /10.0.1.56:30333, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:33,882 [DubboShutdownHook] INFO  alibaba.dubbo.remoting.transport.netty.NettyChannel (NettyChannel.java:135) -  [DUBBO] Close netty channel [id: 0x0f7b262c, /10.0.1.56:61910 => /10.0.1.56:30333], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:33,883 [DubboShutdownHook] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30333. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:33,884 [DubboServerHandler-10.0.1.56:30333-thread-2] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:61910,url:dubbo://10.0.1.56:30333/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=879&side=provider&timestamp=1481624233688, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:33,885 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30333/com.zx.modules.user.massage.service.UserMassageService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.user.massage.service.UserMassageService&loadbalance=roundrobin&methods=addUserMassage&pid=879&side=provider&timestamp=1481624234263, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:33,885 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30333/com.zx.modules.trade.service.AbnormalUrlService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.AbnormalUrlService&loadbalance=roundrobin&methods=selectAbnormalUrl&pid=879&side=provider&timestamp=1481624234183, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:33,886 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30333/com.zx.modules.user.massage.service.CardNoInfoService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.user.massage.service.CardNoInfoService&loadbalance=roundrobin&methods=addCardNoInfo&pid=879&side=provider&timestamp=1481624234238, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:33,886 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30333/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=879&side=provider&timestamp=1481624233688, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:33,886 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30333/com.zx.modules.trade.service.UserUrlService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.UserUrlService&loadbalance=roundrobin&methods=updateId,selectId,addUrl,batchInsertUpdate&pid=879&side=provider&timestamp=1481624234200, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:33,886 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30333/com.zx.modules.trade.service.TradeService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.TradeService&loadbalance=roundrobin&methods=addUserMassage,queryUserInfo,queryUrl,saveAbnormalUrl,queryUserMassage,addStockTrade,selectMassage,selectUrl,selectExisteAbnormalUrl,selectUserMassage&pid=879&side=provider&timestamp=1481624234166, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:33,886 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=879&side=provider&timestamp=1481624233688, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:33,887 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.trade.service.TradeService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.TradeService&loadbalance=roundrobin&methods=addUserMassage,queryUserInfo,queryUrl,saveAbnormalUrl,queryUserMassage,addStockTrade,selectMassage,selectUrl,selectExisteAbnormalUrl,selectUserMassage&pid=879&side=provider&timestamp=1481624234166, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:33,887 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.trade.service.AbnormalUrlService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.AbnormalUrlService&loadbalance=roundrobin&methods=selectAbnormalUrl&pid=879&side=provider&timestamp=1481624234183, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:33,887 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.user.massage.service.CardNoInfoService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.user.massage.service.CardNoInfoService&loadbalance=roundrobin&methods=addCardNoInfo&pid=879&side=provider&timestamp=1481624234238, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:33,887 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.trade.service.UserUrlService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.UserUrlService&loadbalance=roundrobin&methods=updateId,selectId,addUrl,batchInsertUpdate&pid=879&side=provider&timestamp=1481624234200, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:33,887 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.user.massage.service.UserMassageService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.user.massage.service.UserMassageService&loadbalance=roundrobin&methods=addUserMassage&pid=879&side=provider&timestamp=1481624234263, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:38,330 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:38,486 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612679d6: startup date [Tue Dec 13 18:17:38 CST 2016]; root of context hierarchy
+2016-12-13 18:17:38,534 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-12-13 18:17:38,757 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-12-13 18:17:38,968 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-12-13 18:17:39,234 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-12-13 18:17:42,916 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-12-13 18:17:43,822 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.stock.service.StockService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:43,963 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:43,964 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to url dubbo://10.0.1.56:30333/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=881&side=provider&timestamp=1481624263839, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:44,122 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30333, export /10.0.1.56:30333, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:44,124 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.trade.service.TradeService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:44,139 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.TradeService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:44,140 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.TradeService to url dubbo://10.0.1.56:30333/com.zx.modules.trade.service.TradeService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.TradeService&loadbalance=roundrobin&methods=addUserMassage,queryUserInfo,queryUrl,saveAbnormalUrl,queryUserMassage,addStockTrade,selectMassage,selectUrl,selectExisteAbnormalUrl,selectUserMassage&pid=881&side=provider&timestamp=1481624264127, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:44,143 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.trade.service.AbnormalUrlService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:44,170 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.AbnormalUrlService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:44,170 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.AbnormalUrlService to url dubbo://10.0.1.56:30333/com.zx.modules.trade.service.AbnormalUrlService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.AbnormalUrlService&loadbalance=roundrobin&methods=selectAbnormalUrl&pid=881&side=provider&timestamp=1481624264153, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:44,171 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.trade.service.UserUrlService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:44,198 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.UserUrlService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:44,199 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.UserUrlService to url dubbo://10.0.1.56:30333/com.zx.modules.trade.service.UserUrlService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.UserUrlService&loadbalance=roundrobin&methods=updateId,selectId,addUrl,batchInsertUpdate&pid=881&side=provider&timestamp=1481624264175, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:44,199 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.user.massage.service.CardNoInfoService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:44,229 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.user.massage.service.CardNoInfoService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:44,230 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.user.massage.service.CardNoInfoService to url dubbo://10.0.1.56:30333/com.zx.modules.user.massage.service.CardNoInfoService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.user.massage.service.CardNoInfoService&loadbalance=roundrobin&methods=addCardNoInfo&pid=881&side=provider&timestamp=1481624264204, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:44,230 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.user.massage.service.UserMassageService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:44,250 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.user.massage.service.UserMassageService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:44,251 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.user.massage.service.UserMassageService to url dubbo://10.0.1.56:30333/com.zx.modules.user.massage.service.UserMassageService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.user.massage.service.UserMassageService&loadbalance=roundrobin&methods=addUserMassage&pid=881&side=provider&timestamp=1481624264232, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:17:44,255 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:23:41,976 [New I/O server worker #1-1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30333. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 18:23:41,978 [DubboServerHandler-10.0.1.56:30333-thread-31] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:61945,url:dubbo://10.0.1.56:30333/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=881&side=provider&timestamp=1481624263839, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 19:27:43,790 [New I/O server worker #1-2] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30333. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 19:27:43,794 [DubboServerHandler-10.0.1.56:30333-thread-62] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:61962,url:dubbo://10.0.1.56:30333/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=881&side=provider&timestamp=1481624263839, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 20:08:30,551 [New I/O server worker #1-3] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30333. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 20:08:30,561 [DubboServerHandler-10.0.1.56:30333-thread-96] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:62805,url:dubbo://10.0.1.56:30333/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=881&side=provider&timestamp=1481624263839, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:13:56,791 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:13:56,944 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612679d6: startup date [Tue Dec 13 22:13:56 CST 2016]; root of context hierarchy
+2016-12-13 22:13:56,995 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-12-13 22:13:57,197 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-stock/stock-service/stock-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-12-13 22:13:57,368 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-12-13 22:13:57,699 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [stock-jdbc.properties]
+2016-12-13 22:14:00,790 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-12-13 22:14:01,748 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.stock.service.StockService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:14:01,886 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:14:01,886 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.stock.service.StockService to url dubbo://10.0.1.56:30333/com.zx.modules.stock.service.StockService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.stock.service.StockService&loadbalance=roundrobin&methods=selectStockMassage,selectStock,selectMassage,batchInsertUpdate&pid=2058&side=provider&timestamp=1481638441765, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:14:02,046 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30333, export /10.0.1.56:30333, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:14:02,048 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.trade.service.TradeService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:14:02,110 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.TradeService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:14:02,110 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.TradeService to url dubbo://10.0.1.56:30333/com.zx.modules.trade.service.TradeService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.TradeService&loadbalance=roundrobin&methods=addUserMassage,queryUserInfo,queryUrl,saveAbnormalUrl,queryUserMassage,addStockTrade,selectMassage,selectUrl,selectExisteAbnormalUrl,selectUserMassage&pid=2058&side=provider&timestamp=1481638442093, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:14:02,111 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.trade.service.AbnormalUrlService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:14:02,135 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.AbnormalUrlService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:14:02,136 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.AbnormalUrlService to url dubbo://10.0.1.56:30333/com.zx.modules.trade.service.AbnormalUrlService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.AbnormalUrlService&loadbalance=roundrobin&methods=selectAbnormalUrl&pid=2058&side=provider&timestamp=1481638442119, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:14:02,136 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.trade.service.UserUrlService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:14:02,166 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.UserUrlService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:14:02,166 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.trade.service.UserUrlService to url dubbo://10.0.1.56:30333/com.zx.modules.trade.service.UserUrlService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.trade.service.UserUrlService&loadbalance=roundrobin&methods=updateId,selectId,addUrl,batchInsertUpdate&pid=2058&side=provider&timestamp=1481638442140, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:14:02,167 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.user.massage.service.CardNoInfoService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:14:02,186 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.user.massage.service.CardNoInfoService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:14:02,187 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.user.massage.service.CardNoInfoService to url dubbo://10.0.1.56:30333/com.zx.modules.user.massage.service.CardNoInfoService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.user.massage.service.CardNoInfoService&loadbalance=roundrobin&methods=addCardNoInfo&pid=2058&side=provider&timestamp=1481638442171, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:14:02,187 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.user.massage.service.UserMassageService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:14:02,206 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.user.massage.service.UserMassageService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:14:02,207 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.user.massage.service.UserMassageService to url dubbo://10.0.1.56:30333/com.zx.modules.user.massage.service.UserMassageService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.user.massage.service.UserMassageService&loadbalance=roundrobin&methods=addUserMassage&pid=2058&side=provider&timestamp=1481638442191, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:14:02,212 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-12-13 22:51:08,738 [DubboServerHandler-10.0.1.56:30333-thread-200] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2016-12-13 22:51:08,829 [DubboServerHandler-10.0.1.56:30333-thread-200] INFO  org.springframework.jdbc.support.SQLErrorCodesFactory (SQLErrorCodesFactory.java:126) - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2016-12-13 22:51:08,856 [DubboServerHandler-10.0.1.56:30333-thread-200] ERROR com.alibaba.dubbo.rpc.filter.ExceptionFilter (ExceptionFilter.java:87) -  [DUBBO] Got unchecked and undeclared exception which called by 10.0.1.56. service: com.zx.modules.trade.service.TradeService, method: addUserMassage, exception: org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'term_validity' doesn't have a default value
+### The error may involve com.zx.stock.mybatis.dao.ZxStockTradeInfoMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into zx_stock_trade_info      ( user_name,                       real_name,                       regist_time,                              member_level,                       trade_times,                       trade_amount,                       praise_rate,                       evaluate_grand,                       address,                       url_name,                       is_del )       values ( ?,                       ?,                       ?,                              ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'term_validity' doesn't have a default value
+; SQL []; Field 'term_validity' doesn't have a default value; nested exception is java.sql.SQLException: Field 'term_validity' doesn't have a default value, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'term_validity' doesn't have a default value
+### The error may involve com.zx.stock.mybatis.dao.ZxStockTradeInfoMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into zx_stock_trade_info      ( user_name,                       real_name,                       regist_time,                              member_level,                       trade_times,                       trade_amount,                       praise_rate,                       evaluate_grand,                       address,                       url_name,                       is_del )       values ( ?,                       ?,                       ?,                              ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'term_validity' doesn't have a default value
+; SQL []; Field 'term_validity' doesn't have a default value; nested exception is java.sql.SQLException: Field 'term_validity' doesn't have a default value
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:243)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:74)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:399)
+	at com.sun.proxy.$Proxy38.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:253)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:52)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy45.insertSelective(Unknown Source)
+	at com.zx.modules.trade.service.impl.TradeServoceImpl.addUserMassage(TradeServoceImpl.java:156)
+	at sun.reflect.GeneratedMethodAccessor163.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy48.addUserMassage(Unknown Source)
+	at com.alibaba.dubbo.common.bytecode.Wrapper2.invokeMethod(Wrapper2.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: Field 'term_validity' doesn't have a default value
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1078)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4187)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4119)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2570)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2731)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2815)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1379)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:493)
+	at sun.reflect.GeneratedMethodAccessor111.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy55.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:45)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:73)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:115)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:75)
+	at sun.reflect.GeneratedMethodAccessor161.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy53.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:170)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:157)
+	at sun.reflect.GeneratedMethodAccessor160.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	... 45 more
+2016-12-13 22:55:37,636 [DubboServerHandler-10.0.1.56:30333-thread-200] ERROR com.alibaba.dubbo.rpc.filter.ExceptionFilter (ExceptionFilter.java:87) -  [DUBBO] Got unchecked and undeclared exception which called by 10.0.1.56. service: com.zx.modules.trade.service.TradeService, method: addUserMassage, exception: org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'bank_type' at row 1
+### The error may involve com.zx.stock.mybatis.dao.ZxStockTradeMassageMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into zx_stock_trade_massage      ( user_id,                       telphone,                       card_no,                       deposit_bank,                       is_del,                       bank_type )       values ( ?,                       ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'bank_type' at row 1
+; SQL []; Data truncation: Data too long for column 'bank_type' at row 1; nested exception is com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'bank_type' at row 1, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'bank_type' at row 1
+### The error may involve com.zx.stock.mybatis.dao.ZxStockTradeMassageMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into zx_stock_trade_massage      ( user_id,                       telphone,                       card_no,                       deposit_bank,                       is_del,                       bank_type )       values ( ?,                       ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'bank_type' at row 1
+; SQL []; Data truncation: Data too long for column 'bank_type' at row 1; nested exception is com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'bank_type' at row 1
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:102)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:74)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:399)
+	at com.sun.proxy.$Proxy38.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:253)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:52)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy46.insertSelective(Unknown Source)
+	at com.zx.modules.trade.service.impl.TradeServoceImpl.addUserMassage(TradeServoceImpl.java:168)
+	at sun.reflect.GeneratedMethodAccessor163.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy48.addUserMassage(Unknown Source)
+	at com.alibaba.dubbo.common.bytecode.Wrapper2.invokeMethod(Wrapper2.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'bank_type' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4185)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4119)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2570)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2731)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2815)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1379)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:493)
+	at sun.reflect.GeneratedMethodAccessor111.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy55.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:45)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:73)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:115)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:75)
+	at sun.reflect.GeneratedMethodAccessor161.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy53.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:170)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:157)
+	at sun.reflect.GeneratedMethodAccessor160.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	... 45 more
+2016-12-13 23:38:32,494 [DubboServerHandler-10.0.1.56:30333-thread-200] ERROR com.alibaba.dubbo.rpc.filter.ExceptionFilter (ExceptionFilter.java:87) -  [DUBBO] Got unchecked and undeclared exception which called by 10.0.1.56. service: com.zx.modules.trade.service.TradeService, method: addUserMassage, exception: org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'bank_type' at row 1
+### The error may involve com.zx.stock.mybatis.dao.ZxStockTradeMassageMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into zx_stock_trade_massage      ( user_id,                       telphone,                       card_no,                       deposit_bank,                       is_del,                       bank_type )       values ( ?,                       ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'bank_type' at row 1
+; SQL []; Data truncation: Data too long for column 'bank_type' at row 1; nested exception is com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'bank_type' at row 1, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'bank_type' at row 1
+### The error may involve com.zx.stock.mybatis.dao.ZxStockTradeMassageMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into zx_stock_trade_massage      ( user_id,                       telphone,                       card_no,                       deposit_bank,                       is_del,                       bank_type )       values ( ?,                       ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'bank_type' at row 1
+; SQL []; Data truncation: Data too long for column 'bank_type' at row 1; nested exception is com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'bank_type' at row 1
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:102)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:74)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:399)
+	at com.sun.proxy.$Proxy38.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:253)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:52)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy46.insertSelective(Unknown Source)
+	at com.zx.modules.trade.service.impl.TradeServoceImpl.addUserMassage(TradeServoceImpl.java:168)
+	at sun.reflect.GeneratedMethodAccessor163.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy48.addUserMassage(Unknown Source)
+	at com.alibaba.dubbo.common.bytecode.Wrapper2.invokeMethod(Wrapper2.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'bank_type' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4185)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4119)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2570)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2731)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2815)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1379)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:493)
+	at sun.reflect.GeneratedMethodAccessor111.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy55.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:45)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:73)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:115)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:75)
+	at sun.reflect.GeneratedMethodAccessor161.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy53.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:170)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:157)
+	at sun.reflect.GeneratedMethodAccessor160.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	... 45 more

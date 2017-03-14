@@ -1,0 +1,553 @@
+2016-08-02 08:51:40,465 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 08:51:40,655 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5d3411d: startup date [Tue Aug 02 08:51:40 CST 2016]; root of context hierarchy
+2016-08-02 08:51:40,708 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-08-02 08:51:41,210 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-08-02 08:51:41,380 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-08-02 08:51:41,733 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-08-02 08:51:44,853 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-08-02 08:51:45,451 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.promotion.service.TestTableService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 08:51:45,561 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 08:51:45,561 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to url dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 08:51:45,788 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 08:51:45,792 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 09:16:06,628 [New I/O server worker #1-1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 09:16:06,630 [DubboServerHandler-10.0.1.56:30111-thread-13] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:49304,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 09:23:19,110 [New I/O server worker #1-2] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 09:23:19,112 [DubboServerHandler-10.0.1.56:30111-thread-17] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:49643,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 09:23:27,275 [New I/O server worker #1-3] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 09:23:27,276 [DubboServerHandler-10.0.1.56:30111-thread-19] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:49879,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 09:26:45,041 [New I/O server worker #1-4] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 09:26:45,042 [DubboServerHandler-10.0.1.56:30111-thread-25] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:49884,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 11:52:39,071 [New I/O server worker #1-5] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 11:52:39,072 [DubboServerHandler-10.0.1.56:30111-thread-42] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:49897,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 14:47:00,085 [New I/O server worker #1-1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 14:47:00,125 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:55781,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 14:47:25,688 [New I/O server worker #1-2] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 14:47:25,729 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:57181,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 14:50:19,539 [New I/O server worker #1-3] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 14:50:19,539 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:57182,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 14:53:12,966 [New I/O server worker #1-4] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 14:53:12,973 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:57183,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 14:53:47,841 [New I/O server worker #1-5] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 14:53:47,843 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:57188,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 14:54:54,187 [New I/O server worker #1-1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 14:54:54,232 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:57191,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 14:59:09,693 [New I/O server worker #1-2] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 14:59:09,708 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:57192,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 14:59:59,614 [New I/O server worker #1-3] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 14:59:59,616 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:57212,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 15:00:03,908 [New I/O server worker #1-4] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 15:00:03,910 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:57223,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 15:01:04,080 [New I/O server worker #1-5] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 15:01:04,081 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:57228,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 15:02:17,532 [New I/O server worker #1-1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 15:02:17,533 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:57247,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 15:04:41,434 [New I/O server worker #1-2] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 15:04:41,435 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:57264,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 15:09:11,439 [New I/O server worker #1-3] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 15:09:11,440 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:57308,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 15:10:15,330 [New I/O server worker #1-4] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 15:10:15,331 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:57318,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 15:32:20,025 [New I/O server worker #1-5] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 15:32:20,042 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:57326,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 15:50:56,359 [New I/O server worker #1-1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 15:50:56,361 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:57442,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 16:20:20,797 [New I/O server worker #1-2] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 16:20:20,841 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:57754,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 16:23:14,053 [New I/O server worker #1-3] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 16:23:14,103 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58054,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 16:24:10,292 [New I/O server worker #1-4] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 16:24:10,293 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58062,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 16:32:00,903 [New I/O server worker #1-5] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 16:32:00,943 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58063,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 16:35:39,771 [New I/O server worker #1-1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 16:35:39,784 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58088,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 17:45:36,144 [New I/O server worker #1-2] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 17:45:36,153 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58102,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 18:44:38,853 [New I/O server worker #1-3] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 18:44:38,897 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58364,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 18:45:15,402 [New I/O server worker #1-4] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 18:45:15,444 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58590,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 18:45:29,204 [New I/O server worker #1-5] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 18:45:29,222 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58591,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 18:58:51,367 [New I/O server worker #1-1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 18:58:51,459 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58592,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 19:03:11,154 [New I/O server worker #1-2] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 19:03:11,201 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58669,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 19:08:55,284 [New I/O server worker #1-3] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 19:08:55,284 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58677,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 19:09:09,218 [New I/O server worker #1-4] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 19:09:09,220 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58681,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 19:10:15,696 [New I/O server worker #1-5] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 19:10:15,698 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58682,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 19:26:36,127 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2016-08-02 19:26:36,176 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  org.springframework.jdbc.support.SQLErrorCodesFactory (SQLErrorCodesFactory.java:126) - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2016-08-02 19:26:36,185 [DubboServerHandler-10.0.1.56:30111-thread-200] ERROR com.alibaba.dubbo.rpc.filter.ExceptionFilter (ExceptionFilter.java:87) -  [DUBBO] Got unchecked and undeclared exception which called by 10.0.1.56. service: com.zx.modules.promotion.service.TestTableService, method: addTradeData, exception: org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+### The error may involve com.zx.promotion.mybatis.dao.ZxTradeTableMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into zx_trade_table      ( trade_cname,                       trade_varieties,                       trade_price,                       trade_amount,                       trade_unit,                       trade_pname,                       trade_telphone,                       trade_time )       values ( ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+; SQL []; Field 'trade_type' doesn't have a default value; nested exception is java.sql.SQLException: Field 'trade_type' doesn't have a default value, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+### The error may involve com.zx.promotion.mybatis.dao.ZxTradeTableMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into zx_trade_table      ( trade_cname,                       trade_varieties,                       trade_price,                       trade_amount,                       trade_unit,                       trade_pname,                       trade_telphone,                       trade_time )       values ( ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+; SQL []; Field 'trade_type' doesn't have a default value; nested exception is java.sql.SQLException: Field 'trade_type' doesn't have a default value
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:243)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:74)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:399)
+	at com.sun.proxy.$Proxy35.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:253)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:52)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy38.insertSelective(Unknown Source)
+	at com.zx.modules.promotion.service.impl.TableServiceImpl.addTradeData(TableServiceImpl.java:63)
+	at com.alibaba.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1078)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4187)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4119)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2570)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2731)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2815)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1379)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:493)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy42.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:45)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:73)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:115)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:75)
+	at sun.reflect.GeneratedMethodAccessor82.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy40.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:170)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:157)
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	... 33 more
+2016-08-02 19:27:03,036 [New I/O server worker #1-1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 19:27:03,042 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58683,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 19:27:35,410 [DubboServerHandler-10.0.1.56:30111-thread-200] ERROR com.alibaba.dubbo.rpc.filter.ExceptionFilter (ExceptionFilter.java:87) -  [DUBBO] Got unchecked and undeclared exception which called by 10.0.1.56. service: com.zx.modules.promotion.service.TestTableService, method: addTradeData, exception: org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+### The error may involve com.zx.promotion.mybatis.dao.ZxTradeTableMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into zx_trade_table      ( trade_cname,                       trade_varieties,                       trade_price,                       trade_amount,                       trade_unit,                       trade_pname,                       trade_telphone,                       trade_time )       values ( ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+; SQL []; Field 'trade_type' doesn't have a default value; nested exception is java.sql.SQLException: Field 'trade_type' doesn't have a default value, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+### The error may involve com.zx.promotion.mybatis.dao.ZxTradeTableMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into zx_trade_table      ( trade_cname,                       trade_varieties,                       trade_price,                       trade_amount,                       trade_unit,                       trade_pname,                       trade_telphone,                       trade_time )       values ( ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+; SQL []; Field 'trade_type' doesn't have a default value; nested exception is java.sql.SQLException: Field 'trade_type' doesn't have a default value
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:243)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:74)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:399)
+	at com.sun.proxy.$Proxy35.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:253)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:52)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy38.insertSelective(Unknown Source)
+	at com.zx.modules.promotion.service.impl.TableServiceImpl.addTradeData(TableServiceImpl.java:63)
+	at com.alibaba.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1078)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4187)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4119)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2570)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2731)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2815)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1379)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:493)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy42.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:45)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:73)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:115)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:75)
+	at sun.reflect.GeneratedMethodAccessor82.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy40.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:170)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:157)
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	... 33 more
+2016-08-02 19:52:35,984 [DubboServerHandler-10.0.1.56:30111-thread-200] ERROR com.alibaba.dubbo.rpc.filter.ExceptionFilter (ExceptionFilter.java:87) -  [DUBBO] Got unchecked and undeclared exception which called by 10.0.1.56. service: com.zx.modules.promotion.service.TestTableService, method: addTradeData, exception: org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+### The error may involve com.zx.promotion.mybatis.dao.ZxTradeTableMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into zx_trade_table      ( trade_cname,                       trade_varieties,                       trade_price,                       trade_amount,                       trade_unit,                       trade_pname,                       trade_telphone,                       trade_time )       values ( ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+; SQL []; Field 'trade_type' doesn't have a default value; nested exception is java.sql.SQLException: Field 'trade_type' doesn't have a default value, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+### The error may involve com.zx.promotion.mybatis.dao.ZxTradeTableMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into zx_trade_table      ( trade_cname,                       trade_varieties,                       trade_price,                       trade_amount,                       trade_unit,                       trade_pname,                       trade_telphone,                       trade_time )       values ( ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+; SQL []; Field 'trade_type' doesn't have a default value; nested exception is java.sql.SQLException: Field 'trade_type' doesn't have a default value
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:243)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:74)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:399)
+	at com.sun.proxy.$Proxy35.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:253)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:52)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy38.insertSelective(Unknown Source)
+	at com.zx.modules.promotion.service.impl.TableServiceImpl.addTradeData(TableServiceImpl.java:63)
+	at com.alibaba.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1078)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4187)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4119)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2570)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2731)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2815)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1379)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:493)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy42.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:45)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:73)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:115)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:75)
+	at sun.reflect.GeneratedMethodAccessor82.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy40.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:170)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:157)
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	... 33 more
+2016-08-02 19:56:42,623 [DubboServerHandler-10.0.1.56:30111-thread-200] ERROR com.alibaba.dubbo.rpc.filter.ExceptionFilter (ExceptionFilter.java:87) -  [DUBBO] Got unchecked and undeclared exception which called by 10.0.1.56. service: com.zx.modules.promotion.service.TestTableService, method: addTradeData, exception: org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+### The error may involve com.zx.promotion.mybatis.dao.ZxTradeTableMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into zx_trade_table      ( trade_cname,                       trade_varieties,                       trade_price,                       trade_amount,                       trade_unit,                       trade_pname,                       trade_telphone,                       trade_time )       values ( ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+; SQL []; Field 'trade_type' doesn't have a default value; nested exception is java.sql.SQLException: Field 'trade_type' doesn't have a default value, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+### The error may involve com.zx.promotion.mybatis.dao.ZxTradeTableMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into zx_trade_table      ( trade_cname,                       trade_varieties,                       trade_price,                       trade_amount,                       trade_unit,                       trade_pname,                       trade_telphone,                       trade_time )       values ( ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+; SQL []; Field 'trade_type' doesn't have a default value; nested exception is java.sql.SQLException: Field 'trade_type' doesn't have a default value
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:243)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:74)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:399)
+	at com.sun.proxy.$Proxy35.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:253)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:52)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy38.insertSelective(Unknown Source)
+	at com.zx.modules.promotion.service.impl.TableServiceImpl.addTradeData(TableServiceImpl.java:63)
+	at com.alibaba.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1078)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4187)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4119)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2570)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2731)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2815)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1379)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:493)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy42.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:45)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:73)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:115)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:75)
+	at sun.reflect.GeneratedMethodAccessor82.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy40.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:170)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:157)
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	... 33 more
+2016-08-02 19:58:42,493 [DubboServerHandler-10.0.1.56:30111-thread-200] ERROR com.alibaba.dubbo.rpc.filter.ExceptionFilter (ExceptionFilter.java:87) -  [DUBBO] Got unchecked and undeclared exception which called by 10.0.1.56. service: com.zx.modules.promotion.service.TestTableService, method: addTradeData, exception: org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+### The error may involve com.zx.promotion.mybatis.dao.ZxTradeTableMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into zx_trade_table      ( trade_cname,                       trade_varieties,                       trade_price,                       trade_amount,                       trade_unit,                       trade_pname,                       trade_telphone,                       trade_time )       values ( ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+; SQL []; Field 'trade_type' doesn't have a default value; nested exception is java.sql.SQLException: Field 'trade_type' doesn't have a default value, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+### The error may involve com.zx.promotion.mybatis.dao.ZxTradeTableMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into zx_trade_table      ( trade_cname,                       trade_varieties,                       trade_price,                       trade_amount,                       trade_unit,                       trade_pname,                       trade_telphone,                       trade_time )       values ( ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+; SQL []; Field 'trade_type' doesn't have a default value; nested exception is java.sql.SQLException: Field 'trade_type' doesn't have a default value
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:243)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:74)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:399)
+	at com.sun.proxy.$Proxy35.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:253)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:52)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy38.insertSelective(Unknown Source)
+	at com.zx.modules.promotion.service.impl.TableServiceImpl.addTradeData(TableServiceImpl.java:63)
+	at com.alibaba.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: Field 'trade_type' doesn't have a default value
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1078)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4187)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4119)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2570)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2731)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2815)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1379)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:493)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy42.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:45)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:73)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:115)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:75)
+	at sun.reflect.GeneratedMethodAccessor82.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy40.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:170)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:157)
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	... 33 more
+2016-08-02 19:58:49,153 [New I/O server worker #1-2] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 19:58:49,154 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:58742,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:11:22,985 [New I/O server worker #1-3] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:11:23,035 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:59665,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:11:29,446 [New I/O server worker #1-4] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:11:29,447 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:59688,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:12:24,674 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:12:24,683 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:12:24,683 [DubboShutdownHook] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol (DubboProtocol.java:393) -  [DUBBO] Close dubbo server: /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:12:24,684 [DubboShutdownHook] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:146) -  [DUBBO] Close NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:12:24,687 [DubboShutdownHook] INFO  alibaba.dubbo.remoting.transport.netty.NettyChannel (NettyChannel.java:135) -  [DUBBO] Close netty channel [id: 0x72203e5f, /10.0.1.56:59695 => /10.0.1.56:30111], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:12:24,689 [DubboShutdownHook] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:12:24,689 [DubboServerHandler-10.0.1.56:30111-thread-200] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:59695,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:12:24,692 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:12:24,692 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=429&side=provider&timestamp=1470099105467, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:12:48,393 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:12:48,499 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5d3411d: startup date [Tue Aug 02 20:12:48 CST 2016]; root of context hierarchy
+2016-08-02 20:12:48,548 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-08-02 20:12:48,731 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-08-02 20:12:48,863 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-08-02 20:12:49,098 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-08-02 20:12:51,764 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-08-02 20:12:52,152 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.promotion.service.TestTableService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:12:52,261 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:12:52,261 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to url dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=1086&side=provider&timestamp=1470139972166, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:12:52,419 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:12:52,425 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:14:40,864 [New I/O server worker #1-1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:14:40,865 [DubboServerHandler-10.0.1.56:30111-thread-2] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:59710,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=1086&side=provider&timestamp=1470139972166, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:14:44,455 [New I/O server worker #1-2] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:14:44,456 [DubboServerHandler-10.0.1.56:30111-thread-4] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:59721,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=1086&side=provider&timestamp=1470139972166, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:16:14,068 [New I/O server worker #1-3] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:16:14,069 [DubboServerHandler-10.0.1.56:30111-thread-6] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:59725,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=1086&side=provider&timestamp=1470139972166, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:19:00,727 [New I/O server worker #1-4] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:19:00,728 [DubboServerHandler-10.0.1.56:30111-thread-10] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:59749,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=1086&side=provider&timestamp=1470139972166, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:19:59,074 [New I/O server worker #1-5] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:19:59,075 [DubboServerHandler-10.0.1.56:30111-thread-12] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:59769,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=1086&side=provider&timestamp=1470139972166, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:22:26,500 [New I/O server worker #1-1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:22:26,501 [DubboServerHandler-10.0.1.56:30111-thread-15] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:59868,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=1086&side=provider&timestamp=1470139972166, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:24:12,708 [New I/O server worker #1-2] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:24:12,709 [DubboServerHandler-10.0.1.56:30111-thread-17] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:59903,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=1086&side=provider&timestamp=1470139972166, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:27:16,231 [New I/O server worker #1-3] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:27:16,232 [DubboServerHandler-10.0.1.56:30111-thread-19] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:59923,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=1086&side=provider&timestamp=1470139972166, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:36:24,796 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:36:24,798 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:36:24,798 [DubboShutdownHook] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol (DubboProtocol.java:393) -  [DUBBO] Close dubbo server: /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:36:24,803 [DubboShutdownHook] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:146) -  [DUBBO] Close NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:36:24,810 [DubboShutdownHook] INFO  alibaba.dubbo.remoting.transport.netty.NettyChannel (NettyChannel.java:135) -  [DUBBO] Close netty channel [id: 0x6c95224d, /10.0.1.56:59948 => /10.0.1.56:30111], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:36:24,814 [DubboShutdownHook] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:36:24,815 [DubboServerHandler-10.0.1.56:30111-thread-21] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:59948,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=1086&side=provider&timestamp=1470139972166, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:36:24,816 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=1086&side=provider&timestamp=1470139972166, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-08-02 20:36:24,817 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=tradeNumber,selectTradeData,deleteTradeData,saveTradeData,findAllData,addTradeData&pid=1086&side=provider&timestamp=1470139972166, dubbo version: 2.5.3, current host: 127.0.0.1

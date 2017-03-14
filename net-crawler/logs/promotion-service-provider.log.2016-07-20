@@ -1,0 +1,597 @@
+2016-07-20 19:05:39,986 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:05:40,116 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1060b431: startup date [Wed Jul 20 19:05:40 CST 2016]; root of context hierarchy
+2016-07-20 19:05:40,174 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-07-20 19:05:40,516 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-07-20 19:05:40,697 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-07-20 19:05:41,023 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-07-20 19:05:44,331 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-07-20 19:05:45,026 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.promotion.service.TestTableService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:05:45,166 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:05:45,166 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to url dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4803&side=provider&timestamp=1469012745049, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:05:45,340 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:05:45,347 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:07:37,795 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:07:37,912 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5d3411d: startup date [Wed Jul 20 19:07:37 CST 2016]; root of context hierarchy
+2016-07-20 19:07:37,958 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-07-20 19:07:38,129 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-07-20 19:07:38,236 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-07-20 19:07:38,431 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-07-20 19:07:40,954 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-07-20 19:07:41,347 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.promotion.service.TestTableService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:07:41,448 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:07:41,448 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to url dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4805&side=provider&timestamp=1469012861361, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:07:41,605 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Fail to start server(url: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4805&side=provider&timestamp=1469012861361) Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+com.alibaba.dubbo.rpc.RpcException: Fail to start server(url: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4805&side=provider&timestamp=1469012861361) Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:289)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.openServer(DubboProtocol.java:266)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.export(DubboProtocol.java:253)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:55)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:56)
+	at com.alibaba.dubbo.rpc.Protocol$Adpative.export(Protocol$Adpative.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:491)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:281)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:242)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:143)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:163)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:136)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:381)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:335)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:855)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:72)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.<init>(NettyServer.java:63)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyTransporter.bind(NettyTransporter.java:33)
+	at com.alibaba.dubbo.remoting.Transporter$Adpative.bind(Transporter$Adpative.java)
+	at com.alibaba.dubbo.remoting.Transporters.bind(Transporters.java:48)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchanger.bind(HeaderExchanger.java:41)
+	at com.alibaba.dubbo.remoting.exchange.Exchangers.bind(Exchangers.java:63)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:287)
+	... 20 more
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:30111
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:303)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.doOpen(NettyServer.java:94)
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:67)
+	... 27 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.bind(NioServerSocketPipelineSink.java:148)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleServerSocket(NioServerSocketPipelineSink.java:100)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:74)
+	at org.jboss.netty.channel.Channels.bind(Channels.java:468)
+	at org.jboss.netty.channel.AbstractChannel.bind(AbstractChannel.java:192)
+	at org.jboss.netty.bootstrap.ServerBootstrap$Binder.channelOpen(ServerBootstrap.java:348)
+	at org.jboss.netty.channel.Channels.fireChannelOpen(Channels.java:176)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannel.<init>(NioServerSocketChannel.java:85)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:142)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:90)
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:282)
+	... 29 more
+2016-07-20 19:07:41,608 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:07:41,609 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:07:41,610 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4805&side=provider&timestamp=1469012861361, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:07:41,610 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4805&side=provider&timestamp=1469012861361, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:07:48,532 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:07:48,637 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5d3411d: startup date [Wed Jul 20 19:07:48 CST 2016]; root of context hierarchy
+2016-07-20 19:07:48,681 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-07-20 19:07:48,853 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-07-20 19:07:48,968 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-07-20 19:07:55,782 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:07:55,964 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612fc6eb: startup date [Wed Jul 20 19:07:55 CST 2016]; root of context hierarchy
+2016-07-20 19:07:56,023 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-07-20 19:07:56,227 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-07-20 19:07:56,365 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-07-20 19:07:56,677 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-07-20 19:07:59,834 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-07-20 19:08:00,279 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.promotion.service.TestTableService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:08:00,416 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:08:00,421 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to url dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4807&side=provider&timestamp=1469012880297, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:08:00,594 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:08:00,602 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:09:21,799 [New I/O server worker #1-1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:09:21,803 [DubboServerHandler-10.0.1.56:30111-thread-2] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:63769,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4807&side=provider&timestamp=1469012880297, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:18:03,868 [DubboServerHandler-10.0.1.56:30111-thread-4] ERROR com.alibaba.dubbo.rpc.filter.ExceptionFilter (ExceptionFilter.java:87) -  [DUBBO] Got unchecked and undeclared exception which called by 10.0.1.56. service: com.zx.modules.promotion.service.TestTableService, method: addTradeData, exception: java.lang.NullPointerException: null, dubbo version: 2.5.3, current host: 127.0.0.1
+java.lang.NullPointerException
+	at com.zx.modules.promotion.service.impl.TableServiceImpl.addTradeData(TableServiceImpl.java:63)
+	at com.alibaba.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-20 19:22:08,744 [New I/O server worker #1-2] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:22:08,745 [DubboServerHandler-10.0.1.56:30111-thread-5] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:63844,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4807&side=provider&timestamp=1469012880297, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:22:38,629 [New I/O server worker #1-3] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:22:38,631 [DubboServerHandler-10.0.1.56:30111-thread-7] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:64055,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4807&side=provider&timestamp=1469012880297, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:24:20,830 [New I/O server worker #1-4] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:24:20,839 [DubboServerHandler-10.0.1.56:30111-thread-9] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:64065,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4807&side=provider&timestamp=1469012880297, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:25:31,857 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:25:31,997 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612fc6eb: startup date [Wed Jul 20 19:25:31 CST 2016]; root of context hierarchy
+2016-07-20 19:25:32,063 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-07-20 19:25:32,263 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-07-20 19:25:32,429 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-07-20 19:25:32,704 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-07-20 19:25:35,231 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:25:35,366 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612fc6eb: startup date [Wed Jul 20 19:25:35 CST 2016]; root of context hierarchy
+2016-07-20 19:25:35,419 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-07-20 19:25:35,626 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-07-20 19:25:35,767 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-07-20 19:25:35,988 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-07-20 19:25:38,714 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-07-20 19:25:39,210 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.promotion.service.TestTableService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:25:39,343 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:25:39,343 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to url dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4837&side=provider&timestamp=1469013939223, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:25:39,536 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:25:39,542 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:26:26,494 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:26:26,614 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5d3411d: startup date [Wed Jul 20 19:26:26 CST 2016]; root of context hierarchy
+2016-07-20 19:26:26,662 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-07-20 19:26:26,837 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-07-20 19:26:26,952 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-07-20 19:26:27,144 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-07-20 19:26:29,643 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-07-20 19:26:29,992 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.promotion.service.TestTableService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:26:30,144 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:26:30,145 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to url dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4838&side=provider&timestamp=1469013990017, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:26:30,289 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:26:30,293 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:27:21,414 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:27:21,416 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:27:21,416 [DubboShutdownHook] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol (DubboProtocol.java:393) -  [DUBBO] Close dubbo server: /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:27:21,417 [DubboShutdownHook] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:146) -  [DUBBO] Close NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:27:21,422 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4838&side=provider&timestamp=1469013990017, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:27:21,422 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4838&side=provider&timestamp=1469013990017, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:27:46,002 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:27:46,123 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5d3411d: startup date [Wed Jul 20 19:27:46 CST 2016]; root of context hierarchy
+2016-07-20 19:27:46,173 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-07-20 19:27:46,344 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-07-20 19:27:46,454 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-07-20 19:27:46,644 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-07-20 19:27:49,258 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-07-20 19:27:49,615 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.promotion.service.TestTableService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:27:49,741 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:27:49,742 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to url dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4839&side=provider&timestamp=1469014069633, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:27:49,901 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:27:49,905 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:28:02,775 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:28:02,935 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612fc6eb: startup date [Wed Jul 20 19:28:02 CST 2016]; root of context hierarchy
+2016-07-20 19:28:02,986 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-07-20 19:28:03,166 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-07-20 19:28:03,281 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-07-20 19:28:03,533 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-07-20 19:28:06,208 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-07-20 19:28:06,646 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.promotion.service.TestTableService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:28:06,786 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:28:06,786 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to url dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4840&side=provider&timestamp=1469014086663, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:28:06,953 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Fail to start server(url: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4840&side=provider&timestamp=1469014086663) Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+com.alibaba.dubbo.rpc.RpcException: Fail to start server(url: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4840&side=provider&timestamp=1469014086663) Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:289)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.openServer(DubboProtocol.java:266)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.export(DubboProtocol.java:253)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:55)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:56)
+	at com.alibaba.dubbo.rpc.Protocol$Adpative.export(Protocol$Adpative.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:491)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:281)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:242)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:143)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:163)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:136)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:381)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:335)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:855)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:72)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.<init>(NettyServer.java:63)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyTransporter.bind(NettyTransporter.java:33)
+	at com.alibaba.dubbo.remoting.Transporter$Adpative.bind(Transporter$Adpative.java)
+	at com.alibaba.dubbo.remoting.Transporters.bind(Transporters.java:48)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchanger.bind(HeaderExchanger.java:41)
+	at com.alibaba.dubbo.remoting.exchange.Exchangers.bind(Exchangers.java:63)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:287)
+	... 20 more
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:30111
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:303)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.doOpen(NettyServer.java:94)
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:67)
+	... 27 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.bind(NioServerSocketPipelineSink.java:148)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleServerSocket(NioServerSocketPipelineSink.java:100)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:74)
+	at org.jboss.netty.channel.Channels.bind(Channels.java:468)
+	at org.jboss.netty.channel.AbstractChannel.bind(AbstractChannel.java:192)
+	at org.jboss.netty.bootstrap.ServerBootstrap$Binder.channelOpen(ServerBootstrap.java:348)
+	at org.jboss.netty.channel.Channels.fireChannelOpen(Channels.java:176)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannel.<init>(NioServerSocketChannel.java:85)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:142)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:90)
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:282)
+	... 29 more
+2016-07-20 19:28:06,957 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:28:06,960 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:28:06,961 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4840&side=provider&timestamp=1469014086663, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:28:06,961 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4840&side=provider&timestamp=1469014086663, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:29:05,080 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:29:05,082 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:29:05,082 [DubboShutdownHook] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol (DubboProtocol.java:393) -  [DUBBO] Close dubbo server: /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:29:05,083 [DubboShutdownHook] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:146) -  [DUBBO] Close NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:29:05,087 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4839&side=provider&timestamp=1469014069633, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:29:05,088 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4839&side=provider&timestamp=1469014069633, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:29:06,182 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:29:06,379 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612fc6eb: startup date [Wed Jul 20 19:29:06 CST 2016]; root of context hierarchy
+2016-07-20 19:29:06,441 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-07-20 19:29:06,687 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-07-20 19:29:06,833 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-07-20 19:29:07,063 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-07-20 19:29:10,020 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-07-20 19:29:10,460 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.promotion.service.TestTableService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:29:10,600 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:29:10,601 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to url dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4841&side=provider&timestamp=1469014150477, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:29:10,755 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:29:10,761 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:29:23,540 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:29:23,682 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612fc6eb: startup date [Wed Jul 20 19:29:23 CST 2016]; root of context hierarchy
+2016-07-20 19:29:23,733 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-07-20 19:29:23,917 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-07-20 19:29:24,053 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-07-20 19:29:24,306 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-07-20 19:29:27,057 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-07-20 19:29:27,479 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.promotion.service.TestTableService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:29:27,615 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:29:27,615 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to url dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4842&side=provider&timestamp=1469014167495, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:29:27,753 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Fail to start server(url: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4842&side=provider&timestamp=1469014167495) Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+com.alibaba.dubbo.rpc.RpcException: Fail to start server(url: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4842&side=provider&timestamp=1469014167495) Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:289)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.openServer(DubboProtocol.java:266)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.export(DubboProtocol.java:253)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:56)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:55)
+	at com.alibaba.dubbo.rpc.Protocol$Adpative.export(Protocol$Adpative.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:491)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:281)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:242)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:143)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:163)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:136)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:381)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:335)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:855)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:72)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.<init>(NettyServer.java:63)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyTransporter.bind(NettyTransporter.java:33)
+	at com.alibaba.dubbo.remoting.Transporter$Adpative.bind(Transporter$Adpative.java)
+	at com.alibaba.dubbo.remoting.Transporters.bind(Transporters.java:48)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchanger.bind(HeaderExchanger.java:41)
+	at com.alibaba.dubbo.remoting.exchange.Exchangers.bind(Exchangers.java:63)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:287)
+	... 20 more
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:30111
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:303)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.doOpen(NettyServer.java:94)
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:67)
+	... 27 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.bind(NioServerSocketPipelineSink.java:148)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleServerSocket(NioServerSocketPipelineSink.java:100)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:74)
+	at org.jboss.netty.channel.Channels.bind(Channels.java:468)
+	at org.jboss.netty.channel.AbstractChannel.bind(AbstractChannel.java:192)
+	at org.jboss.netty.bootstrap.ServerBootstrap$Binder.channelOpen(ServerBootstrap.java:348)
+	at org.jboss.netty.channel.Channels.fireChannelOpen(Channels.java:176)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannel.<init>(NioServerSocketChannel.java:85)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:142)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:90)
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:282)
+	... 29 more
+2016-07-20 19:29:27,755 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:29:27,757 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:29:27,758 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4842&side=provider&timestamp=1469014167495, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:29:27,758 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4842&side=provider&timestamp=1469014167495, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:31:56,237 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:31:56,358 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5d3411d: startup date [Wed Jul 20 19:31:56 CST 2016]; root of context hierarchy
+2016-07-20 19:31:56,405 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-07-20 19:31:56,591 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-07-20 19:31:56,705 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-07-20 19:31:56,899 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-07-20 19:31:59,347 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-07-20 19:31:59,691 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.promotion.service.TestTableService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:31:59,845 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:31:59,846 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to url dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4850&side=provider&timestamp=1469014319710, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:31:59,986 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Fail to start server(url: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4850&side=provider&timestamp=1469014319710) Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+com.alibaba.dubbo.rpc.RpcException: Fail to start server(url: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4850&side=provider&timestamp=1469014319710) Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:289)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.openServer(DubboProtocol.java:266)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.export(DubboProtocol.java:253)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:55)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:56)
+	at com.alibaba.dubbo.rpc.Protocol$Adpative.export(Protocol$Adpative.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:491)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:281)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:242)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:143)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:163)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:136)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:381)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:335)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:855)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:72)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.<init>(NettyServer.java:63)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyTransporter.bind(NettyTransporter.java:33)
+	at com.alibaba.dubbo.remoting.Transporter$Adpative.bind(Transporter$Adpative.java)
+	at com.alibaba.dubbo.remoting.Transporters.bind(Transporters.java:48)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchanger.bind(HeaderExchanger.java:41)
+	at com.alibaba.dubbo.remoting.exchange.Exchangers.bind(Exchangers.java:63)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:287)
+	... 20 more
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:30111
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:303)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.doOpen(NettyServer.java:94)
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:67)
+	... 27 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.bind(NioServerSocketPipelineSink.java:148)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleServerSocket(NioServerSocketPipelineSink.java:100)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:74)
+	at org.jboss.netty.channel.Channels.bind(Channels.java:468)
+	at org.jboss.netty.channel.AbstractChannel.bind(AbstractChannel.java:192)
+	at org.jboss.netty.bootstrap.ServerBootstrap$Binder.channelOpen(ServerBootstrap.java:348)
+	at org.jboss.netty.channel.Channels.fireChannelOpen(Channels.java:176)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannel.<init>(NioServerSocketChannel.java:85)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:142)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:90)
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:282)
+	... 29 more
+2016-07-20 19:31:59,988 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:31:59,989 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:31:59,990 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4850&side=provider&timestamp=1469014319710, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:31:59,990 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4850&side=provider&timestamp=1469014319710, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:35:16,439 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:35:16,593 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@612fc6eb: startup date [Wed Jul 20 19:35:16 CST 2016]; root of context hierarchy
+2016-07-20 19:35:16,649 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-07-20 19:35:16,832 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-07-20 19:35:16,982 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-07-20 19:35:17,217 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-07-20 19:35:18,891 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:35:19,033 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5d3411d: startup date [Wed Jul 20 19:35:19 CST 2016]; root of context hierarchy
+2016-07-20 19:35:19,082 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-07-20 19:35:19,280 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-07-20 19:35:19,405 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-07-20 19:35:19,615 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-07-20 19:35:20,861 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-07-20 19:35:21,465 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.promotion.service.TestTableService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:35:21,665 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:35:21,665 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to url dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4855&side=provider&timestamp=1469014521487, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:35:21,864 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Fail to start server(url: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4855&side=provider&timestamp=1469014521487) Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+com.alibaba.dubbo.rpc.RpcException: Fail to start server(url: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4855&side=provider&timestamp=1469014521487) Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:289)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.openServer(DubboProtocol.java:266)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.export(DubboProtocol.java:253)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:56)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:55)
+	at com.alibaba.dubbo.rpc.Protocol$Adpative.export(Protocol$Adpative.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:491)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:281)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:242)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:143)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:163)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:136)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:381)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:335)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:855)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:72)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.<init>(NettyServer.java:63)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyTransporter.bind(NettyTransporter.java:33)
+	at com.alibaba.dubbo.remoting.Transporter$Adpative.bind(Transporter$Adpative.java)
+	at com.alibaba.dubbo.remoting.Transporters.bind(Transporters.java:48)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchanger.bind(HeaderExchanger.java:41)
+	at com.alibaba.dubbo.remoting.exchange.Exchangers.bind(Exchangers.java:63)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:287)
+	... 20 more
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:30111
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:303)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.doOpen(NettyServer.java:94)
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:67)
+	... 27 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.bind(NioServerSocketPipelineSink.java:148)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleServerSocket(NioServerSocketPipelineSink.java:100)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:74)
+	at org.jboss.netty.channel.Channels.bind(Channels.java:468)
+	at org.jboss.netty.channel.AbstractChannel.bind(AbstractChannel.java:192)
+	at org.jboss.netty.bootstrap.ServerBootstrap$Binder.channelOpen(ServerBootstrap.java:348)
+	at org.jboss.netty.channel.Channels.fireChannelOpen(Channels.java:176)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannel.<init>(NioServerSocketChannel.java:85)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:142)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:90)
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:282)
+	... 29 more
+2016-07-20 19:35:21,867 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:35:21,869 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:35:21,870 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4855&side=provider&timestamp=1469014521487, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:35:21,870 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4855&side=provider&timestamp=1469014521487, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:35:22,491 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-07-20 19:35:22,873 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.promotion.service.TestTableService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:35:22,989 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:35:22,990 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to url dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4856&side=provider&timestamp=1469014522889, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:35:23,133 [main] ERROR com.alibaba.dubbo.container.Main (Main.java:86) -  [DUBBO] Fail to start server(url: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4856&side=provider&timestamp=1469014522889) Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+com.alibaba.dubbo.rpc.RpcException: Fail to start server(url: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4856&side=provider&timestamp=1469014522889) Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:289)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.openServer(DubboProtocol.java:266)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.export(DubboProtocol.java:253)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:55)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:56)
+	at com.alibaba.dubbo.rpc.Protocol$Adpative.export(Protocol$Adpative.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:491)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:281)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:242)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:143)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:163)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:136)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:381)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:335)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:855)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:93)
+	at com.alibaba.dubbo.container.spring.SpringContainer.start(SpringContainer.java:50)
+	at com.alibaba.dubbo.container.Main.main(Main.java:80)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: Failed to bind NettyServer on /10.0.1.56:30111, cause: Failed to bind to: /0.0.0.0:30111
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:72)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.<init>(NettyServer.java:63)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyTransporter.bind(NettyTransporter.java:33)
+	at com.alibaba.dubbo.remoting.Transporter$Adpative.bind(Transporter$Adpative.java)
+	at com.alibaba.dubbo.remoting.Transporters.bind(Transporters.java:48)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchanger.bind(HeaderExchanger.java:41)
+	at com.alibaba.dubbo.remoting.exchange.Exchangers.bind(Exchangers.java:63)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:287)
+	... 20 more
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:30111
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:303)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.doOpen(NettyServer.java:94)
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:67)
+	... 27 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.bind(NioServerSocketPipelineSink.java:148)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleServerSocket(NioServerSocketPipelineSink.java:100)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:74)
+	at org.jboss.netty.channel.Channels.bind(Channels.java:468)
+	at org.jboss.netty.channel.AbstractChannel.bind(AbstractChannel.java:192)
+	at org.jboss.netty.bootstrap.ServerBootstrap$Binder.channelOpen(ServerBootstrap.java:348)
+	at org.jboss.netty.channel.Channels.fireChannelOpen(Channels.java:176)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannel.<init>(NioServerSocketChannel.java:85)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:142)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:90)
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:282)
+	... 29 more
+2016-07-20 19:35:23,135 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:35:23,137 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:35:23,137 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4856&side=provider&timestamp=1469014522889, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:35:23,137 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4856&side=provider&timestamp=1469014522889, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:45:54,865 [New I/O server worker #1-1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 19:45:54,867 [DubboServerHandler-10.0.1.56:30111-thread-3] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:64172,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4841&side=provider&timestamp=1469014150477, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:00:20,237 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo Log4jContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:00:20,364 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5d3411d: startup date [Wed Jul 20 20:00:20 CST 2016]; root of context hierarchy
+2016-07-20 20:00:20,410 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/service-provider.xml]
+2016-07-20 20:00:20,582 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [/Users/Youbiquan/Documents/youbiquan/projects/ybq-promotion/promotion-service/promotion-service-provider/target/classes/META-INF/spring/spring-context.xml]
+2016-07-20 20:00:20,719 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [common-spring-context-dao.xml]
+2016-07-20 20:00:20,907 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [promotion-jdbc.properties]
+2016-07-20 20:00:23,396 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:667) - {dataSource-1} inited
+2016-07-20 20:00:23,768 [main] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: com.zx.modules.promotion.service.TestTableService, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:00:23,899 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:00:23,899 [main] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service com.zx.modules.promotion.service.TestTableService to url dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4863&side=provider&timestamp=1469016023784, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:00:24,048 [main] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:00:24,053 [main] INFO  com.alibaba.dubbo.container.Main (Main.java:81) -  [DUBBO] Dubbo SpringContainer started!, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:00:39,349 [New I/O server worker #1-1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:00:39,350 [DubboServerHandler-10.0.1.56:30111-thread-2] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:64424,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4863&side=provider&timestamp=1469016023784, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:01:49,179 [New I/O server worker #1-2] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:01:49,180 [DubboServerHandler-10.0.1.56:30111-thread-5] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:64429,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4863&side=provider&timestamp=1469016023784, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:03:16,344 [New I/O server worker #1-3] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:03:16,345 [DubboServerHandler-10.0.1.56:30111-thread-8] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:64445,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4863&side=provider&timestamp=1469016023784, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:04:42,691 [New I/O server worker #1-4] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:04:42,704 [DubboServerHandler-10.0.1.56:30111-thread-10] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:64463,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4863&side=provider&timestamp=1469016023784, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:09:52,400 [New I/O server worker #1-5] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:09:52,436 [DubboServerHandler-10.0.1.56:30111-thread-13] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:64474,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4863&side=provider&timestamp=1469016023784, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:12:29,366 [New I/O server worker #1-1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:12:29,367 [DubboServerHandler-10.0.1.56:30111-thread-16] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:64493,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4863&side=provider&timestamp=1469016023784, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:18:25,857 [New I/O server worker #1-2] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:18:25,858 [DubboServerHandler-10.0.1.56:30111-thread-19] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:64511,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4863&side=provider&timestamp=1469016023784, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:24:30,751 [New I/O server worker #1-3] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:24:30,752 [DubboServerHandler-10.0.1.56:30111-thread-22] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:64680,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4863&side=provider&timestamp=1469016023784, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:26:24,252 [New I/O server worker #1-4] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:26:24,293 [DubboServerHandler-10.0.1.56:30111-thread-25] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:64787,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4863&side=provider&timestamp=1469016023784, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:28:58,416 [New I/O server worker #1-5] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:28:58,431 [DubboServerHandler-10.0.1.56:30111-thread-27] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:64816,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4863&side=provider&timestamp=1469016023784, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:29:43,847 [New I/O server worker #1-1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 20:29:43,889 [DubboServerHandler-10.0.1.56:30111-thread-29] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:64844,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4863&side=provider&timestamp=1469016023784, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 21:29:03,057 [New I/O server worker #1-2] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /10.0.1.56:30111. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 21:29:03,089 [DubboServerHandler-10.0.1.56:30111-thread-31] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /10.0.1.56:64855,url:dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4863&side=provider&timestamp=1469016023784, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 21:29:04,627 [DubboShutdownHook] INFO  com.alibaba.dubbo.config.AbstractConfig$1 (AbstractConfig.java:450) -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 21:29:04,648 [DubboShutdownHook] INFO  com.alibaba.dubbo.registry.support.AbstractRegistryFactory (AbstractRegistryFactory.java:63) -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 21:29:04,649 [DubboShutdownHook] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol (DubboProtocol.java:393) -  [DUBBO] Close dubbo server: /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 21:29:04,650 [DubboShutdownHook] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:146) -  [DUBBO] Close NettyServer bind /0.0.0.0:30111, export /10.0.1.56:30111, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 21:29:04,653 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: dubbo://10.0.1.56:30111/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4863&side=provider&timestamp=1469016023784, dubbo version: 2.5.3, current host: 127.0.0.1
+2016-07-20 21:29:04,653 [DubboShutdownHook] INFO  com.alibaba.dubbo.rpc.protocol.AbstractProtocol (AbstractProtocol.java:76) -  [DUBBO] Unexport service: injvm://127.0.0.1/com.zx.modules.promotion.service.TestTableService?anyhost=true&application=startups&dubbo=2.5.3&interface=com.zx.modules.promotion.service.TestTableService&loadbalance=roundrobin&methods=selectTradeData,deleteTradeData,saveTradeData,addTradeData&pid=4863&side=provider&timestamp=1469016023784, dubbo version: 2.5.3, current host: 127.0.0.1

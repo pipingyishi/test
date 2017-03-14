@@ -1,0 +1,58 @@
+<th:block  th:fragment="paging" th:if="${not #lists.isEmpty(result.pageList)}" th:each="record, stat: ${result.pageList}">
+	<tr>
+		<td class="box">
+			<input type="checkbox"  name="check" th:value="${record.tradeId}"/> <input id="totalPage" type="hidden"  th:value="${result.totalPages}"/>
+		</td>
+		<td class="identifier"  th:text="${stat.count}+15*(${currentPage}-1)">
+		</td>
+		<td class="style-col-width">
+		     <select  class="dropdown" name="tradeType">      
+                        <option value="现货盘" th:selected="${#strings.equals(record.tradeType,'现货盘')}">现货盘</option>
+                        <option value="电子盘" th:selected="${#strings.equals(record.tradeType,'电子盘')}">电子盘</option>
+            </select>
+		</td>
+		<td class="cname-col-width">
+		  <input class="input-border cname"  type="text" name="tradeCname"  th:value="${record.tradeCname}"/>
+		</td>
+		<td class="varieties-col-width">
+		  <select class="dropdown" name="tradeVarieties">      
+                        <option value="大陆邮票" th:selected="${#strings.equals(record.tradeVarieties,'大陆邮票')}">大陆邮票</option>
+                        <option value="港澳邮票" th:selected="${#strings.equals(record.tradeVarieties,'港澳邮票')}">港澳邮票</option>
+                        <option value="钱币" th:selected="${#strings.equals(record.tradeVarieties,'钱币')}">钱币</option>
+                        <option value="磁卡" th:selected="${#strings.equals(record.tradeVarieties,'磁卡')}">磁卡</option>
+                        <option value="封片" th:selected="${#strings.equals(record.tradeVarieties,'封片')}">封片</option>
+                        <option value="其他" th:selected="${#strings.equals(record.tradeVarieties,'其他')}">其他</option>
+            </select>
+		</td>
+		<td class="price-col-width">
+		  <input class="input-border  price"  type="text" name="tradePrice"  th:value="${record.tradePrice}"/>
+        </td>
+        <td class="amount-col-width">
+		  <input class="input-border amount"  type="text" name="tradeAmount"  th:value="${record.tradeAmount}"/>
+		</td>
+		<td class="marketvalue-col-width"  type="text" name="tradeMarketValue"  th:text="${record.tradeMarketValue}+'万'">
+		</td>
+		<td class="unit-col-width">
+		  <input  class="input-border unit"  type="text" name="tradeUnit"  th:value="${record.tradeUnit}"/>
+		</td>
+		<td class="pname-col-width">
+		  <input class="input-border pname"  type="text" name="tradePname"  th:value="${record.tradePname}"/>
+		</td>
+		<td  class="telphone-col-width">
+		  <input class="input-border telphone"  type="text" name="tradeTelphone"  th:value="${record.tradeTelphone}"/>
+		</td>
+		<td class="flag-col-width">
+			<select class="dropdown" name="tradeFlag">      
+						<option value="已成交" th:selected="${#strings.equals(record.tradeFlag,'已成交')}">已成交</option>
+						<option value="未成交" th:selected="${#strings.equals(record.tradeFlag,'未成交')}">未成交</option>
+			</select>
+		</td>
+		<td  class="time-col-width" >
+		  <input class="input-border"  type="text"  name="tradeTime" th:value="${#dates.format(record.tradeTime, 'yyyy-MM-dd HH:mm:ss')}"/>
+		</td>
+		<td class="remark-col-width">
+			<input  class="input-border"  name="tradeRemakes" type="text"  th:value="${record.tradeRemakes}"/>
+		</td>
+	</tr>
+</th:block>
+

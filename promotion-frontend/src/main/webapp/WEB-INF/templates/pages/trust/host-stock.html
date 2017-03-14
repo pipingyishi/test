@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="pragma" content="no-cache"/>
+        <meta http-equiv="Cache-Control" content="no-cache, must-revalidate"/>
+        <meta http-equiv="expires" content="0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <link rel="icon" type="image/png" th:href="@{/resources/image/logo.png}"></link>
+       <link rel="stylesheet" type="text/css"  th:href="@{/resources/css/trust/trust.css}"></link>
+        <link rel="stylesheet" type="text/css"  th:href="@{/resources/css/trust/trust-small.css}"  media="screen and (max-width:330px)"></link>
+        <link rel="stylesheet" type="text/css"  th:href="@{/resources/css/trust/trust-mid.css}"  media="(min-width:331px) and (max-width:360px)"></link>
+        <script LANGUAGE="JavaScript">  
+             window.alert = function(str) {  
+                  return ;  
+              }  
+        </script> 
+    </head>
+    <body>
+        <div class="user-info" >
+            <div class="picture" >
+                <img id="avatar" class="pic-info"  th:if="${ userInfo.avatar!=null}"  th:src="${userInfo.avatar}"/>
+                <img id="avatar" class="pic-info"  th:unless="${userInfo.avatar!=null}"  src="http://pic.youbiquan.com/generic_avatar_default.png"/>
+            </div>
+            <div>
+                <div id="username"  class="user-name"   th:text="${userInfo.username}"></div>
+                <div class="trust">
+                    <img  class="trust-pic" th:src="@{/resources/image/trust.png}"/>
+                </div>
+            </div>
+            <input id="userId" type="hidden"  th:value="${userInfo.userId}"/>
+            <input id="type" type="hidden"  value="出售"/>
+            <th:block th:if="${merchant==null}">
+                <input id="merchant" type="hidden"  value="普通用户"/>
+            </th:block>
+        </div>
+        <div>
+            <table class="hot-stock">
+                <tbody>
+                    <tr class="line-heigth" >
+                        <td colspan="3"  class="line" >
+                        </td>
+                    </tr>
+                    <tr class="value-count-height">
+                        <td class="trade-value" >
+                            <span>交易金额</span>
+                            <span id="sellerTurnover"  class="value"  th:text="${userInfo.sellerTurnover}"></span>
+                        </td>
+                        <td>
+                            <div class="mid-line" >
+                            </div>
+                        </td>
+                        <td class="trade-count" >
+                            <span>交易次数</span>
+                            <span id="tradecount"  class="count" th:text="${userInfo.tradecount}+'次'"></span>
+                        </td>
+                    </tr>
+                    <tr class="line-heigth" >
+                        <td colspan="3" class="line" >
+                        </td>
+                    </tr>
+                    <tr class="pass-rate-height" >
+                        <td class="pass-rate" colspan="3" >
+                            <span>入库率</span>
+                            <span id="passRate"  class="rate"    th:text="${userInfo.passRate}"></span>
+                        </td>
+                    </tr>
+                    <tr class="up-down-line-height" >
+                        <td colspan="3"  class="up-down-line" >
+                        </td>
+                    </tr>
+                    <tr class="sell-buy-height">
+                        <td class="sell" >
+                            <a id="sell"   href="#sell"  onclick="switchStatus('sell')">他的出售</a>
+                        </td>
+                        <td>
+                            <div  class="sell-buy-mid-line" >
+                            </div>
+                        </td>
+                        <td class="buy" >
+                            <a id="buy"   href = "#buy"  onclick="switchStatus('buy')">他的求购</a>
+                        </td>
+                    </tr>
+                    <tr class="line-heigth" >
+                        <td colspan="3" class="line" >
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="sell-underline"  class="sell-underline" >
+        </div>
+        <div  id="buy-underline"  class="buy-underline" >
+        </div>
+        <div id="stockInfo" class="stock-info" >
+            <table id="productTable"  class="stock-info-table" >
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <th:block  th:if="${not #lists.isEmpty(hostStocks)}">
+            <div th:if="${#lists.size(hostStocks)==2 }" class="small-info" >
+            </div>
+        </th:block>
+        <div class="bottom">
+            <div class="bottom-line" th:if="${merchant!=null}">
+            </div>
+            <div>
+                <div id="openApp" class="btn-style" href="#" onclick="openApp('detail');">
+                    打开APP查看
+                </div>
+            </div>
+        </div>
+        <img id="qqImg"  class="qq-img" src="/promotion-frontend/resources/image/qq.png"/>
+        <img id="weiXinImg" class="weixin-img" src="/promotion-frontend/resources/image/weixin.png"/>
+    </body>
+    <script type="text/javascript" th:src="@{/resources/js/trust/trust.js}"></script>
+</html>
+

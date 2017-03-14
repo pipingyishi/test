@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<import resource="classpath:promotion-service-provider.xml"></import>
+    <import resource="classpath:store-service-provider.xml"></import>
+    <import resource="classpath:user-service-provider.xml"></import>
+    <import resource="classpath:content-service-provider.xml"></import>
+    <import resource="classpath:market-service-provider.xml"></import>
+    <import resource="classpath:goods-service-provider.xml"></import>
+    <import resource="classpath:search-service-provider.xml"></import>
+
+</beans>

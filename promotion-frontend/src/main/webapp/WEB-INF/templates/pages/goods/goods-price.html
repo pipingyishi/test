@@ -1,0 +1,90 @@
+<html>
+    <head>
+		<meta http-equiv="pragma" content="no-cache"/>
+		<meta http-equiv="Cache-Control" content="no-cache, must-revalidate"/>
+		<meta http-equiv="expires" content="0"/>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <title>
+            现货报价
+        </title>
+        <script LANGUAGE="JavaScript">  
+             window.alert = function(str) {  
+                  return ;  
+              }  
+        </script>
+        <link rel="icon" type="image/png" th:href="@{/resources/image/logo.png}"></link>
+        <link rel="stylesheet" type="text/css" th:href="@{/resources/css/goods/goods-price.css}"/>
+       <link rel="stylesheet" type="text/css"  th:href="@{/resources/css/goods/small-goods-price.css}"  media="screen and (max-width:330px)"></link>
+    </head>
+    <body>
+        <div  class="user-info" >
+            <div class="picture" >
+                <img   th:if="${ userInfo.avatar!=null}"  th:src="${userInfo.avatar}" class="pic-info" />
+                <img  th:unless="${userInfo.avatar!=null}"  src="http://pic.youbiquan.com/generic_avatar_default.png"   class="pic-info" />
+            </div>
+            <div  class="username small-username">
+                <div th:text="${userInfo.username}">
+                </div>
+                <img class="goods-pic"  th:src="@{/resources/image/goods.png}"/>
+            </div>
+        </div>
+        <span class="user-under-line">
+        </span>
+        <div class="trade small-trade">
+            <div class="trade-value" >
+                <div class="trade-value-left" >
+                    交易金额
+                </div>
+                <div class="trade-value-right"  th:text="${userInfo.sellerTurnover}">
+                </div>
+            </div>
+            <div class="trade-mid-line">
+            </div>
+            <div class="trade-count" >
+                <div class="trade-count-left" >
+                    交易次数
+                </div>
+                <div class="trade-count-right"  th:text="${userInfo.tradecount}+'次'">
+                </div>
+            </div>
+        </div>
+        <input id="type" type="hidden" value="出售"/>
+        <input id="userId" type="hidden" th:value="${userInfo.userId}"/>
+        <div class="trade-under-line" >
+        </div>
+        <a class="sell small-sell" href="#sell" onclick="switchStatus('sell')">
+            他的出售
+        </a>
+        <div class="sell-buy-mid-line" >
+        </div>
+        <a class="buy small-buy" href="#buy" onclick="switchStatus('buy')">
+            他的求购
+        </a>
+        <div class="sell-buy-under-line">
+        </div>
+        <div id="sell-underline" class="sell-underline" >
+        </div>
+        <div id="buy-underline" class="buy-underline" >
+        </div>
+        <div class="product-list">
+            <table class="product-table" id="goodsTable" >
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div id="grayLine"></div>
+        <div id="btn" class="btn-position">
+            <div id="goods" class="btn" onclick="openApp('goods')">
+                打开app查看
+            </div>
+        </div>
+        <img id="qqImg"  class="qq-img" th:src="@{/resources/image/qq.png}"/>
+        <img id="weiXinImg" class="weixin-img" th:src="@{/resources/image/weixin.png}"/>
+    </body>
+    <script type="text/javascript" th:src="@{/resources/js/goods/goods.js}">
+    </script>
+</html>

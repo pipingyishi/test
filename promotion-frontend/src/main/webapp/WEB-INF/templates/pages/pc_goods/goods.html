@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+    	<meta http-equiv="X-UA-Compatible" content="IE=Edge"></meta>
+    	<meta name="keywords" content="中国投资资讯网,一尘网 邮票,邮票价格,邮市行情,钱币行情,小版张封片,邮币卡,金银币,老纪特邮票,纸币,磁卡,文化收藏,集邮市场行情"></meta>
+    	<meta name="description" content="邮币圈，邮票钱币交易收藏平台，是邮商币商的邮币卡交易平台"></meta>
+        <th:block th:replace="pages/head/head :: heading" ></th:block> 
+        <title>中国投资资讯网,一尘网 邮票,邮票价格,邮市行情,钱币行情,小版张封片,邮币卡,金银币,老纪特邮票,纸币,磁卡,文化收藏,集邮市场行情</title>
+        <link rel="icon" type="image/png" th:href="@{/resources/image/logo.png}"></link>
+        <link rel="stylesheet" type="text/css" th:href="@{/resources/css/pc_goods/goods.css?v=}+${#strings.randomAlphanumeric(10)}"></link>
+        <link rel="stylesheet" type="text/css"  th:href="@{/resources/css/pc_goods/jquery.mCustomScrollbar.css}"/>
+        <script type="text/javascript" th:src="@{/resources/js/pc_goods/goods.js?v=}+${#strings.randomAlphanumeric(10)}"></script>
+    </head>
+    <body>
+    	<section class="goods-search" >
+    		<span class=".goods-search > span" >首页 > 邮币圈现货交易
+			</span>
+    		<input class=".goods-search > input" id="goodsInput" type="text" value="搜索藏品"   onblur="OnBlur(this)"  onkeyup="OnKeyup(this)"    onfocus="OnFocus(this)"/>
+			<div class=".goods-search > div"  id="searchGoods">
+			</div>
+    		<span class=".goods-search > div+ span"  onclick="searchGoods()">搜现货</span>
+  		</section>
+    	<div class="goods"  id="goods">
+    		<div class="item">
+    			<div class="cate">
+	    	    	<span class=".cate > span" >分类</span>
+			        <div class=".cate > div"  id="category">
+			            <span class="cate-all"  data-itemid="0" onclick="category(this)">全部</span>
+			            <th:block th:if="${not #lists.isEmpty(goodsCategories)}" th:each="goodsCategorie:${goodsCategories}">
+			            	<span class="cate-detail" th:attr="data-itemId=${goodsCategorie.cateId}"  th:text="${goodsCategorie.cateName}" onclick="category(this)"></span>
+			            </th:block>
+			        </div>
+			    </div>
+		        <div  class="save-option"  id="save"   itemId="0"  optionId="0"  optionValueId="0"  type="" ></div>
+		        <div class="section" id="section" >
+           				<span class="section-tip">版块</span>
+           				<span  class=".section-tip + span" onclick="section(this)"  data-optionid="0"  data-optionvalueid="0">全部</span>
+		           		<th:block th:if="${not #lists.isEmpty(optionsForCategorys)}" th:each="optionsForCategory:${optionsForCategorys}">
+		            		<th:block th:if="${not #lists.isEmpty(optionsForCategory)}" th:each="optionForCategory,stat:${optionsForCategory}">
+		            			<th:block th:if="${stat.count==1 and not #lists.isEmpty(optionForCategory.subOptions)}" th:each="subOption:${optionForCategory.subOptions}" >
+		            				<span  class="section-detail"   th:text="${subOption.itemName}" onclick="section(this)"     th:attr="data-optionId=${optionForCategory.itemId},data-optionValueId=${subOption.itemId}">
+			            			</span>
+		            			</th:block>
+		            		</th:block>
+		            </th:block>
+		        </div>
+		    </div>
+	        <div id="list" th:if="${not #lists.isEmpty(goodsProducts)}" >
+	        </div>
+	      </div>
+    </body>
+    <script type="text/javascript" th:src="@{/resources/js/common/common.js}"></script>
+    <script type="text/javascript" th:src="@{/resources/js/pc_goods/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/resources/js/pc_goods/jquery-ui.min.js}"></script>
+    <script type="text/javascript" th:src="@{/resources/js/pc_goods/jquery.mousewheel.min.js}"></script>
+    <script type="text/javascript" th:src="@{/resources/js/pc_goods/mCustomScrollbar.js}"></script>
+</html>

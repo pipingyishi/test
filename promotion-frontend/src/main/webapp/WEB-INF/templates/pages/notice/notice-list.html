@@ -1,0 +1,104 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html>
+    <head>
+        <th:block th:replace="pages/head/head :: heading" />
+        <title>公告</title>
+        <link rel="icon" type="image/png" th:href="@{/resources/image/logo.png}"/>
+        <link rel="stylesheet" type="text/css" th:href="@{/resources/css/notice/notice-list.css}"/>
+    </head>
+    <body>
+        <a class="header"  href="http://a.app.qq.com/o/simple.jsp?pkgname=cc.quanhai.youbiquan&amp;g_f=991653">
+            <div class="logo">
+                <img th:src="@{/resources/image/logo.png}"/>
+            </div>
+            <div class="ybq-introduction">
+                <div>
+                    邮币圈
+                </div>
+                <div class="ybq-content">
+                    邮币卡投资者的圈子
+                </div>
+            </div>
+            <div class="download">
+                点击下载
+            </div>
+        </a>
+        <div class="menu">
+            <div class="exchange" id="exchange" >
+                <span>
+                    交易所
+                </span>
+                <div>
+                    <span>
+                        全部
+                    </span>
+                    <img th:src="@{/resources/image/down-arrow.png}" onclick="exchangeSelect()" />
+                </div>
+            </div>
+            <div id="noticeType"   class="notice-type" >
+                <span>
+                    公告类型
+                </span>
+                <div>
+                    <span>
+                        全部
+                    </span>
+                    <img  th:src="@{/resources/image/down-arrow.png}" onclick="noticeTypeSelect()"/>
+                </div>
+            </div>
+            <div class="header-underline">
+            </div>
+        </div>
+        <div   id="noticeList">
+	        <th:block th:if="${not #lists.isEmpty(notices)}" th:each="notice:${notices}">
+		        <div class="notice-list" name="detailNoticeList"  th:onclick="${'showNoticeInfo('+notice.noticeId+')'}">
+		            <div class="exchange-logo">
+		                <img  th:src="${notice.exchange.logo}"/>
+		            </div>
+		            <div class="notice-list-detail">
+		                <th:block th:if="${not #lists.isEmpty(dicts)}" th:each="dict:${dicts}">
+		                    <div class="notice-title" th:if="${#strings.toString(notice.noticeType)==dict.dictKeyValue and notice.noticeType==1}"  th:text="'[其他]'+${notice.noticeTitle}">
+                            </div>
+                            <div  class="notice-title" th:if="${#strings.toString(notice.noticeType)==dict.dictKeyValue and notice.noticeType!=1}"  th:text="'['+${dict.dictKeyDesc}+']'+${notice.noticeTitle}">
+                            </div>
+		                </th:block>
+		                <div class="exchange-name">
+		                    <span th:text="${notice.exchange.name}">
+		                    </span>
+		                    <span class="publish-date"  th:text="${notice.createDateStr}">
+		                    </span>
+		                </div>
+		            </div>
+		            <div class="notice-list-underline">
+		            </div>
+		        </div>
+		    </th:block>
+	    </div>
+        <input id="presentExchangeId" type="hidden" value="0"/>
+        <div id="exchangeTab"  class="exchange-tab">
+            <th:block th:if="${not #lists.isEmpty(exchanges)}" th:each="exchange,stat:${exchanges}">
+                <span class="exchange-tab-selected"  id="exchangeId-0" th:if="${stat.count==1}"  onclick="exchangeTab(0)" >
+                    全部
+                </span>
+                <span th:id="'exchangeId-'+${exchange.exchangeId}"  th:text="${exchange.shortName}" th:onclick="${'exchangeTab('+exchange.exchangeId+')'}">
+                </span>
+            </th:block>
+        </div>
+        <input id="presentNoticeType" type="hidden" value="0"/>
+        <div id="noticeTypeTab"    class="notice-type-tab" >
+           <th:block th:if="${not #lists.isEmpty(dicts)}" th:each="dict,stat:${dicts}">
+                <span id="noticeTypeId-0"  class="notice-type-tab-all" th:if="${stat.count==1}"   onclick="noticeTypeTab(0)">
+                    全部
+                </span>
+                <span   id="noticeTypeId-1"  th:if="${dict.dictKeyValue=='4'}"  th:unless="${stat.count==1}"   th:onclick="${'noticeTypeTab(1)'}"  th:text="${dict.dictKeyDesc}">
+                </span>
+                <span th:id="'noticeTypeId-'+${dict.dictKeyValue}"   th:if="${stat.count ne 1 and dict.dictKeyValue ne '4'}"   th:onclick="${'noticeTypeTab('+dict.dictKeyValue+')'}"  th:text="${dict.dictKeyDesc}">
+                </span>
+          </th:block>
+        </div>
+    </body>
+    <script th:src="@{/resources/js/notice/notice.js}">
+    </script>
+    <script th:src="@{/resources/js/common/common.js}">
+    </script>
+</html>

@@ -1,0 +1,12 @@
+.small-username, .small-sell,.small-buy,.small-product-name,.small-sell-price,.small-buy-price{
+	font-size:15px;
+}
+
+.small-attribute-transaction-type{
+	font-size:13px;
+}
+
+.small-trade,.small-quantity,.remark{
+	font-size:14px;
+}
+
