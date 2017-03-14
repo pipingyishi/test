@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	
+	<properties resource="stock-jdbc.properties" />
+	
+	<context id="ybq" targetRuntime="MyBatis3">
+
+		<plugin type="org.mybatis.generator.plugins.RowBoundsPlugin" />
+
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+			<property name="suppressDate" value="true" />
+		</commentGenerator>
+
+		<jdbcConnection driverClass="${jdbc.driverClassName}"
+			connectionURL="${jdbc.service_url}" userId="${jdbc.service_username}"
+			password="${jdbc.service_password}" />
+
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<javaModelGenerator targetPackage="com.zx.stock.mybatis.entity"
+			targetProject="MAVEN">
+			<property name="enableSubPackages" value="false" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="com.zx.stock.mybatis.mapper"
+			targetProject="MAVEN">
+			<property name="enableSubPackages" value="false" />
+		</sqlMapGenerator>
+
+		<javaClientGenerator targetPackage="com.zx.stock.mybatis.dao"
+			targetProject="MAVEN" type="MIXEDMAPPER">
+			<property name="enableSubPackages" value="false" />
+		</javaClientGenerator>		
+		<table tableName="zx_stock_info">
+            <generatedKey column="stock_info_id" sqlStatement="MySql"
+                identity="true" />
+        </table>
+        <table tableName="stockinfo">
+            <generatedKey column="stockinfoId" sqlStatement="MySql"
+                identity="true" />
+        </table>
+        <table tableName="zx_massage">
+            <generatedKey column="id" sqlStatement="MySql"
+                identity="true" />
+        </table>
+        <table tableName="zx_stock_trade">
+            <generatedKey column="id" sqlStatement="MySql"
+                identity="true" />
+        </table>
+        <table tableName="zx_abnormal_url">
+            <generatedKey column="id" sqlStatement="MySql"
+                identity="true" />
+        </table>
+        <table tableName="zx_stock_trade_info">
+            <generatedKey column="id" sqlStatement="MySql"
+                identity="true" />
+        </table>
+        <table tableName="zx_stock_trade_massage">
+            <generatedKey column="id" sqlStatement="MySql"
+                identity="true" />
+        </table>
+        <table tableName="zx_user_url">
+            <generatedKey column="id" sqlStatement="MySql"
+                identity="true" />
+        </table>
+        <table tableName="zx_crawler_user_info">
+            <!-- <generatedKey column="user_id" sqlStatement="MySql"
+                identity="false" /> -->
+        </table>
+        <table tableName="zx_crawler_user_card">
+           <!--  <generatedKey column="card_id" sqlStatement="MySql"
+                identity="false" /> -->
+        </table>
+        <table tableName="zx_user_url_info">
+            <generatedKey column="id" sqlStatement="MySql"
+                identity="true" />
+        </table>        
+	</context>
+</generatorConfiguration>
